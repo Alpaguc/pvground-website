@@ -1,0 +1,42 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Netlify Functions
+[functions]
+  directory = "netlify/functions"
+
+# HTTPS redirect - Tüm HTTP isteklerini HTTPS'e yönlendir
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+# Google Search Console doğrulama dosyası - doğrudan servis et
+[[redirects]]
+  from = "/googleab9ad47d04fa770d.html"
+  to = "/googleab9ad47d04fa770d.html"
+  status = 200
+  force = false
+
+# SPA routing - Tüm sayfaları index.html'e yönlendir
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Güvenlik header'ları
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+

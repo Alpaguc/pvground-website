@@ -1,0 +1,622 @@
+{
+  "nav": {
+    "products": "Ürünler",
+    "solutions": "Çözümler",
+    "about": "Hakkımızda",
+    "pricing": "Fiyatlandırma",
+    "releaseNotes": "Yama Notları",
+    "requestDemo": "Key Talep Et"
+  },
+  "hero": {
+    "badge": "Yeni Nesil Güneş Enerjisi Tasarımı",
+    "title1": "Güneş Enerjisi",
+    "title2": "Tasarımında",
+    "title3": "Yeni Çağ",
+    "description": "PVGround, güneş enerjisi projeleriniz için tamamen ücretsiz bir tasarım ve analiz platformu. Bireysel bir geliştirici olarak, sektörün gelişimine katkıda bulunmayı hedefliyorum. Modern teknoloji ve kullanıcı odaklı yaklaşımla projelerinizi daha hızlı ve verimli hale getirmenize yardımcı oluyorum. Tamamen ücretsiz olarak sunduğum platformla sektörün daha iyi hale gelmesine katkıda bulunuyorum. Destek olmak isteyenlerin geri bildirimlerine minnettarım.",
+    "cta1": "Key Talep Et",
+    "cta2": "Özellikleri Keşfet",
+    "stat1": "Manuel Yapmaya Göre",
+    "stat2": "Proje",
+    "stat3": "Ülke"
+  },
+  "features": {
+    "title": "PVGround",
+    "titleHighlight": "Özellikleri",
+    "description": "Modern teknoloji ve gelişmiş algoritmalarla güneş enerjisi tasarımını bir üst seviyeye taşıyoruz. Gelişmiş çözümlerimiz ve yenilikçi yaklaşımımızla projelerinizi hızlandırın.",
+    "items": {
+      "shadowingAnalysis": {
+        "title": "Gölgeleme Analizi",
+        "description": "Güneş panellerinin gölgelenme durumunu analiz edin ve enerji kayıplarını minimize edin."
+      },
+      "terrainAnalysis": {
+        "title": "Arazi Analizi",
+        "description": "Gerçek topografya verileri ile çalışın, arazi yapısına uygun tasarımlar yapın."
+      },
+      "capacityIteration": {
+        "title": "Kapasite İterasyonu",
+        "description": "Farklı kapasite senaryolarını test edin ve en uygun çözümü bulun."
+      },
+      "dcAcHvCabling": {
+        "title": "DC-AC-HV Kablolama",
+        "description": "DC, AC ve yüksek voltaj kablolama sistemlerini otomatik olarak tasarlayın ve optimize edin."
+      },
+      "visualization": {
+        "title": "3D Görselleştirme",
+        "description": "Projelerinizi gerçekçi 3D modeller ile görselleştirin ve sunun."
+      },
+      "reporting": {
+        "title": "Raporlama",
+        "description": "Detaylı teknik raporlar ve çizimler ile projelerinizi belgelendirin."
+      }
+    },
+    "imagePlaceholder": "Özellik Görseli Buraya Eklenecek",
+    "imageSize": "Görsel boyutu: 1400x600 önerilir"
+  },
+  "solutions": {
+    "title": "PVGround Neler Yapıyor?",
+    "description": "Güneş enerjisi projeleriniz için kapsamlı çözümler sunuyoruz. AutoCAD entegrasyonundan PVsyst export'una kadar tüm süreçleri otomatikleştiriyoruz.",
+    "capabilities": [
+      {
+        "title": "AutoCAD Entegrasyonu",
+        "description": "Araziyi AutoCAD'e aktarıyor ve topografik veriyi analiz ediyor."
+      },
+      {
+        "title": "PV Area İterasyonu",
+        "description": "Farklı kapasite senaryolarını test ederek en uygun PV alanını belirliyor."
+      },
+      {
+        "title": "Kazık Boyu Hesaplama",
+        "description": "Arazi yapısına göre otomatik olarak kazık boylarını hesaplıyor."
+      },
+      {
+        "title": "Cut & Fill Analizi",
+        "description": "Çarpışma senaryosuna göre cut & fill hesaplamalarını yapıyor."
+      },
+      {
+        "title": "Elektriksel Dizayn",
+        "description": "Tam elektriksel dizayn yaparak sistem optimizasyonunu sağlıyor."
+      },
+      {
+        "title": "3D Kablolama",
+        "description": "DC-AC-HV kabloları 3D olarak yerleştirerek metrajları doğru analiz ediyor."
+      },
+      {
+        "title": "Gölgeleme Unsurları",
+        "description": "Telçit, ağaç gibi gölgeleme unsurlarını ekleyebiliyor."
+      },
+      {
+        "title": "Veri Export",
+        "description": "Tüm analiz ve tasarım verilerini export edebiliyor."
+      },
+      {
+        "title": "PVsyst Entegrasyonu",
+        "description": "AutoCAD'de gölgeleme analizi yapıp PVsyst export edebiliyor."
+      }
+    ],
+    "integration": {
+      "title": "Entegrasyon ve Uyumluluk",
+      "description": "PVGround, sektördeki standart araçlarla sorunsuz çalışır",
+      "tools": ["AutoCAD", "PVsyst", "Excel", "PDF"]
+    }
+  },
+  "advantages": {
+    "title": "Neden",
+    "titleHighlight": "PVGround?",
+    "description1": "PVGround, güneş enerjisi projeleriniz için hızlı, doğru ve akıllı çözümler sunuyor. Modern teknoloji ve gelişmiş algoritmalarla tasarım sürelerinizi önemli ölçüde kısaltıyoruz.",
+    "description2": "Gelişmiş optimizasyon ve kullanıcı odaklı tasarımımız ile güneş enerjisi projelerinizi bir üst seviyeye taşıyoruz. Tamamen ücretsiz olarak sunduğumuz platformumuzla sektörün gelişimine katkıda bulunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "advantages": {
+      "faster": {
+        "title": "Manuel Hesaplamaya Göre %90+ Daha Hızlı",
+        "description": "Gelişmiş algoritmalar sayesinde tasarım sürelerini %90 azaltın"
+      },
+      "accurate": {
+        "title": "Manuel Hesaplamaya Göre %90 Daha Doğru",
+        "description": "Gelişmiş analizler ile en yüksek doğruluk oranı"
+      },
+      "smarter": {
+        "title": "Daha Akıllı",
+        "description": "Otomatik optimizasyon ile maliyetleri düşürün, verimliliği artırın"
+      }
+    },
+    "cta": "Hemen Deneyin →",
+    "imagePlaceholder": "Hakkımızda Görseli Buraya Eklenecek",
+    "imageSize": "Görsel boyutu: 1200x800 önerilir"
+  },
+  "team": {
+    "title": "Hakkımızda",
+    "name": "Şükrü YİĞİT",
+    "role": "Proje Geliştirici & Mühendis",
+    "bio": {
+      "paragraph1": "Yenilenebilir enerji sektöründe yaklaşık 4 yıldır aktif olarak çalışmaktayım. Kariyerime güneş enerjisi santrali kurulum projelerinde Saha Sorumlusu olarak başladım ve bu görevi 1.5 yıl sürdürdüm. Ardından bir yıl boyunca Proje Mühendisi olarak görev yaptım ve çeşitli yazılım araçları kullanarak proje tasarımı ve geliştirme süreçlerinde aktif rol aldım. Hızlı öğrenme yeteneğim ve teknik merakım sayesinde sistem simülasyonlarında derin uzmanlık geliştirdim, ekibe önemli değer kattım ve bu performansın sonucunda Proje Takım Lideri pozisyonuna terfi ettim.",
+      "paragraph2": "Bu süreçte, teknik merakım ve öğrenme tutkum beni kişisel projeler ve yazılım araçları geliştirmeye yöneltti. Çatı üzeri güneş enerjisi projeleri için PvROOF ve yer üstü güç santralleri için PvGround adlı AutoCAD eklentilerini tasarladım, saha tasarımı ve arazi etüt süreçlerini optimize etmeyi hedefledim. Ayrıca, depolama entegreli sistemler için bir Enerji Yönetim Sistemi (EMS) prototipi üzerinde çalıştım.",
+      "paragraph3": "Sürekli iyileştirme ilkesini benimseyerek, yalnızca kendimi değil, aynı zamanda çalıştığım ekipleri ve şirketleri de ilerletmeyi hedefliyorum. Bu bağlamda, mühendislik bilgisini paylaşmak için YouTube kanalımda eğitici içerikler üretiyor ve yayınlamaya devam ediyorum. Nihai hedefim, geliştirdiğim yenilikçi yazılım çözümleri ve saha deneyimli mühendislik bakış açımla sektöre ve ülkemin enerji geleceğine anlamlı katma değer sağlamaktır.",
+      "paragraph4": "Ayrıca, PVGround gibi bir araç geliştirmemin temel nedeni, sektörde yaşadığım zorlukları ve eksiklikleri görmem ve bunlara çözüm üretme tutkumdur. Saha deneyimlerim sırasında manuel hesaplamaların ne kadar zaman aldığını ve hata yapmaya ne kadar açık olduğunu gördüm. Bu durum beni, mühendislerin işini kolaylaştıracak ve sektörün gelişimine katkı sağlayacak bir araç geliştirmeye yöneltti. Ülkeme ve bulunduğum ortama her zaman katma değer katmayı çok seviyorum. PVGround'un tamamen ücretsiz olması da bu tutkumun bir yansımasıdır - güneş enerjisi sektörünün daha iyi hale gelmesi ve herkesin erişebileceği profesyonel araçlara sahip olması benim için çok önemli."
+    }
+  },
+  "testimonials": {
+    "title": "Kullanıcılarımız",
+    "titleHighlight": "Ne Diyor?",
+    "description": "",
+    "items": {
+      "1": {
+        "content": "PVGround ile proje tasarım sürelerimiz ciddi anlamda kısaldı. Özellikle gölgeleme analizi ve kapasite iterasyonu özellikleri işimizi çok kolaylaştırdı. Manuel hesaplamalara göre çok daha hızlı ve doğru sonuçlar alıyoruz.",
+        "name": "Sibel Cansu Akdeniz",
+        "role": "Proje Mühendisi",
+        "company": "Senerji Elektrik Teknoloji A.Ş."
+      },
+      "2": {
+        "content": "DC-AC-HV kablolama modülü gerçekten harika çalışıyor. Karmaşık projelerde bile otomatik olarak en uygun kablo yönlendirmesini yapıyor. PVGround sayesinde hem zaman kazanıyoruz hem de daha az hata yapıyoruz.",
+        "name": "Emre Dönmez",
+        "role": "Proje Mühendisi",
+        "company": "Senerji Elektrik Teknoloji A.Ş."
+      },
+      "3": {
+        "content": "3D görselleştirme özelliği kullanıcılarımıza projeleri sunarken çok işimize yarıyor. Arazi analizi de gerçek topografya verileriyle çalıştığı için çok güvenilir. PVGround gerçekten profesyonel bir çözüm.",
+        "name": "Talha Kırdemir",
+        "role": "Proje Mühendisi",
+        "company": "Senerji Elektrik Teknoloji A.Ş."
+      },
+      "4": {
+        "content": "Raporlama modülü çok detaylı ve profesyonel. Teknik çizimler ve analiz raporları otomatik olarak oluşturuluyor. PVGround ile manuel hesaplamalara göre çok daha hızlı ve doğru çalışıyoruz. Kesinlikle tavsiye ederim.",
+        "name": "Sadık Toğrul",
+        "role": "Kıdemli Tasarım Mühendisi",
+        "company": "Chint Power Systems"
+      }
+    },
+    "stats": {
+      "customers": "Mutlu Kullanıcı",
+      "projects": "Tamamlanan Proje",
+      "countries": "Ülke",
+      "rating": "Ortalama Puan"
+    },
+    "popup": {
+      "title": "PVGround'u kullandınız mı?",
+      "subtitle": "Bizi değerlendirin"
+    }
+  },
+  "testimonialForm": {
+    "title": "PVGround'u kullandınız mı? Bizi değerlendirin",
+    "rating": "Değerlendirme",
+    "name": "Ad Soyad",
+    "role": "Pozisyon",
+    "rolePlaceholder": "Örn: Proje Mühendisi",
+    "company": "Şirket",
+    "companyPlaceholder": "Şirket adı",
+    "comment": "Yorumunuz",
+    "commentPlaceholder": "PVGround hakkındaki görüşlerinizi paylaşın...",
+    "submit": "Gönder",
+    "submitting": "Gönderiliyor...",
+    "success": "Teşekkür ederiz! Yorumunuz gönderildi.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "minimize": "Küçült",
+    "close": "Kapat",
+    "minimizedTooltip": "Bizi değerlendirin",
+    "validation": {
+      "required": "Lütfen zorunlu alanları doldurun"
+    }
+  },
+  "cta": {
+    "title": "Hemen",
+    "titleHighlight": "Başlayın",
+    "description": "PVGround tamamen ücretsizdir. Sektörün daha iyi hale gelmesi için ücretsiz sunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız. Hemen başlayın ve deneyimlerinizi bizimle paylaşın.",
+    "button1": "Key Talep Et",
+    "button2": "Bizi Arayın",
+    "trust": {
+      "support": "7/24 Destek",
+      "trial": "Ücretsiz Deneme",
+      "setup": "Hızlı Kurulum"
+    }
+  },
+  "footer": {
+    "description": "Güneş enerjisi tasarımında yeni nesil platform. Tamamen ücretsiz. Sektörün daha iyi hale gelmesi için ücretsiz sunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "links": {
+      "product": {
+        "features": "Özellikler",
+        "pricing": "Fiyatlandırma",
+        "updates": "Güncellemeler"
+      },
+      "solutions": {
+        "layout": "Yerleşim Tasarımı",
+        "modeling": "Enerji Modelleme",
+        "analysis": "Arazi Analizi"
+      },
+      "company": {
+        "about": "Hakkımızda",
+        "blog": "Blog",
+        "careers": "Kariyer",
+        "contact": "İletişim"
+      },
+      "resources": {
+        "docs": "Dokümantasyon",
+        "help": "Yardım Merkezi",
+        "api": "API",
+        "training": "Eğitimler"
+      }
+    },
+    "copyright": "Tüm hakları saklıdır.",
+    "resources": "Kaynaklar",
+    "feedback": {
+      "title": "Geri Bildirim",
+      "subject": "PVGround Geri Bildirimi"
+    },
+    "legal": {
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Şartları",
+      "cookies": "Çerez Politikası"
+    }
+  },
+  "legalNotice": {
+    "title": "Yasal Uyarı ve Sorumluluk Reddi Beyanı",
+    "section1": {
+      "title": "1. Bağımsız Geliştirme ve Özgünlük",
+      "content": "PV Ground; bağımsız bir geliştirici tarafından, güneş enerjisi sektöründeki genel mühendislik prensipleri, matematiksel algoritmalar ve kamuya açık teknik bilgiler temel alınarak sıfırdan geliştirilmiş ücretsiz bir AutoCAD® eklentisidir. Bu yazılımın kaynak kodları ve çalışma mantığı tamamen özgündür. Herhangi bir üçüncü taraf ticari yazılımın kaynak kodlarına erişilmemiş, kopyalanmamış, tersine mühendislik (reverse engineering) uygulanmamış veya kodu çözülmemiştir (decompiling)."
+    },
+    "section2": {
+      "title": "2. Ticari Bağlantısızlık",
+      "content": "PV Ground; PVcase UAB, Virto.CAD, Autodesk Inc. veya diğer herhangi bir ticari güneş enerjisi yazılımı sağlayıcısı ile hiçbir şekilde bağlantılı değildir. Bu firmalarla herhangi bir ortaklığımız, veri alışverişimiz veya ticari ilişkimiz yoktur. Bu yazılım, söz konusu firmalar tarafından yetkilendirilmemiş, desteklenmemiş veya onaylanmamıştır."
+    },
+    "section3": {
+      "title": "3. Ticari Markalar",
+      "content": "Bu dokümantasyonda, web sitesinde veya yazılım arayüzünde adı geçen tüm ürün ve şirket isimleri (örneğin; PVcase™, Virto.CAD™, AutoCAD®, PVsyst™ vb.), ilgili hak sahiplerinin tescilli ticari markalarıdır. Bu isimlerin kullanımı yalnızca tanımlama, karşılaştırma ve uyumluluk belirtme amacı taşımakta olup (Nominative Fair Use), herhangi bir marka ihlali veya sponsorluk iması içermemektedir."
+    },
+    "section4": {
+      "title": "4. Garanti ve Sorumluluk Reddi",
+      "content": "Bu yazılım kullanıcılara \"OLDUĞU GİBİ\" (AS-IS) sunulmaktadır. Geliştirici; yazılımın kusursuzluğu, ticari elverişliliği veya belirli bir amaca uygunluğu konusunda açık veya zımni hiçbir garanti vermez. Yazılımın kullanımından kaynaklanabilecek veri kaybı, hatalı hesaplama veya ticari zararlardan geliştirici sorumlu tutulamaz. Kullanıcı, yazılımı kendi riski altında kullanmayı kabul eder."
+    }
+  },
+  "demo": {
+    "title": "Ücretsiz PVGround Demo'sunu Alın",
+    "description": "PVGround, geleneksel, zaman alıcı ve hata yapmaya açık güneş projesi geliştirme sürecine alternatif sunarak güneş enerjisini ileriye taşıyor. Demo için formu doldurun, size en kısa sürede ulaşalım.",
+    "form": {
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "email": "E-posta",
+      "company": "Şirket",
+      "phone": "Telefon",
+      "jobTitle": "Pozisyon",
+      "message": "Mesaj",
+      "phonePlaceholder": "Telefon numarası",
+      "submit": "Key Talep Et",
+      "submitting": "Gönderiliyor..."
+    },
+    "validation": {
+      "emailRequired": "E-posta adresi gereklidir",
+      "emailInvalid": "Geçerli bir e-posta adresi giriniz",
+      "emailBlocked": "Lütfen şirket e-posta adresinizi kullanınız. Gmail, Yahoo gibi kişisel e-posta servisleri kabul edilmemektedir.",
+      "emailNote": "Lütfen şirket e-posta adresinizi kullanınız (@gmail.com, @yahoo.com gibi kişisel e-posta servisleri kabul edilmemektedir)",
+      "messageRequired": "Mesaj alanı zorunludur"
+    },
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan info@pvground.com adresine e-posta gönderin.",
+    "trust": {
+      "title": "Neden PVGround?",
+      "item1": {
+        "title": "Hızlı Yanıt",
+        "description": "24 saat içinde size ulaşırız"
+      },
+      "item2": {
+        "title": "Ücretsiz Demo",
+        "description": "Herhangi bir yükümlülük yok"
+      },
+      "item3": {
+        "title": "Uzman Destek",
+        "description": "Projenin kurucusundan destek alın :)"
+      }
+    },
+    "stats": {
+      "customers": "Kullanıcı",
+      "countries": "Ülke"
+    },
+    "success": {
+      "title": "Talebiniz Alındı!",
+      "message": "Demo talebiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
+      "back": "Ana Sayfaya Dön"
+    },
+    "confirmation": {
+      "subject": "PVGround - Talebiniz Alındı",
+      "greeting": "Merhaba",
+      "message": "Key talebiniz başarıyla alınmıştır. En kısa sürede size ulaşacağız.",
+      "details": "Talebiniz detayları:",
+      "thanks": "Teşekkür ederiz!"
+    }
+  },
+  "releaseNotes": {
+    "title": "Yama Notları",
+    "description": "PVGround'un yeni özelliklerini, iyileştirmelerini ve düzeltmelerini keşfedin.",
+    "version": "Versiyon",
+    "newFeatures": "Yeni Özellikler",
+    "improvements": "İyileştirmeler",
+    "bugFixes": "Hata Düzeltmeleri",
+    "releases": {
+      "1.22": {
+        "date": "Şubat 2026",
+        "description": "Yeni özellikler ve iyileştirmeler ile Versiyon 1.22.",
+        "features": [
+          {
+            "title": "Birden Fazla PV Area Seçimi ve Yerleşim",
+            "description": [
+              "Artık birden fazla PV area seçimi yapabiliyor ve aynı anda yerleşim yapabiliyorsunuz",
+              "Çoklu alan seçimi ile daha esnek proje yönetimi"
+            ],
+            "video": "/images/release-notes/1.22/multiple-pv-area-selection.mp4"
+          },
+          {
+            "title": "İterasyon Dialog Güncellemeleri",
+            "description": [
+              "Artık her iterasyon ayrı ayrı detaylı hesaplanıyor",
+              "Gösterge çubukları değiştirildi ve daha bilgilendirici hale getirildi",
+              "İterasyon süreçleri daha şeffaf ve takip edilebilir",
+              "İterasyon yaparken artık birden fazla PV area seçilerek 2 farklı PV area'nın iterasyonunu seçebilirsiniz",
+              "Her PV area için ayrı ayrı spacing mesafeleri ile yerleşim yaptırabilirsiniz"
+            ],
+            "image": "/images/release-notes/1.22/iteration-dialog-updates.png"
+          },
+          {
+            "title": "Otomatik Terrain Adaptasyonu",
+            "description": [
+              "Artık PV modülleri topografik haritada move ettiğinizde otomatik olarak yeni terrain'e adapt olacak",
+              "Hem AutoCAD'in move komutu ile hem de Move Frames butonumuz ile hareket ettirdiğiniz framesler adapt olacak",
+              "Move Frames ile hareket ettirirseniz toplu seçimlerde sadece framesler seçilirken, AutoCAD'in move komutunda başka unsurları seçebilirsiniz",
+              "Önerimiz buton ile devam etmeniz yönündedir"
+            ],
+            "video": "/images/release-notes/1.22/auto-terrain-adaptation.mp4"
+          },
+          {
+            "title": "Advanced Modda Kablo Kesit Hesaplaması",
+            "description": [
+              "Artık AG Kablolar ve DC kablolar için Advanced modda kesit mm² hesaplaması ve önerisi sunmaktadır",
+              "Daha doğru ve optimize edilmiş kablo seçimi için gelişmiş hesaplama sistemi",
+              "Proje gereksinimlerinize uygun kablo kesit önerileri"
+            ],
+            "image": "/images/release-notes/1.22/cable-section-calculation.png"
+          },
+          {
+            "title": "Koridor Sistemi Eklendi",
+            "description": [
+              "Artık koridorlarınızı otomatik olarak oluşturabiliyorsunuz",
+              "Koridor sistemi ile PV modül yerleşimleriniz arasında güvenli erişim yolları oluşturun",
+              "Otomatik koridor oluşturma ile manuel çizim ihtiyacını ortadan kaldırın",
+              "Proje gereksinimlerinize göre koridor genişliklerini ve konumlarını özelleştirebilirsiniz",
+              "Koridorlar topografik haritaya otomatik olarak uyum sağlar"
+            ],
+            "video": "/images/release-notes/1.22/corridor-system.mp4"
+          }
+        ],
+        "improvements": [
+          "Depolamalı sistem için Battery Pack sistemi eklenecek butonları oluşturuldu",
+          "Drainage Analysis bölümü eklendi, geliştirilme çalışmalarına başlandı",
+          "Artık kullanıcı arabildirimine göre Layers bölümü gidişatı etkilememek ve düzeni PV modül düzen sırasını bozmamak adına Project Setup bölümünün sağına taşındı"
+        ],
+        "bugFixes": [
+          "Kullanıcı geri bildirimine göre bazı frameslerin hizalama sorunu giderildi",
+          "Yerleştirme optimizasyonu arttırıldı",
+          "Minimal düzeydeki hatalar kaldırıldı"
+        ]
+      },
+      "1.21": {
+        "date": "Ocak 2026",
+        "description": "Yeni özellikler ve hata düzeltmeleri ile Versiyon 1.21.",
+        "features": [
+          {
+            "title": "Workspace' Read Contour Eklendi",
+            "description": [
+              "Artık arazilerinizin topografik haritasını harita mühendislerinin çıkarttığı ya da farklı import seçeneklerinin PVGround anlayabileceği bir tasarıma dönüştürmek bir tık kadar kolay",
+              "Topografik verileri hızlı ve kolay bir şekilde içe aktarın",
+              "Farklı formatlardan topografik harita dönüşümü desteği"
+            ],
+            "image": "/images/release-notes/1.21/read-contour.gif"
+          }
+        ],
+        "improvements": [],
+        "bugFixes": [
+          "Bazı kullanıcılar tarafından bildirilen lisanslama hataları düzeltildi",
+          "Lisanslama sistemi iyileştirildi ve stabilite artırıldı"
+        ]
+      },
+      "1.2": {
+        "date": "Şubat 2025",
+        "description": "Yeni özellikler, performans iyileştirmeleri ve hata düzeltmeleri ile Versiyon 1.2.",
+        "features": [
+          {
+            "title": "Lisanslama Sistemi Eklendi",
+            "description": [
+              "Yeni lisanslama sistemi ile kullanıcı yönetimi geliştirildi",
+              "Güvenli ve kontrollü erişim sağlanıyor",
+              "Kullanıcı bazlı lisans yönetimi aktif"
+            ],
+            "image": "/images/release-notes/1.2/licensing-system.png"
+          },
+          {
+            "title": "Export Sistemi Aktif Edildi",
+            "description": [
+              "Export sistemi başarıyla aktif edildi",
+              "Basic ve Advanced modlar ile kapsamlı export desteği"
+            ],
+            "image": "/images/release-notes/1.2/export-system.png"
+          },
+          {
+            "title": "Basic Export Sistemi",
+            "description": [
+              "DC-AC kabloların metrajlarını tam olarak vermekte",
+              "Temel export işlemleri için optimize edilmiş sistem",
+              "Kullanıcı dostu arayüz ile hızlı export işlemleri"
+            ],
+            "image": "/images/release-notes/1.2/basic-export-system.png"
+          },
+          {
+            "title": "Advanced Export Sistemi",
+            "description": [
+              "DC kabloların kesin metrajlarını export edebilme",
+              "Gelişmiş analiz ve detaylı export özellikleri",
+              "AC kablolar için geliştirme devam ediyor"
+            ],
+            "image": "/images/release-notes/1.2/advanced-export-system.png"
+          },
+          {
+            "title": "AG Kablo Export",
+            "description": [
+              "AG kablo export özelliği eklendi",
+              "Yüksek voltaj kablo sistemleri için export desteği"
+            ],
+            "image": "/images/release-notes/1.2/ag-kablo-export.png"
+          }
+        ],
+        "improvements": [
+          "Kullanıcı geri bildirimlerine göre performans hızlandırmaları yapıldı",
+          "Sistem genelinde hız optimizasyonları gerçekleştirildi",
+          "Export işlemleri daha hızlı ve verimli hale getirildi"
+        ],
+        "bugFixes": [
+          "Kullanıcı geri bildirimlerine göre tespit edilen hatalar giderildi",
+          "Export işlemlerindeki hatalar düzeltildi",
+          "Genel stabilite ve performans iyileştirmeleri yapıldı"
+        ]
+      },
+      "1.1": {
+        "date": "Ocak 2025",
+        "description": "Yeni özellikler ve iyileştirmeler ile Versiyon 1.1.",
+        "features": [
+          {
+            "title": "İterasyon Eklendi",
+            "description": [
+              "Farklı pitch değerleri için otomatik kapasite hesaplaması yapabilirsiniz",
+              "Pitch aralığı ve adım değerlerini belirleyerek birden fazla senaryoyu karşılaştırabilirsiniz",
+              "Her iterasyon için alan, kapasite, modül sayısı ve gölgeleme açısı değerlerini görebilirsiniz",
+              "Tablo formatında tüm sonuçları görüntüleyip en uygun pitch değerini seçebilirsiniz"
+            ],
+            "image": "/images/release-notes/1.1/iterasyon.gif"
+          },
+          {
+            "title": "Pile Generatör Eklendi",
+            "description": [
+              "Kazık boylarını arazinin eğimine göre otomatik olarak hesaplayabilirsiniz",
+              "Kazık derinliklerini belirleyerek projenize uygun kazık yerleşimini oluşturabilirsiniz",
+              "Topografik verilere göre her kazık için doğru boy hesaplaması yapılır"
+            ],
+            "image": "/images/release-notes/1.1/pile-generator.png"
+          },
+          {
+            "title": "Cross Selection'a yeni özellik eklendi - Harfiat işlemi öncesi ve sonrası yerleşimi görebiliyorsunuz",
+            "description": [
+              "Arazi eğimini kazıklar ile birlikte görselleştirebilirsiniz",
+              "Harfiat işlemi öncesi ve sonrası yerleşimi karşılaştırabilirsiniz",
+              "Sunumlarda kullanılmak üzere profesyonel görselleştirmeler oluşturabilirsiniz",
+              "Cross section görünümü ile projenizin detaylı analizini yapabilirsiniz"
+            ],
+            "image": "/images/release-notes/1.1/cross-selection-harfiat.gif"
+          }
+        ],
+        "improvements": [
+          "Panel yerleşimi daha hassas ve hızlı hale getirildi",
+          "Kullanıcı arayüzü performans iyileştirmeleri yapıldı",
+          "Görselleştirme kalitesi artırıldı",
+          "Export işlemleri optimize edildi"
+        ],
+        "bugFixes": [
+          "UI hataları düzeltildi",
+          "Panel yerleşim hesaplamalarındaki küçük hatalar giderildi",
+          "Cross Selection görüntüleme sorunları çözüldü",
+          "Genel stabilite iyileştirmeleri yapıldı"
+        ]
+      },
+      "1.0": {
+        "date": "20 Aralık 2024",
+        "description": "PVGround'un ilk büyük sürümü. Güneş enerjisi tasarımında yeni bir dönem başlıyor.",
+        "features": [
+          "Otomatik güneş paneli yerleşim algoritması",
+          "Gerçek zamanlı arazi analizi",
+          "3D görselleştirme modülü",
+          "Enerji üretim modelleme",
+          "Otomatik kablo yönlendirme",
+          "3D DC dönüşüm özelliği eklendi",
+          "AC Kablolama modülü eklendi",
+          "DC Kablolama modülü eklendi",
+          "Electrical Dialog güncellendi - Stringleme tasarımı değiştirildi",
+          "Electrical Devices Stringleme özelliği eklendi",
+          "Gölgeleme Analizi modülü eklendi"
+        ],
+        "improvements": [
+          "Kullanıcı arayüzü performans optimizasyonu",
+          "Daha hızlı render süreleri",
+          "Geliştirilmiş hata mesajları"
+        ],
+        "bugFixes": [
+          "Arazi yükleme sorunları düzeltildi",
+          "Export fonksiyonu iyileştirildi"
+        ]
+      },
+      "0.9": {
+        "date": "15 Kasım 2024",
+        "description": "Beta sürümü - Önemli özellikler ve iyileştirmeler.",
+        "features": [
+          "Preview ayarlandı - Daha sade hale getirildi dialoglar",
+          "Yerden yükseklik özelliği eklendi",
+          "Panel arası boşluklar özelliği eklendi",
+          "Hizalama özelliği eklendi"
+        ],
+        "improvements": [
+          "Genel performans iyileştirmeleri",
+          "Dialog arayüzleri sadeleştirildi"
+        ],
+        "bugFixes": [
+          "Küçük UI hataları düzeltildi",
+          "Preview görüntüleme sorunları çözüldü"
+        ]
+      },
+      "0.8": {
+        "date": "1 Kasım 2024",
+        "description": "Erken erişim sürümü - Temel özellikler ve test aşaması.",
+        "features": [
+          "Temel tasarım araçları",
+          "Arazi import özelliği",
+          "Temel raporlama"
+        ],
+        "improvements": [
+          "İlk kullanıcı deneyimi iyileştirmeleri"
+        ],
+        "bugFixes": [
+          "Kritik hatalar düzeltildi"
+        ]
+      },
+      "0.7": {
+        "date": "15 Ekim 2024",
+        "description": "Alpha sürümü - İlk test versiyonu.",
+        "features": [
+          "Temel arayüz",
+          "Giriş sistemi"
+        ],
+        "improvements": [],
+        "bugFixes": [
+          "İlk hata düzeltmeleri"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Fiyatlandırma",
+    "description": "PVGround tamamen ücretsizdir. Güneş enerjisi sistemlerinin gelişmesine katkı sunmayı amaçlıyoruz.",
+    "free": "Tamamen Ücretsiz",
+    "freeTitle": "PVGround Tamamen Ücretsiz",
+    "freeDescription": "Tüm özellikler ve araçlar tamamen ücretsiz olarak sunulmaktadır.",
+    "mission": "Güneş enerjisi sistemlerinin gelişmesine katkı sunmayı ve sektörün büyümesine destek olmayı amaçlıyoruz. Tamamen ücretsiz olarak sunduğumuz platformumuzla sektörün daha iyi hale gelmesine katkıda bulunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "getStarted": "Hemen Başlayın",
+    "features": [
+      "Tüm tasarım araçları",
+      "Gölgeleme analizi",
+      "Arazi analizi",
+      "Kapasite iterasyonu",
+      "DC-AC-HV kablolama",
+      "3D görselleştirme",
+      "AutoCAD entegrasyonu",
+      "PVsyst export",
+      "Detaylı raporlama",
+      "Sınırsız proje",
+      "Tüm özellikler",
+      "Sürekli güncellemeler"
+    ],
+    "missionTitle": "Misyonumuz",
+    "missionText": "PVGround olarak, güneş enerjisi sektörünün gelişimine katkıda bulunmayı ve herkesin erişebileceği profesyonel tasarım araçları sunmayı hedefliyoruz. Tamamen ücretsiz olarak sunduğumuz platformumuzla, güneş enerjisi projelerinin daha hızlı ve verimli bir şekilde hayata geçirilmesine destek oluyoruz. Sektörün daha iyi hale gelmesi için ücretsiz sunuyoruz ve destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "earlyAccessTitle": "Erken Erişim",
+    "earlyAccessText": "Sizler için hazırladığım bu program, 01.05.2026 tarihine kadar erken erişim kapsamında tamamen ücretsizdir. Geliştirme sürecine katkıda bulunmak veya destek olmak isterseniz, info@pvground.com adresinden bana her zaman ulaşabilirsiniz. Desteğiniz için teşekkürler!"
+  }
+}
+

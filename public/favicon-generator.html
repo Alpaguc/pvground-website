@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Favicon Generator - PVGround</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .canvas-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    canvas {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      background: white;
+    }
+    .downloads {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .download-item {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #0ea5e9;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background: #0284c7;
+    }
+  </style>
+</head>
+<body>
+  <h1>PVGround Favicon Generator</h1>
+  <p>Farklı boyutlarda favicon'ları oluşturmak için aşağıdaki canvas'ı kullanın.</p>
+  
+  <div class="canvas-container">
+    <canvas id="faviconCanvas" width="512" height="512"></canvas>
+  </div>
+
+  <div class="downloads">
+    <div class="download-item">
+      <h3>16x16</h3>
+      <button onclick="downloadFavicon(16)">İndir</button>
+    </div>
+    <div class="download-item">
+      <h3>32x32</h3>
+      <button onclick="downloadFavicon(32)">İndir</button>
+    </div>
+    <div class="download-item">
+      <h3>180x180 (Apple)</h3>
+      <button onclick="downloadFavicon(180)">İndir</button>
+    </div>
+    <div class="download-item">
+      <h3>192x192</h3>
+      <button onclick="downloadFavicon(192)">İndir</button>
+    </div>
+    <div class="download-item">
+      <h3>512x512</h3>
+      <button onclick="downloadFavicon(512)">İndir</button>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('faviconCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function drawFavicon(size) {
+      canvas.width = size;
+      canvas.height = size;
+      
+      // Gradient background
+      const gradient = ctx.createLinearGradient(0, 0, size, size);
+      gradient.addColorStop(0, '#0ea5e9');
+      gradient.addColorStop(1, '#f97316');
+      
+      // Rounded rectangle
+      const radius = size * 0.2;
+      ctx.beginPath();
+      ctx.moveTo(radius, 0);
+      ctx.lineTo(size - radius, 0);
+      ctx.quadraticCurveTo(size, 0, size, radius);
+      ctx.lineTo(size, size - radius);
+      ctx.quadraticCurveTo(size, size, size - radius, size);
+      ctx.lineTo(radius, size);
+      ctx.quadraticCurveTo(0, size, 0, size - radius);
+      ctx.lineTo(0, radius);
+      ctx.quadraticCurveTo(0, 0, radius, 0);
+      ctx.closePath();
+      ctx.fillStyle = gradient;
+      ctx.fill();
+      
+      // Text "PV"
+      ctx.fillStyle = 'white';
+      ctx.font = `bold ${size * 0.6}px Arial`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('PV', size / 2, size / 2);
+    }
+
+    function downloadFavicon(size) {
+      drawFavicon(size);
+      const link = document.createElement('a');
+      link.download = `favicon-${size}x${size}.png`;
+      link.href = canvas.toDataURL();
+      link.click();
+    }
+
+    // Initial draw
+    drawFavicon(512);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,621 @@
+{
+  "nav": {
+    "products": "Produkte",
+    "solutions": "Lösungen",
+    "about": "Über uns",
+    "pricing": "Preise",
+    "releaseNotes": "Versionshinweise",
+    "requestDemo": "Schlüssel Anfordern"
+  },
+  "hero": {
+    "badge": "Solar-Design der nächsten Generation",
+    "title1": "Solarenergie",
+    "title2": "Design",
+    "title3": "Neue Ära",
+    "description": "PVGround ist eine vollständig kostenlose Design- und Analyseplattform für Ihre Solarenergieprojekte. Wir bieten sie kostenlos an, um die Branche besser zu machen. Wir sind dankbar für Feedback von denen, die uns unterstützen möchten.",
+    "cta1": "Schlüssel Anfordern",
+    "cta2": "Funktionen Erkunden",
+    "stat1": "vs Manuell",
+    "stat2": "Projekte",
+    "stat3": "Länder"
+  },
+  "features": {
+    "title": "PVGround",
+    "titleHighlight": "Funktionen",
+    "description": "Wir bringen das Solarenergie-Design mit moderner Technologie und fortschrittlichen Algorithmen auf die nächste Stufe. Unsere fortschrittlichen Lösungen und innovative Herangehensweise beschleunigen Ihre Projekte.",
+    "items": {
+      "shadowingAnalysis": {
+        "title": "Verschattungsanalyse",
+        "description": "Analysieren Sie die Verschattungsbedingungen von Solarpanelen und minimieren Sie Energieverluste."
+      },
+      "terrainAnalysis": {
+        "title": "Geländeanalyse",
+        "description": "Arbeiten Sie mit echten Topografiedaten und erstellen Sie Designs, die zur Geländestruktur passen."
+      },
+      "capacityIteration": {
+        "title": "Kapazitätsiteration",
+        "description": "Testen Sie verschiedene Kapazitätsszenarien und finden Sie die optimale Lösung."
+      },
+      "dcAcHvCabling": {
+        "title": "DC-AC-HV Kabelverlegung",
+        "description": "Entwerfen und optimieren Sie DC-, AC- und Hochspannungskabelverlegungssysteme automatisch."
+      },
+      "visualization": {
+        "title": "3D-Visualisierung",
+        "description": "Visualisieren und präsentieren Sie Ihre Projekte mit realistischen 3D-Modellen."
+      },
+      "reporting": {
+        "title": "Berichterstattung",
+        "description": "Dokumentieren Sie Ihre Projekte mit detaillierten technischen Berichten und Zeichnungen."
+      }
+    },
+    "imagePlaceholder": "Funktionsbild wird hier hinzugefügt",
+    "imageSize": "Empfohlene Bildgröße: 1400x600"
+  },
+  "solutions": {
+    "title": "Was Macht PVGround?",
+    "description": "Wir bieten umfassende Lösungen für Ihre Solarenergieprojekte. Wir automatisieren alle Prozesse von der AutoCAD-Integration bis zum PVsyst-Export.",
+    "capabilities": [
+      {
+        "title": "AutoCAD-Integration",
+        "description": "Überträgt Gelände nach AutoCAD und analysiert topografische Daten."
+      },
+      {
+        "title": "PV-Flächeniteration",
+        "description": "Testet verschiedene Kapazitätsszenarien, um die optimale PV-Fläche zu bestimmen."
+      },
+      {
+        "title": "Pfahllängenberechnung",
+        "description": "Berechnet automatisch Pfahllängen entsprechend der Geländestruktur."
+      },
+      {
+        "title": "Cut & Fill Analyse",
+        "description": "Führt Cut & Fill Berechnungen entsprechend Kollisionsszenarien durch."
+      },
+      {
+        "title": "Elektrisches Design",
+        "description": "Führt vollständiges elektrisches Design durch und gewährleistet Systemoptimierung."
+      },
+      {
+        "title": "3D-Kabelverlegung",
+        "description": "Platziert DC-AC-HV Kabel in 3D und analysiert Mengen genau."
+      },
+      {
+        "title": "Verschattungselemente",
+        "description": "Kann Verschattungselemente wie Zäune und Bäume hinzufügen."
+      },
+      {
+        "title": "Datenexport",
+        "description": "Kann alle Analyse- und Designdaten exportieren."
+      },
+      {
+        "title": "PVsyst-Integration",
+        "description": "Kann Verschattungsanalyse in AutoCAD durchführen und nach PVsyst exportieren."
+      }
+    ],
+    "integration": {
+      "title": "Integration und Kompatibilität",
+      "description": "PVGround arbeitet nahtlos mit branchenüblichen Tools",
+      "tools": ["AutoCAD", "PVsyst", "Excel", "PDF"]
+    }
+  },
+  "advantages": {
+    "title": "Warum",
+    "titleHighlight": "PVGround?",
+    "description1": "PVGround bietet schnelle, präzise und intelligente Lösungen für Ihre Solarenergieprojekte. Wir reduzieren Ihre Designzeiten erheblich mit moderner Technologie und fortschrittlichen Algorithmen.",
+    "description2": "Wir bringen Ihre Solarenergieprojekte mit fortschrittlicher Optimierung und benutzerorientiertem Design auf die nächste Stufe. Wir tragen zur Entwicklung der Branche bei, indem wir unsere Plattform vollständig kostenlos anbieten. Wir sind dankbar für Feedback von denen, die uns unterstützen möchten.",
+    "advantages": {
+      "faster": {
+        "title": "90%+ Schneller Als Manuelle Berechnung",
+        "description": "Reduzieren Sie die Designzeiten um 90% mit fortschrittlichen Algorithmen"
+      },
+      "accurate": {
+        "title": "90% Genauer Als Manuelle Berechnung",
+        "description": "Höchste Genauigkeitsrate mit fortschrittlicher Analyse"
+      },
+      "smarter": {
+        "title": "Intelligenter",
+        "description": "Reduzieren Sie die Kosten und steigern Sie die Effizienz durch automatisierte Optimierung"
+      }
+    },
+    "cta": "Jetzt Ausprobieren →",
+    "imagePlaceholder": "Über uns Bild wird hier hinzugefügt",
+    "imageSize": "Empfohlene Bildgröße: 1200x800"
+  },
+  "team": {
+    "title": "Über uns",
+    "name": "Şükrü YİĞİT",
+    "role": "Projektentwickler & Ingenieur",
+    "bio": {
+      "paragraph1": "Ich arbeite seit etwa 4 Jahren aktiv im Bereich der erneuerbaren Energien. Ich begann meine Karriere als Baustellenleiter für Solaranlagen-Installationsprojekte, eine Position, die ich 1,5 Jahre lang innehatte. Anschließend war ich ein Jahr lang Projektingenieur, wo ich eine aktive Rolle bei der Projektdesign und -entwicklung mit verschiedenen Softwaretools spielte. Dank meiner schnellen Lernfähigkeit und technischen Neugier entwickelte ich tiefe Expertise in Systemsimulationen, trug erheblich zum Team bei und wurde aufgrund dieser Leistung zum Projektteamleiter befördert.",
+      "paragraph2": "Während dieser Zeit führten meine technische Neugier und Leidenschaft für das Lernen dazu, dass ich persönliche Projekte und Softwaretools entwickelte. Ich entwarf AutoCAD-Plugins namens PvROOF für Dach-Solarprojekte und PvGround für Freiflächen-Kraftwerke, um Felddesign und Standorterkundungsprozesse zu optimieren. Zusätzlich arbeitete ich an einem Prototyp für ein Energiemanagementsystem (EMS) für speicherintegrierte Systeme.",
+      "paragraph3": "Indem ich das Prinzip der kontinuierlichen Verbesserung umarme, strebe ich danach, nicht nur mich selbst, sondern auch die Teams und Unternehmen, mit denen ich arbeite, voranzubringen. In diesem Zusammenhang produziere und veröffentliche ich weiterhin Bildungsinhalte auf meinem YouTube-Kanal, um Ingenieurwissen zu teilen. Mein ultimatives Ziel ist es, durch die innovativen Softwarelösungen, die ich entwickle, und meine felderfahrene Ingenieursperspektive einen bedeutsamen Mehrwert für die Branche und die Energiezukunft meines Landes zu schaffen.",
+      "paragraph4": "Darüber hinaus ist der Hauptgrund, warum ich ein Tool wie PVGround entwickelt habe, meine Leidenschaft, die Herausforderungen und Mängel in der Branche zu sehen und Lösungen dafür zu schaffen. Während meiner Felderfahrungen sah ich, wie zeitaufwändig manuelle Berechnungen waren und wie fehleranfällig sie waren. Diese Situation führte mich dazu, ein Tool zu entwickeln, das die Arbeit der Ingenieure erleichtern und zur Entwicklung der Branche beitragen würde. Ich liebe es immer, meinem Land und der Umgebung, in der ich mich befinde, Mehrwert zu verleihen. Dass PVGround vollständig kostenlos ist, ist auch ein Ausdruck dieser Leidenschaft - es ist mir sehr wichtig, dass der Solarenergiesektor sich verbessert und jeder Zugang zu professionellen Tools hat."
+    }
+  },
+  "testimonials": {
+    "title": "Was sagen",
+    "titleHighlight": "Unsere Benutzer?",
+    "description": "",
+    "items": {
+      "1": {
+        "content": "PVGround hat unsere Projektentwurfszeiten erheblich verkürzt. Besonders die Verschattungsanalyse und Kapazitätsiteration haben unsere Arbeit viel einfacher gemacht. Wir erhalten viel schnellere und genauere Ergebnisse im Vergleich zu manuellen Berechnungen.",
+        "name": "Sibel Cansu Akdeniz",
+        "role": "Projektingenieur",
+        "company": "Senerji Elektrik Teknoloji A.Ş."
+      },
+      "2": {
+        "content": "Das DC-AC-HV Kabelverlegungsmodul funktioniert wirklich großartig. Es findet automatisch die optimale Kabelverlegung, auch bei komplexen Projekten. Dank PVGround sparen wir Zeit und machen weniger Fehler.",
+        "name": "Emre Dönmez",
+        "role": "Projektingenieur",
+        "company": "Senerji Elektrik Teknoloji A.Ş."
+      },
+      "3": {
+        "content": "Die 3D-Visualisierungsfunktion ist sehr nützlich, wenn wir Projekte unseren Kunden präsentieren. Die Geländeanalyse ist auch sehr zuverlässig, da sie mit echten Topografiedaten arbeitet. PVGround ist wirklich eine professionelle Lösung.",
+        "name": "Talha Kırdemir",
+        "role": "Projektingenieur",
+        "company": "Senerji Elektrik Teknoloji A.Ş."
+      },
+      "4": {
+        "content": "Das Berichtsmodul ist sehr detailliert und professionell. Technische Zeichnungen und Analyseberichte werden automatisch erstellt. Mit PVGround arbeiten wir viel schneller und genauer im Vergleich zu manuellen Berechnungen. Ich empfehle es auf jeden Fall.",
+        "name": "Sadık Toğrul",
+        "role": "Senior Design Ingenieur",
+        "company": "Chint Power Systems"
+      }
+    },
+    "stats": {
+      "customers": "Zufriedene Benutzer",
+      "projects": "Abgeschlossene Projekte",
+      "countries": "Länder",
+      "rating": "Durchschnittliche Bewertung"
+    },
+    "popup": {
+      "title": "Haben Sie PVGround verwendet?",
+      "subtitle": "Bewerten Sie uns"
+    }
+  },
+  "testimonialForm": {
+    "title": "Haben Sie PVGround verwendet? Bewerten Sie uns",
+    "rating": "Bewertung",
+    "name": "Vollständiger Name",
+    "role": "Position",
+    "rolePlaceholder": "z.B. Projektingenieur",
+    "company": "Unternehmen",
+    "companyPlaceholder": "Firmenname",
+    "comment": "Ihr Kommentar",
+    "commentPlaceholder": "Teilen Sie Ihre Gedanken über PVGround...",
+    "submit": "Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Vielen Dank! Ihr Kommentar wurde gesendet.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "minimize": "Minimieren",
+    "close": "Schließen",
+    "minimizedTooltip": "Bewerten Sie uns",
+    "validation": {
+      "required": "Bitte füllen Sie die erforderlichen Felder aus"
+    }
+  },
+  "cta": {
+    "title": "Jetzt",
+    "titleHighlight": "Loslegen",
+    "description": "PVGround ist vollständig kostenlos. Wir bieten es kostenlos an, um die Branche besser zu machen. Wir sind dankbar für Feedback von denen, die uns unterstützen möchten. Beginnen Sie jetzt und teilen Sie Ihre Erfahrungen mit uns.",
+    "button1": "Schlüssel Anfordern",
+    "button2": "Rufen Sie uns an",
+    "trust": {
+      "support": "24/7 Support",
+      "trial": "Kostenlose Testversion",
+      "setup": "Schnelle Einrichtung"
+    }
+  },
+  "footer": {
+    "description": "Plattform der nächsten Generation für Solarenergie-Design. Vollständig kostenlos. Wir bieten sie kostenlos an, um die Branche besser zu machen. Wir sind dankbar für Feedback von denen, die uns unterstützen möchten.",
+    "links": {
+      "product": {
+        "features": "Funktionen",
+        "pricing": "Preise",
+        "updates": "Updates"
+      },
+      "solutions": {
+        "layout": "Layout-Design",
+        "modeling": "Energiemodellierung",
+        "analysis": "Geländeanalyse"
+      },
+      "company": {
+        "about": "Über uns",
+        "blog": "Blog",
+        "careers": "Karriere",
+        "contact": "Kontakt"
+      },
+      "resources": {
+        "docs": "Dokumentation",
+        "help": "Hilfezentrum",
+        "api": "API",
+        "training": "Schulungen"
+      }
+    },
+    "copyright": "Alle Rechte vorbehalten.",
+    "resources": "Ressourcen",
+    "feedback": {
+      "title": "Feedback",
+      "subject": "PVGround Feedback"
+    },
+    "legal": {
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookie-Richtlinie"
+    }
+  },
+  "legalNotice": {
+    "title": "Rechtlicher Hinweis und Haftungsausschluss",
+    "section1": {
+      "title": "1. Unabhängige Entwicklung und Originalität",
+      "content": "PV Ground ist ein kostenloses AutoCAD®-Plugin, das von Grund auf von einem unabhängigen Entwickler entwickelt wurde, basierend auf allgemeinen Ingenieursprinzipien, mathematischen Algorithmen und öffentlich verfügbaren technischen Informationen im Solarenergiesektor. Der Quellcode und die Arbeitslogik dieser Software sind vollständig originell. Es wurde kein Zugriff auf den Quellcode kommerzieller Software Dritter genommen, es wurde nichts kopiert, keine Reverse Engineering angewendet oder Code dekompiliert."
+    },
+    "section2": {
+      "title": "2. Keine kommerzielle Verbindung",
+      "content": "PV Ground steht in keiner Weise in Verbindung mit PVcase UAB, Virto.CAD, Autodesk Inc. oder einem anderen kommerziellen Solarenergie-Softwareanbieter. Wir haben keine Partnerschaft, keinen Datenaustausch oder keine kommerzielle Beziehung zu diesen Unternehmen. Diese Software wurde von den genannten Unternehmen nicht autorisiert, unterstützt oder genehmigt."
+    },
+    "section3": {
+      "title": "3. Markenrechte",
+      "content": "Alle in dieser Dokumentation, auf der Website oder in der Softwareoberfläche genannten Produkt- und Firmennamen (wie PVcase™, Virto.CAD™, AutoCAD®, PVsyst™ usw.) sind eingetragene Marken ihrer jeweiligen Eigentümer. Die Verwendung dieser Namen dient ausschließlich zu Identifikations-, Vergleichs- und Kompatibilitätszwecken (Nominative Fair Use) und impliziert keine Markenrechtsverletzung oder Sponsoring."
+    },
+    "section4": {
+      "title": "4. Gewährleistung und Haftungsausschluss",
+      "content": "Diese Software wird den Benutzern \"WIE BESEHEN\" (AS-IS) zur Verfügung gestellt. Der Entwickler gibt keine ausdrücklichen oder stillschweigenden Garantien hinsichtlich der Perfektion, Handelsüblichkeit oder Eignung der Software für einen bestimmten Zweck. Der Entwickler kann nicht für Datenverlust, Berechnungsfehler oder kommerzielle Schäden haftbar gemacht werden, die aus der Verwendung der Software entstehen können. Der Benutzer akzeptiert, die Software auf eigenes Risiko zu verwenden."
+    }
+  },
+  "demo": {
+    "title": "Holen Sie sich noch heute Ihre kostenlose PVGround-Demo",
+    "description": "PVGround bringt die Solarenergie voran mit einer Alternative zum traditionellen arbeitsintensiven, zeitaufwändigen und fehleranfälligen Solarprojektentwicklungsprozess. Füllen Sie das Formular aus, um eine Demo anzufordern, und wir melden uns so schnell wie möglich bei Ihnen.",
+    "form": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "company": "Unternehmen",
+      "phone": "Telefon",
+      "jobTitle": "Position",
+      "message": "Nachricht",
+      "phonePlaceholder": "Telefonnummer",
+      "submit": "Schlüssel Anfordern",
+      "submitting": "Wird gesendet..."
+    },
+    "validation": {
+      "emailRequired": "E-Mail-Adresse ist erforderlich",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "emailBlocked": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse. Persönliche E-Mail-Dienste wie Gmail und Yahoo werden nicht akzeptiert.",
+      "emailNote": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse (persönliche E-Mail-Dienste wie @gmail.com, @yahoo.com werden nicht akzeptiert)",
+      "messageRequired": "Nachrichtfeld ist erforderlich"
+    },
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut oder senden Sie eine E-Mail direkt an info@pvground.com.",
+    "trust": {
+      "title": "Warum PVGround?",
+      "item1": {
+        "title": "Schnelle Antwort",
+        "description": "Wir melden uns innerhalb von 24 Stunden bei Ihnen"
+      },
+      "item2": {
+        "title": "Kostenlose Demo",
+        "description": "Keine Verpflichtungen"
+      },
+      "item3": {
+        "title": "Experten-Support",
+        "description": "Erhalten Sie Unterstützung vom Projektgründer :)"
+      }
+    },
+    "stats": {
+      "customers": "Benutzer",
+      "countries": "Länder"
+    },
+    "success": {
+      "title": "Anfrage erhalten!",
+      "message": "Ihre Demo-Anfrage wurde erfolgreich übermittelt. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "back": "Zurück zur Startseite"
+    },
+    "confirmation": {
+      "subject": "PVGround - Ihre Anfrage wurde erhalten",
+      "greeting": "Hallo",
+      "message": "Ihre Schlüsselanfrage wurde erfolgreich erhalten. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "details": "Ihre Anfragedetails:",
+      "thanks": "Vielen Dank!"
+    }
+  },
+  "releaseNotes": {
+    "title": "Versionshinweise",
+    "description": "Entdecken Sie neue Funktionen, Verbesserungen und Fehlerbehebungen in PVGround.",
+    "version": "Version",
+    "newFeatures": "Neue Funktionen",
+    "improvements": "Verbesserungen",
+    "bugFixes": "Fehlerbehebungen",
+    "releases": {
+      "1.22": {
+        "date": "Februar 2026",
+        "description": "Version 1.22 mit neuen Funktionen und Verbesserungen.",
+        "features": [
+          {
+            "title": "Mehrfache PV-Bereichsauswahl und Platzierung",
+            "description": [
+              "Sie können jetzt mehrere PV-Bereiche auswählen und gleichzeitig Platzierungen durchführen",
+              "Flexibleres Projektmanagement mit Mehrfachbereichsauswahl"
+            ],
+            "video": "/images/release-notes/1.22/multiple-pv-area-selection.mp4"
+          },
+          {
+            "title": "Iterationsdialog-Updates",
+            "description": [
+              "Jede Iteration wird jetzt separat im Detail berechnet",
+              "Fortschrittsbalken wurden geändert und informativer gestaltet",
+              "Iterationsprozesse sind transparenter und nachverfolgbar",
+              "Bei der Durchführung von Iterationen können Sie jetzt mehrere PV-Bereiche auswählen und Iterationen für 2 verschiedene PV-Bereiche wählen",
+              "Sie können Platzierungen mit separaten Abstandsabständen für jeden PV-Bereich durchführen"
+            ],
+            "image": "/images/release-notes/1.22/iteration-dialog-updates.png"
+          },
+          {
+            "title": "Automatische Geländeanpassung",
+            "description": [
+              "PV-Module passen sich jetzt automatisch an das neue Gelände an, wenn Sie sie auf der topografischen Karte bewegen",
+              "Rahmen, die sowohl mit AutoCADs Verschiebebefehl als auch mit unserer Schaltfläche Frames verschieben bewegt werden, passen sich an",
+              "Beim Verschieben mit Frames verschieben werden bei Massenauswahlen nur Rahmen ausgewählt, während AutoCADs Verschiebebefehl die Auswahl anderer Elemente ermöglicht",
+              "Wir empfehlen, mit der Schaltfläche fortzufahren"
+            ],
+            "video": "/images/release-notes/1.22/auto-terrain-adaptation.mp4"
+          },
+          {
+            "title": "Kabelquerschnittsberechnung im erweiterten Modus",
+            "description": [
+              "Bietet jetzt Querschnitts-mm²-Berechnung und Empfehlungen für AC-Kabel und DC-Kabel im erweiterten Modus",
+              "Erweiterte Berechnungssystem für genauere und optimierte Kabelauswahl",
+              "Kabelquerschnittsempfehlungen, die Ihren Projektanforderungen entsprechen"
+            ],
+            "image": "/images/release-notes/1.22/cable-section-calculation.png"
+          },
+          {
+            "title": "Korridorsystem hinzugefügt",
+            "description": [
+              "Sie können jetzt automatisch Korridore erstellen",
+              "Erstellen Sie sichere Zugangswege zwischen Ihren PV-Modulplatzierungen mit dem Korridorsystem",
+              "Beseitigen Sie den Bedarf an manueller Zeichnung durch automatische Korridorerstellung",
+              "Passen Sie Korridorbreiten und -standorte entsprechend Ihren Projektanforderungen an",
+              "Korridore passen sich automatisch an die topografische Karte an"
+            ],
+            "video": "/images/release-notes/1.22/corridor-system.mp4"
+          }
+        ],
+        "improvements": [
+          "Schaltflächen für das Battery Pack-System, das für Speichersysteme hinzugefügt werden soll, wurden erstellt",
+          "Drainage Analysis-Bereich wurde hinzugefügt, Entwicklungsarbeiten haben begonnen",
+          "Der Layers-Bereich wurde basierend auf Benutzerfeedback rechts vom Project Setup-Bereich verschoben, um den Workflow nicht zu beeinträchtigen und die PV-Modullayout-Reihenfolge nicht zu stören"
+        ],
+        "bugFixes": [
+          "Ausrichtungsprobleme bei einigen Rahmen wurden basierend auf Benutzerfeedback behoben",
+          "Platzierungsoptimierung wurde erhöht",
+          "Minimale Fehler wurden entfernt"
+        ]
+      },
+      "1.21": {
+        "date": "Januar 2026",
+        "description": "Version 1.21 mit neuen Funktionen und Fehlerbehebungen.",
+        "features": [
+          {
+            "title": "Workspace' Read Contour hinzugefügt",
+            "description": [
+              "Es ist jetzt so einfach wie ein Klick, Ihre topografische Karte des Geländes, ob von Vermessungsingenieuren erstellt oder aus verschiedenen Import-Optionen, in ein Design umzuwandeln, das PVGround verstehen kann",
+              "Topografische Daten schnell und einfach importieren",
+              "Unterstützung für topografische Kartenkonvertierung aus verschiedenen Formaten"
+            ],
+            "image": "/images/release-notes/1.21/read-contour.gif"
+          }
+        ],
+        "improvements": [],
+        "bugFixes": [
+          "Von einigen Benutzern gemeldete Lizenzierungsfehler wurden behoben",
+          "Lizenzierungssystem verbessert und Stabilität erhöht"
+        ]
+      },
+      "1.2": {
+        "date": "Februar 2025",
+        "description": "Version 1.2 mit neuen Funktionen, Leistungsverbesserungen und Fehlerbehebungen.",
+        "features": [
+          {
+            "title": "Lizenzierungssystem hinzugefügt",
+            "description": [
+              "Benutzerverwaltung mit neuem Lizenzierungssystem verbessert",
+              "Sicherer und kontrollierter Zugang gewährleistet",
+              "Benutzerbasierte Lizenzverwaltung aktiv"
+            ],
+            "image": "/images/release-notes/1.2/licensing-system.png"
+          },
+          {
+            "title": "Export-System aktiviert",
+            "description": [
+              "Export-System erfolgreich aktiviert",
+              "Umfassende Export-Unterstützung mit Basic- und Advanced-Modi"
+            ],
+            "image": "/images/release-notes/1.2/export-system.png"
+          },
+          {
+            "title": "Basic Export-System",
+            "description": [
+              "Vollständig funktionsfähig, liefert Messwerte für DC-AC-Kabel",
+              "Optimiertes System für grundlegende Export-Vorgänge",
+              "Schnelle Export-Vorgänge mit benutzerfreundlicher Oberfläche"
+            ],
+            "image": "/images/release-notes/1.2/basic-export-system.png"
+          },
+          {
+            "title": "Advanced Export-System",
+            "description": [
+              "Kann genaue Messwerte für DC-Kabel exportieren",
+              "Erweiterte Analyse- und detaillierte Export-Funktionen",
+              "AC-Kabel-Entwicklung läuft weiter"
+            ],
+            "image": "/images/release-notes/1.2/advanced-export-system.png"
+          },
+          {
+            "title": "AG-Kabel Export",
+            "description": [
+              "AG-Kabel-Export-Funktion hinzugefügt",
+              "Export-Unterstützung für Hochspannungskabelsysteme"
+            ],
+            "image": "/images/release-notes/1.2/ag-kablo-export.png"
+          }
+        ],
+        "improvements": [
+          "Leistungsverbesserungen basierend auf Benutzerfeedback implementiert",
+          "Geschwindigkeitsoptimierungen im gesamten System durchgeführt",
+          "Export-Vorgänge schneller und effizienter gemacht"
+        ],
+        "bugFixes": [
+          "Durch Benutzerfeedback identifizierte Fehler behoben",
+          "Fehler in Export-Vorgängen behoben",
+          "Allgemeine Stabilitäts- und Leistungsverbesserungen vorgenommen"
+        ]
+      },
+      "1.1": {
+        "date": "Januar 2025",
+        "description": "Version 1.1 mit neuen Funktionen und Verbesserungen.",
+        "features": [
+          {
+            "title": "Iteration hinzugefügt",
+            "description": [
+              "Automatische Kapazitätsberechnung für verschiedene Pitch-Werte",
+              "Vergleichen Sie mehrere Szenarien durch Festlegen von Pitch-Bereich und Schrittweiten",
+              "Anzeige von Fläche, Kapazität, Modulanzahl und Verschattungswinkel für jede Iteration",
+              "Alle Ergebnisse in Tabellenformat anzeigen und den optimalen Pitch-Wert auswählen"
+            ],
+            "image": "/images/release-notes/1.1/iterasyon.gif"
+          },
+          {
+            "title": "Pile Generator hinzugefügt",
+            "description": [
+              "Automatische Berechnung der Pfahllängen basierend auf dem Geländeneigung",
+              "Pfahltiefen bestimmen, um optimale Pfahlplatzierung für Ihr Projekt zu erstellen",
+              "Genaue Längenberechnung für jeden Pfahl basierend auf topografischen Daten"
+            ],
+            "image": "/images/release-notes/1.1/pile-generator.png"
+          },
+          {
+            "title": "Neue Funktion zu Cross Selection hinzugefügt - Sie können die Platzierung vor und nach Erdarbeiten anzeigen",
+            "description": [
+              "Geländeneigung zusammen mit Pfählen visualisieren",
+              "Platzierung vor und nach Erdarbeiten vergleichen",
+              "Professionelle Visualisierungen für Präsentationen erstellen",
+              "Detaillierte Analyse Ihres Projekts mit Querschnittsansicht durchführen"
+            ],
+            "image": "/images/release-notes/1.1/cross-selection-harfiat.gif"
+          }
+        ],
+        "improvements": [
+          "Panel-Platzierung ist jetzt präziser und schneller",
+          "Benutzeroberflächen-Performance-Verbesserungen",
+          "Visualisierungsqualität verbessert",
+          "Export-Vorgänge optimiert"
+        ],
+        "bugFixes": [
+          "UI-Fehler behoben",
+          "Kleine Fehler bei Panel-Platzierungsberechnungen behoben",
+          "Cross Selection-Anzeigeprobleme gelöst",
+          "Allgemeine Stabilitätsverbesserungen"
+        ]
+      },
+      "1.0": {
+        "date": "20. Dezember 2024",
+        "description": "PVGrounds erste große Version. Eine neue Ära im Solarenergie-Design beginnt.",
+        "features": [
+          "Automatisierter Solarpanel-Layout-Algorithmus",
+          "Echtzeit-Geländeanalyse",
+          "3D-Visualisierungsmodul",
+          "Energieproduktionsmodellierung",
+          "Automatische Kabelverlegung",
+          "3D DC-Konvertierungsfunktion hinzugefügt",
+          "AC-Kabelverlegungsmodul hinzugefügt",
+          "DC-Kabelverlegungsmodul hinzugefügt",
+          "Electrical Dialog aktualisiert - Stringing-Design geändert",
+          "Electrical Devices Stringing Funktion hinzugefügt",
+          "Verschattungsanalyse-Modul hinzugefügt"
+        ],
+        "improvements": [
+          "Benutzeroberflächen-Performance-Optimierung",
+          "Schnellere Render-Zeiten",
+          "Verbesserte Fehlermeldungen"
+        ],
+        "bugFixes": [
+          "Geländelade-Probleme behoben",
+          "Export-Funktion verbessert"
+        ]
+      },
+      "0.9": {
+        "date": "15. November 2024",
+        "description": "Beta-Version - Verbesserungen basierend auf Benutzerfeedback.",
+        "features": [
+          "Demo-Anfrageformular",
+          "Release Notes-Seite",
+          "Erweiterte Formularvalidierung"
+        ],
+        "improvements": [
+          "Allgemeine Leistungsverbesserungen",
+          "Mobile Kompatibilitätsverbesserungen"
+        ],
+        "bugFixes": [
+          "Kleine UI-Fehler behoben",
+          "Formularübermittlungsprobleme gelöst"
+        ]
+      },
+      "0.8": {
+        "date": "1. November 2024",
+        "description": "Early-Access-Version - Kernfunktionen und Testphase.",
+        "features": [
+          "Grundlegende Design-Tools",
+          "Gelände-Import-Funktion",
+          "Grundlegende Berichterstellung"
+        ],
+        "improvements": [
+          "Erste Benutzererfahrungsverbesserungen"
+        ],
+        "bugFixes": [
+          "Kritische Fehler behoben"
+        ]
+      },
+      "0.7": {
+        "date": "15. Oktober 2024",
+        "description": "Alpha-Version - Erste Testversion.",
+        "features": [
+          "Grundlegende Benutzeroberfläche",
+          "Anmeldesystem"
+        ],
+        "improvements": [],
+        "bugFixes": [
+          "Erste Fehlerbehebungen"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Preise",
+    "description": "PVGround ist vollständig kostenlos. Wir möchten zur Entwicklung von Solarenergiesystemen beitragen.",
+    "free": "Vollständig Kostenlos",
+    "freeTitle": "PVGround ist Vollständig Kostenlos",
+    "freeDescription": "Alle Funktionen und Tools werden vollständig kostenlos bereitgestellt.",
+    "mission": "Wir möchten zur Entwicklung von Solarenergiesystemen beitragen und das Wachstum der Branche unterstützen. Wir bieten unsere Plattform vollständig kostenlos an, um die Branche besser zu machen. Wir sind dankbar für Feedback von denen, die uns unterstützen möchten.",
+    "getStarted": "Jetzt Loslegen",
+    "features": [
+      "Alle Design-Tools",
+      "Verschattungsanalyse",
+      "Geländeanalyse",
+      "Kapazitätsiteration",
+      "DC-AC-HV Kabelverlegung",
+      "3D-Visualisierung",
+      "AutoCAD-Integration",
+      "PVsyst-Export",
+      "Detaillierte Berichterstattung",
+      "Unbegrenzte Projekte",
+      "Alle Funktionen",
+      "Kontinuierliche Updates"
+    ],
+    "missionTitle": "Unsere Mission",
+    "missionText": "Als PVGround möchten wir zur Entwicklung der Solarenergiebranche beitragen und professionelle Design-Tools bereitstellen, die für jeden zugänglich sind. Mit unserer vollständig kostenlosen Plattform unterstützen wir die schnellere und effizientere Umsetzung von Solarenergieprojekten. Wir bieten sie kostenlos an, um die Branche besser zu machen, und wir sind dankbar für Feedback von denen, die uns unterstützen möchten.",
+    "earlyAccessTitle": "Früher Zugang",
+    "earlyAccessText": "Dieses Programm, das ich für Sie vorbereitet habe, ist bis zum 01.05.2026 im Rahmen des frühen Zugangs völlig kostenlos. Wenn Sie zum Entwicklungsprozess beitragen oder Unterstützung leisten möchten, können Sie mich jederzeit unter info@pvground.com erreichen. Vielen Dank für Ihre Unterstützung!"
+  }
+}
+

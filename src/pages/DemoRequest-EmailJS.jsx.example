@@ -1,0 +1,49 @@
+// EmailJS Alternatifi - Eğer Netlify Forms yerine EmailJS kullanmak isterseniz
+// Bu dosyayı DemoRequest.jsx'e kopyalayın ve EmailJS ayarlarını yapın
+
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import emailjs from '@emailjs/browser'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
+// EmailJS handleSubmit örneği:
+const handleSubmitEmailJS = async (e) => {
+  e.preventDefault()
+  
+  // EmailJS ayarları (EmailJS dashboard'dan alınacak)
+  const serviceId = 'YOUR_SERVICE_ID'
+  const templateId = 'YOUR_TEMPLATE_ID'
+  const publicKey = 'YOUR_PUBLIC_KEY'
+
+  try {
+    await emailjs.send(
+      serviceId,
+      templateId,
+      {
+        to_email: 'yt.sukru@gmail.com',
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        job_title: formData.jobTitle,
+        message: formData.message,
+      },
+      publicKey
+    )
+    
+    setSubmitted(true)
+  } catch (error) {
+    console.error('EmailJS error:', error)
+    alert('Bir hata oluştu. Lütfen tekrar deneyin.')
+  }
+}
+
+// EmailJS kullanmak için:
+// 1. npm install @emailjs/browser
+// 2. EmailJS hesabı oluştur: https://www.emailjs.com/
+// 3. Service ID, Template ID ve Public Key'i yukarıdaki değişkenlere ekle
+// 4. handleSubmit fonksiyonunu yukarıdaki kodla değiştir
+
