@@ -327,8 +327,30 @@
     "improvements": "Improvements",
     "bugFixes": "Bug Fixes",
     "releases": {
+      "1.23": {
+        "date": "January 2026",
+        "description": "Version 1.23 with new features, improvements and bug fixes.",
+        "features": [
+          {
+            "title": "PVGROUND_RELOAD Command",
+            "description": [
+              "When you close the plugin and want to reopen it, simply type PVGROUND_RELOAD in the command section",
+              "Quick and easy plugin reload",
+              "Restart the plugin with a single command from the command section"
+            ],
+            "video": "/images/release-notes/1.23/pvground-reload.mkv"
+          }
+        ],
+        "improvements": [
+          "Shading Analysis dialog has been updated, made more compact and user-friendly"
+        ],
+        "bugFixes": [
+          "Fixed issue where DC cables moved meaninglessly during DC Cable 3D Convert",
+          "Turkish texts in info sections of some buttons have been corrected to English"
+        ]
+      },
       "1.22": {
-        "date": "February 2026",
+        "date": "January 2026",
         "description": "Version 1.22 with new features and improvements.",
         "features": [
           {

@@ -327,8 +327,30 @@
     "improvements": "Verbesserungen",
     "bugFixes": "Fehlerbehebungen",
     "releases": {
+      "1.23": {
+        "date": "Januar 2026",
+        "description": "Version 1.23 mit neuen Funktionen, Verbesserungen und Fehlerbehebungen.",
+        "features": [
+          {
+            "title": "PVGROUND_RELOAD-Befehl",
+            "description": [
+              "Wenn Sie das Plugin schließen und es erneut öffnen möchten, geben Sie einfach PVGROUND_RELOAD im Befehlsbereich ein",
+              "Schnelles und einfaches Plugin-Neuladen",
+              "Starten Sie das Plugin mit einem einzigen Befehl aus dem Befehlsbereich neu"
+            ],
+            "video": "/images/release-notes/1.23/pvground-reload.mkv"
+          }
+        ],
+        "improvements": [
+          "Shading Analysis-Dialog wurde aktualisiert und kompakter und benutzerfreundlicher gestaltet"
+        ],
+        "bugFixes": [
+          "Problem behoben, bei dem DC-Kabel während der DC-Kabel-3D-Konvertierung sinnlos bewegten",
+          "Türkische Texte in Info-Bereichen einiger Schaltflächen wurden ins Englische korrigiert"
+        ]
+      },
       "1.22": {
-        "date": "Februar 2026",
+        "date": "Januar 2026",
         "description": "Version 1.22 mit neuen Funktionen und Verbesserungen.",
         "features": [
           {
