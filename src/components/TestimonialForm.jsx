@@ -27,32 +27,9 @@ const TestimonialForm = ({ isOpen, isMinimized, onClose, onMinimize, onRestore, 
     setIsSubmitting(true)
     
     try {
-      // Supabase yoksa localStorage'a kaydet
+      // Supabase yoksa hata göster
       if (!supabase) {
-        const existingTestimonials = JSON.parse(localStorage.getItem('pvground_testimonials') || '[]')
-        const newTestimonial = {
-          id: Date.now().toString(),
-          name: formData.name,
-          role: formData.role || '',
-          company: formData.company || '',
-          content: formData.content,
-          rating: parseInt(formData.rating),
-          created: new Date().toISOString(),
-          status: 'approved',
-        }
-        existingTestimonials.push(newTestimonial)
-        localStorage.setItem('pvground_testimonials', JSON.stringify(existingTestimonials))
-        
-        setSubmitted(true)
-        if (onSubmit) {
-          onSubmit(newTestimonial)
-        }
-        setTimeout(() => {
-          setSubmitted(false)
-          setFormData({ name: '', role: '', company: '', content: '', rating: 0 })
-          setHoveredRating(0)
-          onClose()
-        }, 2000)
+        alert(t('testimonialForm.supabaseError') || 'Supabase yapılandırılmamış. Lütfen environment variables ekleyin.')
         setIsSubmitting(false)
         return
       }

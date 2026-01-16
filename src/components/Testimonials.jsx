@@ -22,25 +22,10 @@ const Testimonials = () => {
       try {
         setLoading(true)
         
-        // Supabase yoksa localStorage'dan oku
+        // Supabase yoksa boş liste göster (localStorage kullanma - production'da her zaman Supabase kullanılmalı)
         if (!supabase) {
-          const storedTestimonials = JSON.parse(localStorage.getItem('pvground_testimonials') || '[]')
-          const approvedTestimonials = storedTestimonials.filter(t => t.status === 'approved')
-          approvedTestimonials.sort((a, b) => new Date(b.created) - new Date(a.created))
-          
-          setTestimonials(approvedTestimonials.map(t => ({
-            id: t.id,
-            name: t.name,
-            role: t.role || '',
-            company: t.company || '',
-            content: t.content,
-            rating: t.rating || 5,
-            created: t.created,
-          })))
-          
-          if (approvedTestimonials.length > 0) {
-            setCurrentIndex(0)
-          }
+          console.warn('Supabase not configured. Please add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables.')
+          setTestimonials([])
           setLoading(false)
           return
         }
@@ -156,24 +141,7 @@ const Testimonials = () => {
     // Yeni testimonial eklendiğinde listeyi yenile
     try {
       if (!supabase) {
-        // localStorage'dan oku
-        const storedTestimonials = JSON.parse(localStorage.getItem('pvground_testimonials') || '[]')
-        const approvedTestimonials = storedTestimonials.filter(t => t.status === 'approved')
-        approvedTestimonials.sort((a, b) => new Date(b.created) - new Date(a.created))
-        
-        setTestimonials(approvedTestimonials.map(t => ({
-          id: t.id,
-          name: t.name,
-          role: t.role || '',
-          company: t.company || '',
-          content: t.content,
-          rating: t.rating || 5,
-          created: t.created,
-        })))
-        
-        if (approvedTestimonials.length > 0) {
-          setCurrentIndex(0)
-        }
+        console.warn('Supabase not configured. Cannot refresh testimonials.')
         return
       }
       
