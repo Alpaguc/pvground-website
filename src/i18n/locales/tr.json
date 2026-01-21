@@ -327,6 +327,29 @@
     "improvements": "İyileştirmeler",
     "bugFixes": "Hata Düzeltmeleri",
     "releases": {
+      "1.24": {
+        "date": "Ocak 2026",
+        "description": "Performans iyileştirmeleri ve hata düzeltmeleri ile Versiyon 1.24.",
+        "features": [
+          {
+            "title": "Çoklu PV Area İterasyonu",
+            "description": [
+              "İterasyon birden fazla PV area için oluşturulabiliyor",
+              "Her PV area için farklı spacing mesafeleri seçilebiliyor"
+            ],
+            "video": "/images/release-notes/1.24/multi-pv-area-iteration.mp4"
+          }
+        ],
+        "improvements": [
+          "İterasyon ve yerleştirme önemli ölçüde hızlandırıldı, artık 20 MWe projeler yaklaşık 4 saniyede yerleştirilebiliyor",
+          "Frames dialog güncellendi, görsel eklendi ve Save / Duplicate / Delete bölümlerine ikonlar eklenerek arayüz daha göze hitap eder hale getirildi"
+        ],
+        "bugFixes": [
+          "PVC Export'ta PV modüllerin çizgili görünmesi sorunu giderildi",
+          "Hizalama çizgisinde birden fazla yol olduğunda hizalamayı engelleyen sorun giderildi",
+          "Bazı frameslerin yüksek kuzey / güney eğimlerinde tilt değerini sağlayamaması sorunu giderildi"
+        ]
+      },
       "1.23": {
         "date": "Ocak 2026",
         "description": "Yeni özellik, iyileştirmeler ve hata düzeltmeleri ile Versiyon 1.23.",

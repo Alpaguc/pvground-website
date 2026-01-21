@@ -327,6 +327,29 @@
     "improvements": "Improvements",
     "bugFixes": "Bug Fixes",
     "releases": {
+      "1.24": {
+        "date": "January 2026",
+        "description": "Version 1.24 with performance improvements and bug fixes.",
+        "features": [
+          {
+            "title": "Multi PV Area Iteration",
+            "description": [
+              "Iteration can now be created for multiple PV areas",
+              "Different spacing distances can be selected for each PV area"
+            ],
+            "video": "/images/release-notes/1.24/multi-pv-area-iteration.mp4"
+          }
+        ],
+        "improvements": [
+          "Iteration and placement have been significantly accelerated, 20 MWe projects can now be placed in around 4 seconds",
+          "Frames dialog has been updated, an image has been added and icons were added to the Save / Duplicate / Delete section to make the UI more visually appealing"
+        ],
+        "bugFixes": [
+          "Fixed issue where PV modules appeared with dashed lines in PVC Export",
+          "Fixed issue where multiple paths on the alignment line prevented alignment",
+          "Fixed issue where some frames could not satisfy the tilt value at high north / south slopes"
+        ]
+      },
       "1.23": {
         "date": "January 2026",
         "description": "Version 1.23 with new features, improvements and bug fixes.",

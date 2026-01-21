@@ -327,6 +327,29 @@
     "improvements": "Verbesserungen",
     "bugFixes": "Fehlerbehebungen",
     "releases": {
+      "1.24": {
+        "date": "Januar 2026",
+        "description": "Version 1.24 mit Leistungsverbesserungen und Fehlerbehebungen.",
+        "features": [
+          {
+            "title": "Mehrfache PV-Bereichsiteration",
+            "description": [
+              "Iteration kann jetzt für mehrere PV-Bereiche erstellt werden",
+              "Für jeden PV-Bereich können unterschiedliche Abstandsmaße gewählt werden"
+            ],
+            "video": "/images/release-notes/1.24/multi-pv-area-iteration.mp4"
+          }
+        ],
+        "improvements": [
+          "Iteration und Platzierung wurden deutlich beschleunigt, 20 MWe-Projekte können jetzt in etwa 4 Sekunden platziert werden",
+          "Frames-Dialog wurde aktualisiert, ein Bild hinzugefügt und im Bereich Speichern / Duplizieren / Löschen wurden Symbole hinzugefügt, um die Oberfläche visuell ansprechender zu machen"
+        ],
+        "bugFixes": [
+          "Problem behoben, bei dem PV-Module im PVC-Export gestrichelt dargestellt wurden",
+          "Problem behoben, bei dem mehrere Wege auf der Ausrichtungslinie die Ausrichtung verhinderten",
+          "Problem behoben, bei dem einige Frames bei hohen Nord- / Südneigungen den Tilt-Wert nicht einhalten konnten"
+        ]
+      },
       "1.23": {
         "date": "Januar 2026",
         "description": "Version 1.23 mit neuen Funktionen, Verbesserungen und Fehlerbehebungen.",

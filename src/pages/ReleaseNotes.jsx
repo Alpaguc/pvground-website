@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 const ReleaseNotes = () => {
   const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
-  const [selectedVersion, setSelectedVersion] = useState('1.23')
+  const [selectedVersion, setSelectedVersion] = useState('1.24')
 
   useEffect(() => {
     // Scroll to top when page loads
@@ -21,7 +21,7 @@ const ReleaseNotes = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const releases = ['1.23', '1.22', '1.21', '1.2', '1.1', '1.0', '0.9', '0.8', '0.7']
+  const releases = ['1.24', '1.23', '1.22', '1.21', '1.2', '1.1', '1.0', '0.9', '0.8', '0.7']
 
   return (
     <div className="min-h-screen bg-white">
