@@ -156,13 +156,62 @@ const ReleaseNotes = () => {
                   <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
                   {t('releaseNotes.improvements')}
                 </h3>
-                <ul className="space-y-3">
+                <ul className="space-y-6">
                   {t(`releaseNotes.releases.${selectedVersion}.improvements`, { returnObjects: true }).map((improvement, index) => (
-                    <li key={index} className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-gray-700">{improvement}</span>
+                    <li key={index} className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+                        </svg>
+                        <div className="flex-1">
+                          <span className="text-gray-700 font-medium">{typeof improvement === 'string' ? improvement : improvement.title || improvement.description}</span>
+                          {typeof improvement === 'object' && improvement.description && (
+                            <div className="mt-2 text-gray-600 text-sm leading-relaxed">
+                              {Array.isArray(improvement.description) ? (
+                                <ul className="list-disc list-inside space-y-1 ml-2">
+                                  {improvement.description.map((desc, idx) => (
+                                    <li key={idx}>{desc}</li>
+                                  ))}
+                                </ul>
+                              ) : (
+                                <p>{improvement.description}</p>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                      {/* Görsel/GIF/Video desteği */}
+                      {typeof improvement === 'object' && (improvement.image || improvement.video) && (
+                        <div className="mt-4 -ml-8 w-full max-w-4xl">
+                          <div className="rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                            {improvement.video ? (
+                              <video 
+                                src={improvement.video} 
+                                controls
+                                className="w-full h-auto"
+                                preload="metadata"
+                                playsInline
+                                muted
+                                style={{ minHeight: '400px' }}
+                              >
+                                Tarayıcınız video oynatmayı desteklemiyor.
+                              </video>
+                            ) : improvement.image && improvement.image.endsWith('.gif') ? (
+                              <img 
+                                src={improvement.image} 
+                                alt={improvement.title || 'Improvement demonstration'} 
+                                className="w-full h-auto"
+                              />
+                            ) : (
+                              <img 
+                                src={improvement.image} 
+                                alt={improvement.title || 'Improvement image'} 
+                                className="w-full h-auto"
+                              />
+                            )}
+                          </div>
+                        </div>
+                      )}
                     </li>
                   ))}
                 </ul>

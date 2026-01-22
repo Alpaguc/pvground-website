@@ -342,7 +342,11 @@
         ],
         "improvements": [
           "İterasyon ve yerleştirme önemli ölçüde hızlandırıldı, artık 20 MWe projeler yaklaşık 4 saniyede yerleştirilebiliyor",
-          "Frames dialog güncellendi, görsel eklendi ve Save / Duplicate / Delete bölümlerine ikonlar eklenerek arayüz daha göze hitap eder hale getirildi"
+          {
+            "title": "Frames Dialog Güncellemesi",
+            "description": "Frames dialog güncellendi, görsel eklendi ve Save / Duplicate / Delete bölümlerine ikonlar eklenerek arayüz daha göze hitap eder hale getirildi",
+            "image": "/images/release-notes/1.24/frame-settings.png"
+          }
         ],
         "bugFixes": [
           "PVC Export'ta PV modüllerin çizgili görünmesi sorunu giderildi",

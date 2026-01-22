@@ -342,7 +342,11 @@
         ],
         "improvements": [
           "Iteration and placement have been significantly accelerated, 20 MWe projects can now be placed in around 4 seconds",
-          "Frames dialog has been updated, an image has been added and icons were added to the Save / Duplicate / Delete section to make the UI more visually appealing"
+          {
+            "title": "Frames Dialog Update",
+            "description": "Frames dialog has been updated, an image has been added and icons were added to the Save / Duplicate / Delete section to make the UI more visually appealing",
+            "image": "/images/release-notes/1.24/frame-settings.png"
+          }
         ],
         "bugFixes": [
           "Fixed issue where PV modules appeared with dashed lines in PVC Export",

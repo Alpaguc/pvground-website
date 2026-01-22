@@ -342,7 +342,11 @@
         ],
         "improvements": [
           "Iteration und Platzierung wurden deutlich beschleunigt, 20 MWe-Projekte können jetzt in etwa 4 Sekunden platziert werden",
-          "Frames-Dialog wurde aktualisiert, ein Bild hinzugefügt und im Bereich Speichern / Duplizieren / Löschen wurden Symbole hinzugefügt, um die Oberfläche visuell ansprechender zu machen"
+          {
+            "title": "Frames-Dialog-Aktualisierung",
+            "description": "Frames-Dialog wurde aktualisiert, ein Bild hinzugefügt und im Bereich Speichern / Duplizieren / Löschen wurden Symbole hinzugefügt, um die Oberfläche visuell ansprechender zu machen",
+            "image": "/images/release-notes/1.24/frame-settings.png"
+          }
         ],
         "bugFixes": [
           "Problem behoben, bei dem PV-Module im PVC-Export gestrichelt dargestellt wurden",
