@@ -283,6 +283,8 @@
       "emailRequired": "E-Mail-Adresse ist erforderlich",
       "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
       "emailBlocked": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse. Persönliche E-Mail-Dienste wie Gmail und Yahoo werden nicht akzeptiert.",
+      "emailGenericNotAllowed": "Bitte verwenden Sie Ihre persönliche E-Mail-Adresse. Generische E-Mail-Adressen wie Projekt, Sales, Info werden nicht akzeptiert.",
+      "emailEducationNotAllowed": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse. E-Mail-Adressen von Bildungseinrichtungen (edu.tr, edu.com usw.) werden nicht akzeptiert.",
       "emailNote": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse (persönliche E-Mail-Dienste wie @gmail.com, @yahoo.com werden nicht akzeptiert)",
       "messageRequired": "Nachrichtfeld ist erforderlich"
     },
@@ -329,7 +331,7 @@
     "releases": {
       "1.24": {
         "date": "Januar 2026",
-        "description": "Version 1.24 mit Leistungsverbesserungen und Fehlerbehebungen.",
+        "description": "Version 1.24 mit neuen Symbolen, umfassenden Änderungen im Ribbon Manager und auf Benutzerfeedback optimiertem Design.",
         "features": [
           {
             "title": "Mehrfache PV-Bereichsiteration",
@@ -338,6 +340,20 @@
               "Für jeden PV-Bereich können unterschiedliche Abstandsmaße gewählt werden"
             ],
             "video": "/images/release-notes/1.24/multi-pv-area-iteration.mp4"
+          },
+          {
+            "title": "Neue Symbole und umfassende Änderungen im Ribbon Manager",
+            "description": "Ribbon Manager wurde komplett überarbeitet und mit neuen Symbolen versehen. Die Benutzeroberfläche wurde auf Basis von Benutzerfeedback optimiert und deutlich benutzerfreundlicher gestaltet.",
+            "image": "/images/release-notes/1.24/ribbon-manager.png"
+          },
+          {
+            "title": "Frame-Konfiguration komplett erneuert",
+            "description": [
+              "Frame-Konfiguration wurde komplett erneuert und Bilder wurden dynamisch gestaltet",
+              "Umstellung auf einen Ansatz mit geringem Eingabe- und hohem Ausgabeaufwand, was die Benutzererfahrung erheblich verbessert",
+              "Design wurde auf Basis von Endbenutzerfeedback optimiert"
+            ],
+            "image": "/images/release-notes/1.24/frame-configuration.png"
           }
         ],
         "improvements": [
@@ -346,7 +362,8 @@
             "title": "Frames-Dialog-Aktualisierung",
             "description": "Frames-Dialog wurde aktualisiert, ein Bild hinzugefügt und im Bereich Speichern / Duplizieren / Löschen wurden Symbole hinzugefügt, um die Oberfläche visuell ansprechender zu machen",
             "image": "/images/release-notes/1.24/frame-settings.png"
-          }
+          },
+          "Design wurde auf Basis von Endbenutzerfeedback deutlich benutzerfreundlicher und optimaler gestaltet"
         ],
         "bugFixes": [
           "Problem behoben, bei dem PV-Module im PVC-Export gestrichelt dargestellt wurden",
@@ -532,7 +549,7 @@
               "Anzeige von Fläche, Kapazität, Modulanzahl und Verschattungswinkel für jede Iteration",
               "Alle Ergebnisse in Tabellenformat anzeigen und den optimalen Pitch-Wert auswählen"
             ],
-            "image": "/images/release-notes/1.1/iterasyon.gif"
+            "video": "/images/release-notes/1.1/iterasyon.mp4"
           },
           {
             "title": "Pile Generator hinzugefügt",
@@ -551,7 +568,7 @@
               "Professionelle Visualisierungen für Präsentationen erstellen",
               "Detaillierte Analyse Ihres Projekts mit Querschnittsansicht durchführen"
             ],
-            "image": "/images/release-notes/1.1/cross-selection-harfiat.gif"
+            "video": "/images/release-notes/1.1/cross-selection-harfiat.mp4"
           }
         ],
         "improvements": [

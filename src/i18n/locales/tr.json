@@ -283,6 +283,8 @@
       "emailRequired": "E-posta adresi gereklidir",
       "emailInvalid": "Geçerli bir e-posta adresi giriniz",
       "emailBlocked": "Lütfen şirket e-posta adresinizi kullanınız. Gmail, Yahoo gibi kişisel e-posta servisleri kabul edilmemektedir.",
+      "emailGenericNotAllowed": "Lütfen kişisel e-posta adresinizi kullanınız. Proje, sales, satış, info gibi genel e-posta adresleri kabul edilmemektedir.",
+      "emailEducationNotAllowed": "Lütfen şirket e-posta adresinizi kullanınız. Eğitim kurumlarına ait e-posta adresleri (edu.tr, edu.com vb.) kabul edilmemektedir.",
       "emailNote": "Lütfen şirket e-posta adresinizi kullanınız (@gmail.com, @yahoo.com gibi kişisel e-posta servisleri kabul edilmemektedir)",
       "messageRequired": "Mesaj alanı zorunludur"
     },
@@ -329,7 +331,7 @@
     "releases": {
       "1.24": {
         "date": "Ocak 2026",
-        "description": "Performans iyileştirmeleri ve hata düzeltmeleri ile Versiyon 1.24.",
+        "description": "Yeni ikonlar, Ribbon Manager'da köklü değişiklikler ve kullanıcı geri bildirimlerine göre optimize edilmiş tasarım ile Versiyon 1.24.",
         "features": [
           {
             "title": "Çoklu PV Area İterasyonu",
@@ -338,6 +340,20 @@
               "Her PV area için farklı spacing mesafeleri seçilebiliyor"
             ],
             "video": "/images/release-notes/1.24/multi-pv-area-iteration.mp4"
+          },
+          {
+            "title": "Yeni İkonlar ve Ribbon Manager'da Köklü Değişiklik",
+            "description": "Ribbon Manager tamamen yenilendi ve yeni ikonlar eklendi. Arayüz kullanıcı geri bildirimlerine göre optimize edildi ve çok daha kullanışlı hale getirildi.",
+            "image": "/images/release-notes/1.24/ribbon-manager.png"
+          },
+          {
+            "title": "Frame Configuration Tamamen Yenilendi",
+            "description": [
+              "Frame configuration tamamen yenilendi ve görseller dinamik hale getirildi",
+              "Az girdi çok çıktı mantığına dönüştürüldü, kullanıcı deneyimi önemli ölçüde iyileştirildi",
+              "Tasarım son kullanıcı geri bildirimlerine göre optimize edildi"
+            ],
+            "image": "/images/release-notes/1.24/frame-configuration.png"
           }
         ],
         "improvements": [
@@ -346,7 +362,8 @@
             "title": "Frames Dialog Güncellemesi",
             "description": "Frames dialog güncellendi, görsel eklendi ve Save / Duplicate / Delete bölümlerine ikonlar eklenerek arayüz daha göze hitap eder hale getirildi",
             "image": "/images/release-notes/1.24/frame-settings.png"
-          }
+          },
+          "Tasarım tamamen son kullanıcı geri bildirimine göre çok daha kullanışlı ve optimum hale getirildi"
         ],
         "bugFixes": [
           "PVC Export'ta PV modüllerin çizgili görünmesi sorunu giderildi",
@@ -532,7 +549,7 @@
               "Her iterasyon için alan, kapasite, modül sayısı ve gölgeleme açısı değerlerini görebilirsiniz",
               "Tablo formatında tüm sonuçları görüntüleyip en uygun pitch değerini seçebilirsiniz"
             ],
-            "image": "/images/release-notes/1.1/iterasyon.gif"
+            "video": "/images/release-notes/1.1/iterasyon.mp4"
           },
           {
             "title": "Pile Generatör Eklendi",
@@ -551,7 +568,7 @@
               "Sunumlarda kullanılmak üzere profesyonel görselleştirmeler oluşturabilirsiniz",
               "Cross section görünümü ile projenizin detaylı analizini yapabilirsiniz"
             ],
-            "image": "/images/release-notes/1.1/cross-selection-harfiat.gif"
+            "video": "/images/release-notes/1.1/cross-selection-harfiat.mp4"
           }
         ],
         "improvements": [

@@ -32,6 +32,11 @@ const DemoRequest = () => {
     'mail.com',
     'yandex.com',
     'protonmail.com',
+    'icloud.com',
+    'me.com',
+    'mac.com',
+    'live.com',
+    'msn.com',
     'arugy.com',
     'airsworld.net',
     'protectsmail.net',
@@ -46,9 +51,45 @@ const DemoRequest = () => {
     'fakeinbox.com',
   ]
 
+  // Genel/şirket e-posta adreslerini engelle (kişisel e-posta adresleri kabul edilir)
+  const blockedEmailPrefixes = [
+    'proje',
+    'project',
+    'sales',
+    'satis',
+    'satış',
+    'info',
+    'contact',
+    'iletişim',
+    'destek',
+    'support',
+    'genel',
+    'general',
+    'admin',
+    'yönetim',
+    'management',
+    'noreply',
+    'no-reply',
+    'donotreply',
+    'do-not-reply',
+    'mail',
+    'email',
+    'e-posta',
+    'eposta',
+    'musteri',
+    'müşteri',
+    'customer',
+    'client',
+    'müşteri',
+    'musteri',
+  ]
+
   // Ülke kodları
   const countryCodes = [
     { code: '+90', country: 'Türkiye', flag: '🇹🇷' },
+    { code: '+994', country: 'Azerbaycan', flag: '🇦🇿' },
+    { code: '+374', country: 'Ermenistan', flag: '🇦🇲' },
+    { code: '+995', country: 'Gürcistan', flag: '🇬🇪' },
     { code: '+1', country: 'ABD/Kanada', flag: '🇺🇸' },
     { code: '+44', country: 'İngiltere', flag: '🇬🇧' },
     { code: '+49', country: 'Almanya', flag: '🇩🇪' },
@@ -63,18 +104,44 @@ const DemoRequest = () => {
     { code: '+47', country: 'Norveç', flag: '🇳🇴' },
     { code: '+45', country: 'Danimarka', flag: '🇩🇰' },
     { code: '+358', country: 'Finlandiya', flag: '🇫🇮' },
-    { code: '+7', country: 'Rusya', flag: '🇷🇺' },
+    { code: '+48', country: 'Polonya', flag: '🇵🇱' },
+    { code: '+40', country: 'Romanya', flag: '🇷🇴' },
+    { code: '+359', country: 'Bulgaristan', flag: '🇧🇬' },
+    { code: '+30', country: 'Yunanistan', flag: '🇬🇷' },
+    { code: '+385', country: 'Hırvatistan', flag: '🇭🇷' },
+    { code: '+386', country: 'Slovenya', flag: '🇸🇮' },
+    { code: '+420', country: 'Çekya', flag: '🇨🇿' },
+    { code: '+421', country: 'Slovakya', flag: '🇸🇰' },
+    { code: '+36', country: 'Macaristan', flag: '🇭🇺' },
+    { code: '+380', country: 'Ukrayna', flag: '🇺🇦' },
+    { code: '+7', country: 'Rusya/Kazakistan', flag: '🇷🇺' },
     { code: '+86', country: 'Çin', flag: '🇨🇳' },
     { code: '+81', country: 'Japonya', flag: '🇯🇵' },
     { code: '+82', country: 'Güney Kore', flag: '🇰🇷' },
     { code: '+91', country: 'Hindistan', flag: '🇮🇳' },
     { code: '+971', country: 'BAE', flag: '🇦🇪' },
     { code: '+966', country: 'Suudi Arabistan', flag: '🇸🇦' },
+    { code: '+974', country: 'Katar', flag: '🇶🇦' },
+    { code: '+965', country: 'Kuveyt', flag: '🇰🇼' },
+    { code: '+973', country: 'Bahreyn', flag: '🇧🇭' },
+    { code: '+968', country: 'Umman', flag: '🇴🇲' },
+    { code: '+961', country: 'Lübnan', flag: '🇱🇧' },
+    { code: '+962', country: 'Ürdün', flag: '🇯🇴' },
+    { code: '+972', country: 'İsrail', flag: '🇮🇱' },
+    { code: '+964', country: 'Irak', flag: '🇮🇶' },
+    { code: '+98', country: 'İran', flag: '🇮🇷' },
     { code: '+20', country: 'Mısır', flag: '🇪🇬' },
     { code: '+27', country: 'Güney Afrika', flag: '🇿🇦' },
     { code: '+55', country: 'Brezilya', flag: '🇧🇷' },
     { code: '+52', country: 'Meksika', flag: '🇲🇽' },
     { code: '+61', country: 'Avustralya', flag: '🇦🇺' },
+    { code: '+64', country: 'Yeni Zelanda', flag: '🇳🇿' },
+    { code: '+65', country: 'Singapur', flag: '🇸🇬' },
+    { code: '+60', country: 'Malezya', flag: '🇲🇾' },
+    { code: '+66', country: 'Tayland', flag: '🇹🇭' },
+    { code: '+62', country: 'Endonezya', flag: '🇮🇩' },
+    { code: '+84', country: 'Vietnam', flag: '🇻🇳' },
+    { code: '+63', country: 'Filipinler', flag: '🇵🇭' },
   ]
 
   useEffect(() => {
@@ -114,6 +181,25 @@ const DemoRequest = () => {
     const domain = email.split('@')[1]?.toLowerCase()
     if (blockedEmailDomains.some(blocked => domain === blocked || domain?.endsWith('.' + blocked))) {
       return t('demo.validation.emailBlocked')
+    }
+
+    // Eğitim domain'lerini engelle (edu.tr, edu.com, edu.org, vb.)
+    if (domain && (domain.includes('.edu') || domain.startsWith('edu.'))) {
+      return t('demo.validation.emailEducationNotAllowed')
+    }
+
+    // Genel/şirket e-posta adreslerini engelle (kişisel e-posta adresleri kabul edilir)
+    const localPart = email.split('@')[0]?.toLowerCase()
+    if (localPart) {
+      // Local part'ı noktalara göre böl ve her parçayı kontrol et
+      const localParts = localPart.split('.')
+      if (localParts.some(part => blockedEmailPrefixes.includes(part))) {
+        return t('demo.validation.emailGenericNotAllowed')
+      }
+      // Tam eşleşmeyi de kontrol et
+      if (blockedEmailPrefixes.includes(localPart)) {
+        return t('demo.validation.emailGenericNotAllowed')
+      }
     }
 
     return null
