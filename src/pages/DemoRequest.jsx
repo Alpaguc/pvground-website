@@ -17,10 +17,14 @@ const DemoRequest = () => {
     phone: '',
     jobTitle: '',
     message: '',
+    acceptTerms: false,
+    acceptCookies: false,
   })
   const [submitted, setSubmitted] = useState(false)
   const [errors, setErrors] = useState({})
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showTermsModal, setShowTermsModal] = useState(false)
+  const [showCookiesModal, setShowCookiesModal] = useState(false)
 
   // Sanal e-posta servisleri listesi
   const blockedEmailDomains = [
@@ -155,11 +159,31 @@ const DemoRequest = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    // ESC tuşu ile modal'ları kapat
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        setShowTermsModal(false)
+        setShowCookiesModal(false)
+      }
+    }
+    if (showTermsModal || showCookiesModal) {
+      window.addEventListener('keydown', handleEscape)
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      window.removeEventListener('keydown', handleEscape)
+      document.body.style.overflow = 'unset'
+    }
+  }, [showTermsModal, showCookiesModal])
+
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value, type, checked } = e.target
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: type === 'checkbox' ? checked : value,
     })
     // Hata mesajını temizle
     if (errors[name]) {
@@ -217,6 +241,16 @@ const DemoRequest = () => {
     // Mesaj validasyonu
     if (!formData.message || formData.message.trim().length === 0) {
       newErrors.message = t('demo.validation.messageRequired')
+    }
+
+    // Kullanım Koşulları kabulü
+    if (!formData.acceptTerms) {
+      newErrors.acceptTerms = t('demo.validation.acceptTermsRequired')
+    }
+
+    // Çerez Politikası kabulü
+    if (!formData.acceptCookies) {
+      newErrors.acceptCookies = t('demo.validation.acceptCookiesRequired')
     }
 
     setErrors(newErrors)
@@ -567,6 +601,67 @@ ${hasRequestedBefore ? '\n⚠️ NOT: Bu e-posta adresi daha önce key talep etm
                     )}
                   </div>
 
+                  {/* Kullanım Koşulları ve Çerez Politikası */}
+                  <div className="space-y-4 pt-4 border-t border-gray-200">
+                    <div>
+                      <label className="flex items-start space-x-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          name="acceptTerms"
+                          checked={formData.acceptTerms}
+                          onChange={handleChange}
+                          className="mt-1 w-5 h-5 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                        />
+                        <span className="text-sm text-gray-700">
+                          {t('demo.form.acceptTerms.prefix')}{' '}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.preventDefault()
+                              setShowTermsModal(true)
+                            }}
+                            className="text-primary-600 hover:text-primary-700 underline font-semibold"
+                          >
+                            {t('demo.form.acceptTerms.link')}
+                          </button>
+                          {' '}{t('demo.form.acceptTerms.suffix')}
+                        </span>
+                      </label>
+                      {errors.acceptTerms && (
+                        <p className="mt-1 ml-8 text-sm text-red-600">{errors.acceptTerms}</p>
+                      )}
+                    </div>
+
+                    <div>
+                      <label className="flex items-start space-x-3 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          name="acceptCookies"
+                          checked={formData.acceptCookies}
+                          onChange={handleChange}
+                          className="mt-1 w-5 h-5 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                        />
+                        <span className="text-sm text-gray-700">
+                          {t('demo.form.acceptCookies.prefix')}{' '}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.preventDefault()
+                              setShowCookiesModal(true)
+                            }}
+                            className="text-primary-600 hover:text-primary-700 underline font-semibold"
+                          >
+                            {t('demo.form.acceptCookies.link')}
+                          </button>
+                          {' '}{t('demo.form.acceptCookies.suffix')}
+                        </span>
+                      </label>
+                      {errors.acceptCookies && (
+                        <p className="mt-1 ml-8 text-sm text-red-600">{errors.acceptCookies}</p>
+                      )}
+                    </div>
+                  </div>
+
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}
@@ -645,6 +740,129 @@ ${hasRequestedBefore ? '\n⚠️ NOT: Bu e-posta adresi daha önce key talep etm
           </div>
         </div>
       </div>
+
+      {/* Kullanım Koşulları Modal */}
+      {showTermsModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50"
+          onClick={() => setShowTermsModal(false)}
+        >
+          <motion.div
+            onClick={(e) => e.stopPropagation()}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] flex flex-col"
+          >
+            <div className="flex items-center justify-between p-6 border-b border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-900">
+                {t('legalNotice.termsOfService.title')}
+              </h2>
+              <button
+                onClick={() => setShowTermsModal(false)}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div className="overflow-y-auto p-6 space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {t('legalNotice.termsOfService.section1.title')}
+                </h3>
+                <p className="leading-relaxed whitespace-pre-line text-gray-700">
+                  {t('legalNotice.termsOfService.section1.content')}
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {t('legalNotice.termsOfService.section2.title')}
+                </h3>
+                <p className="leading-relaxed whitespace-pre-line text-gray-700">
+                  {t('legalNotice.termsOfService.section2.content')}
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {t('legalNotice.termsOfService.section3.title')}
+                </h3>
+                <p className="leading-relaxed whitespace-pre-line text-gray-700">
+                  {t('legalNotice.termsOfService.section3.content')}
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {t('legalNotice.termsOfService.section4.title')}
+                </h3>
+                <p className="leading-relaxed whitespace-pre-line text-gray-700">
+                  {t('legalNotice.termsOfService.section4.content')}
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {t('legalNotice.termsOfService.section5.title')}
+                </h3>
+                <p className="leading-relaxed whitespace-pre-line text-gray-700">
+                  {t('legalNotice.termsOfService.section5.content')}
+                </p>
+              </div>
+            </div>
+            <div className="p-6 border-t border-gray-200 flex justify-end">
+              <button
+                onClick={() => setShowTermsModal(false)}
+                className="px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+              >
+                {t('demo.modal.close') || 'Kapat'}
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Çerez Politikası Modal */}
+      {showCookiesModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50"
+          onClick={() => setShowCookiesModal(false)}
+        >
+          <motion.div
+            onClick={(e) => e.stopPropagation()}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] flex flex-col"
+          >
+            <div className="flex items-center justify-between p-6 border-b border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-900">
+                {t('legalNotice.cookiePolicy.title')}
+              </h2>
+              <button
+                onClick={() => setShowCookiesModal(false)}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div className="overflow-y-auto p-6">
+              <p className="leading-relaxed whitespace-pre-line text-gray-700">
+                {t('legalNotice.cookiePolicy.content')}
+              </p>
+            </div>
+            <div className="p-6 border-t border-gray-200 flex justify-end">
+              <button
+                onClick={() => setShowCookiesModal(false)}
+                className="px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+              >
+                {t('demo.modal.close') || 'Kapat'}
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
 
       <Footer />
     </div>

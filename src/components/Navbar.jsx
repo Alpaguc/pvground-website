@@ -13,6 +13,7 @@ const Navbar = ({ scrolled }) => {
     { key: 'solutions', href: '/#solutions', isLink: true },
     { key: 'about', href: '/#about', isLink: true },
     { key: 'pricing', href: '/pricing', isLink: true },
+    { key: 'howToUse', href: '/how-to-use', isLink: true },
     { key: 'releaseNotes', href: '/release-notes', isLink: true },
   ]
 

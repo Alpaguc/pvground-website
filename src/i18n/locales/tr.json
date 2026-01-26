@@ -5,6 +5,7 @@
     "about": "Hakkımızda",
     "pricing": "Fiyatlandırma",
     "releaseNotes": "Yama Notları",
+    "howToUse": "Nasıl Kullanılır",
     "requestDemo": "Key Talep Et"
   },
   "hero": {
@@ -12,7 +13,7 @@
     "title1": "Güneş Enerjisi",
     "title2": "Tasarımında",
     "title3": "Yeni Çağ",
-    "description": "PVGround, güneş enerjisi projeleriniz için tamamen ücretsiz bir tasarım ve analiz platformu. Bireysel bir geliştirici olarak, sektörün gelişimine katkıda bulunmayı hedefliyorum. Modern teknoloji ve kullanıcı odaklı yaklaşımla projelerinizi daha hızlı ve verimli hale getirmenize yardımcı oluyorum. Tamamen ücretsiz olarak sunduğum platformla sektörün daha iyi hale gelmesine katkıda bulunuyorum. Destek olmak isteyenlerin geri bildirimlerine minnettarım.",
+    "description": "PVGround, güneş enerjisi projeleriniz için tamamen ücretsiz bir tasarım ve analiz platformu. Bireysel bir geliştirici olarak, sektörün gelişimine katkıda bulunmayı hedefliyorum. Modern teknoloji ve kullanıcı odaklı yaklaşımla projelerinizi daha hızlı ve verimli hale getirmenize yardımcı oluyorum.",
     "cta1": "Key Talep Et",
     "cta2": "Özellikleri Keşfet",
     "stat1": "Manuel Yapmaya Göre",
@@ -103,7 +104,7 @@
     "title": "Neden",
     "titleHighlight": "PVGround?",
     "description1": "PVGround, güneş enerjisi projeleriniz için hızlı, doğru ve akıllı çözümler sunuyor. Modern teknoloji ve gelişmiş algoritmalarla tasarım sürelerinizi önemli ölçüde kısaltıyoruz.",
-    "description2": "Gelişmiş optimizasyon ve kullanıcı odaklı tasarımımız ile güneş enerjisi projelerinizi bir üst seviyeye taşıyoruz. Tamamen ücretsiz olarak sunduğumuz platformumuzla sektörün gelişimine katkıda bulunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "description2": "Gelişmiş optimizasyon ve kullanıcı odaklı tasarımımız ile güneş enerjisi projelerinizi bir üst seviyeye taşıyoruz.",
     "advantages": {
       "faster": {
         "title": "Manuel Hesaplamaya Göre %90+ Daha Hızlı",
@@ -198,7 +199,7 @@
   "cta": {
     "title": "Hemen",
     "titleHighlight": "Başlayın",
-    "description": "PVGround tamamen ücretsizdir. Sektörün daha iyi hale gelmesi için ücretsiz sunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız. Hemen başlayın ve deneyimlerinizi bizimle paylaşın.",
+    "description": "PVGround tamamen ücretsizdir. Hemen başlayın ve deneyimlerinizi bizimle paylaşın.",
     "button1": "Key Talep Et",
     "button2": "Bizi Arayın",
     "trust": {
@@ -208,7 +209,7 @@
     }
   },
   "footer": {
-    "description": "Güneş enerjisi tasarımında yeni nesil platform. Tamamen ücretsiz. Sektörün daha iyi hale gelmesi için ücretsiz sunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "description": "Güneş enerjisi tasarımında yeni nesil platform. Tamamen ücretsiz.",
     "links": {
       "product": {
         "features": "Özellikler",
@@ -247,21 +248,47 @@
   },
   "legalNotice": {
     "title": "Yasal Uyarı ve Sorumluluk Reddi Beyanı",
-    "section1": {
-      "title": "1. Bağımsız Geliştirme ve Özgünlük",
-      "content": "PV Ground; bağımsız bir geliştirici tarafından, güneş enerjisi sektöründeki genel mühendislik prensipleri, matematiksel algoritmalar ve kamuya açık teknik bilgiler temel alınarak sıfırdan geliştirilmiş ücretsiz bir AutoCAD® eklentisidir. Bu yazılımın kaynak kodları ve çalışma mantığı tamamen özgündür. Herhangi bir üçüncü taraf ticari yazılımın kaynak kodlarına erişilmemiş, kopyalanmamış, tersine mühendislik (reverse engineering) uygulanmamış veya kodu çözülmemiştir (decompiling)."
+    "termsOfService": {
+      "title": "PV GROUND - KULLANIM KOŞULLARI",
+      "section1": {
+        "title": "1. LİSANS HAKKI",
+        "content": "İşbu yazılımın (PV Ground) mülkiyeti geliştiriciye (Şükrü Yiğit) aittir. Kullanıcıya sadece \"kullanım hakkı\" verilir, yazılımın kendisi satılmaz."
+      },
+      "section2": {
+        "title": "2. TERSİNE MÜHENDİSLİK YASAĞI (ÇOK ÖNEMLİ)",
+        "content": "Kullanıcı, yazılımın kaynak kodunu türetmeye çalışamaz, tersine mühendislik (reverse engineering), kaynak koda dönüştürme (decompiling) veya parçalara ayırma (disassembly) işlemi yapamaz. Bu tür girişimler fikri mülkiyet ihlali sayılır ve yasal işlem başlatılır."
+      },
+      "section3": {
+        "title": "3. SORUMLULUK REDDİ (GARANTİ YOKTUR)",
+        "content": "Bu yazılım, sektöre katkı sağlamak amacıyla geliştirilme aşamasındadır (\"BETA\" sürüm). Yazılım \"OLDUĞU GİBİ\" (AS-IS) sunulmaktadır. Geliştirici, yazılımın %100 hatasız olduğunu, kesintisiz çalışacağını veya ticari bir amaca kesin hizmet edeceğini garanti etmez."
+      },
+      "section4": {
+        "title": "4. MÜHENDİSLİK SORUMLULUĞU",
+        "content": "Bu yazılım bir yardımcı araçtır. Yazılımın ürettiği hesaplamaların, çizimlerin ve metrajların doğruluğunu kontrol etmek tamamen kullanıcının (mühendisin) sorumluluğundadır. Yazılımdan kaynaklanabilecek ticari zararlardan, yanlış hesaplamalardan veya malzeme kayıplarından geliştirici sorumlu tutulamaz."
+      },
+      "section5": {
+        "title": "5. FİKRİ MÜLKİYET",
+        "content": "Yazılımın tasarımı, algoritmaları ve arayüzü telif hakları ile korunmaktadır. İzinsiz kopyalanması yasaktır."
+      }
     },
-    "section2": {
-      "title": "2. Ticari Bağlantısızlık",
-      "content": "PV Ground; PVcase UAB, Virto.CAD, Autodesk Inc. veya diğer herhangi bir ticari güneş enerjisi yazılımı sağlayıcısı ile hiçbir şekilde bağlantılı değildir. Bu firmalarla herhangi bir ortaklığımız, veri alışverişimiz veya ticari ilişkimiz yoktur. Bu yazılım, söz konusu firmalar tarafından yetkilendirilmemiş, desteklenmemiş veya onaylanmamıştır."
+    "privacyPolicy": {
+      "title": "GİZLİLİK POLİTİKASI",
+      "section1": {
+        "title": "1. HANGİ VERİLERİ TOPLUYORUZ?",
+        "content": "Yazılımımızı kullanabilmeniz ve lisanslayabilmemiz için yalnızca şu temel bilgileri topluyoruz:\n\nAd, Soyad ve E-posta adresi (İletişim için).\n\nDonanım Kimliği (Hardware ID) veya MAC Adresi (Lisansın sadece sizin bilgisayarınızda çalışmasını sağlamak için)."
+      },
+      "section2": {
+        "title": "2. VERİLERİ NASIL KULLANIYORUZ?",
+        "content": "Toplanan veriler sadece lisans anahtarının doğrulanması (activation) ve size güncelleme bildirimlerinin gönderilmesi amacıyla kullanılır. Verileriniz asla üçüncü taraflara satılmaz veya pazarlama amacıyla paylaşılmaz."
+      },
+      "section3": {
+        "title": "3. PROJE GİZLİLİĞİ",
+        "content": "PV Ground kullanarak çizdiğiniz projeler, DWG dosyaları ve hesaplamalar tamamen sizin bilgisayarınızda (yerel olarak) saklanır. Sunucularımıza herhangi bir proje verisi yüklenmez. Ticari sırlarınız güvendedir."
+      }
     },
-    "section3": {
-      "title": "3. Ticari Markalar",
-      "content": "Bu dokümantasyonda, web sitesinde veya yazılım arayüzünde adı geçen tüm ürün ve şirket isimleri (örneğin; PVcase™, Virto.CAD™, AutoCAD®, PVsyst™ vb.), ilgili hak sahiplerinin tescilli ticari markalarıdır. Bu isimlerin kullanımı yalnızca tanımlama, karşılaştırma ve uyumluluk belirtme amacı taşımakta olup (Nominative Fair Use), herhangi bir marka ihlali veya sponsorluk iması içermemektedir."
-    },
-    "section4": {
-      "title": "4. Garanti ve Sorumluluk Reddi",
-      "content": "Bu yazılım kullanıcılara \"OLDUĞU GİBİ\" (AS-IS) sunulmaktadır. Geliştirici; yazılımın kusursuzluğu, ticari elverişliliği veya belirli bir amaca uygunluğu konusunda açık veya zımni hiçbir garanti vermez. Yazılımın kullanımından kaynaklanabilecek veri kaybı, hatalı hesaplama veya ticari zararlardan geliştirici sorumlu tutulamaz. Kullanıcı, yazılımı kendi riski altında kullanmayı kabul eder."
+    "cookiePolicy": {
+      "title": "ÇEREZ POLİTİKASI",
+      "content": "Web sitemiz, kullanıcı deneyimini iyileştirmek ve site trafiğini analiz etmek amacıyla çerezler (cookies) kullanmaktadır.\n\nZorunlu Çerezler: Sitenin çalışması için gerekli olan teknik çerezlerdir.\n\nAnaliz Çerezleri: Ziyaretçi sayısını takip etmek için (Google Analytics vb.) kullanılan anonim verilerdir. Tarayıcı ayarlarınızdan çerezleri dilediğiniz zaman engelleyebilirsiniz."
     }
   },
   "demo": {
@@ -277,7 +304,20 @@
       "message": "Mesaj",
       "phonePlaceholder": "Telefon numarası",
       "submit": "Key Talep Et",
-      "submitting": "Gönderiliyor..."
+      "submitting": "Gönderiliyor...",
+      "acceptTerms": {
+        "prefix": "Kabul ediyorum:",
+        "link": "Kullanım Koşulları",
+        "suffix": ""
+      },
+      "acceptCookies": {
+        "prefix": "Kabul ediyorum:",
+        "link": "Çerez Politikası",
+        "suffix": ""
+      }
+    },
+    "modal": {
+      "close": "Kapat"
     },
     "validation": {
       "emailRequired": "E-posta adresi gereklidir",
@@ -286,7 +326,9 @@
       "emailGenericNotAllowed": "Lütfen kişisel e-posta adresinizi kullanınız. Proje, sales, satış, info gibi genel e-posta adresleri kabul edilmemektedir.",
       "emailEducationNotAllowed": "Lütfen şirket e-posta adresinizi kullanınız. Eğitim kurumlarına ait e-posta adresleri (edu.tr, edu.com vb.) kabul edilmemektedir.",
       "emailNote": "Lütfen şirket e-posta adresinizi kullanınız (@gmail.com, @yahoo.com gibi kişisel e-posta servisleri kabul edilmemektedir)",
-      "messageRequired": "Mesaj alanı zorunludur"
+      "messageRequired": "Mesaj alanı zorunludur",
+      "acceptTermsRequired": "Kullanım Koşullarını kabul etmelisiniz",
+      "acceptCookiesRequired": "Çerez Politikasını kabul etmelisiniz"
     },
     "error": "Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan info@pvground.com adresine e-posta gönderin.",
     "trust": {
@@ -663,7 +705,7 @@
     "free": "Tamamen Ücretsiz",
     "freeTitle": "PVGround Tamamen Ücretsiz",
     "freeDescription": "Tüm özellikler ve araçlar tamamen ücretsiz olarak sunulmaktadır.",
-    "mission": "Güneş enerjisi sistemlerinin gelişmesine katkı sunmayı ve sektörün büyümesine destek olmayı amaçlıyoruz. Tamamen ücretsiz olarak sunduğumuz platformumuzla sektörün daha iyi hale gelmesine katkıda bulunuyoruz. Destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "mission": "Güneş enerjisi sistemlerinin gelişmesine katkı sunmayı ve sektörün büyümesine destek olmayı amaçlıyoruz.",
     "getStarted": "Hemen Başlayın",
     "features": [
       "Tüm tasarım araçları",
@@ -680,9 +722,232 @@
       "Sürekli güncellemeler"
     ],
     "missionTitle": "Misyonumuz",
-    "missionText": "PVGround olarak, güneş enerjisi sektörünün gelişimine katkıda bulunmayı ve herkesin erişebileceği profesyonel tasarım araçları sunmayı hedefliyoruz. Tamamen ücretsiz olarak sunduğumuz platformumuzla, güneş enerjisi projelerinin daha hızlı ve verimli bir şekilde hayata geçirilmesine destek oluyoruz. Sektörün daha iyi hale gelmesi için ücretsiz sunuyoruz ve destek olmak isteyenlerin geri bildirimlerine minnettarız.",
+    "missionText": "PVGround olarak, güneş enerjisi sektörünün gelişimine katkıda bulunmayı ve herkesin erişebileceği profesyonel tasarım araçları sunmayı hedefliyoruz. Tamamen ücretsiz olarak sunduğumuz platformumuzla, güneş enerjisi projelerinin daha hızlı ve verimli bir şekilde hayata geçirilmesine destek oluyoruz.",
     "earlyAccessTitle": "Erken Erişim",
     "earlyAccessText": "Sizler için hazırladığım bu program, 01.05.2026 tarihine kadar erken erişim kapsamında tamamen ücretsizdir. Geliştirme sürecine katkıda bulunmak veya destek olmak isterseniz, info@pvground.com adresinden bana her zaman ulaşabilirsiniz. Desteğiniz için teşekkürler!"
+  },
+  "howToUse": {
+    "title": "Nasıl Kullanılır?",
+    "description": "PVGround'u kullanarak projelerinizi nasıl oluşturacağınızı öğrenin. Adım adım eğitim videoları ile tüm özellikleri keşfedin.",
+    "categories": [
+      {
+        "title": "Başlangıç ve Veri Yükleme",
+        "items": [
+          {
+            "question": "KML/KMZ Dosyamı ve Topografik Veriyi Nasıl Yüklerim?",
+            "video": "/howtowork/kml-kmz-yukleme.mp4"
+          },
+          {
+            "question": "Contourline çizgilerini kullanarak arazi modellemesi yapabilir miyim?",
+            "video": "/howtowork/contourline-arazi-modelleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Frame Ayarları",
+        "items": [
+          {
+            "question": "Frame Ayarlarını Nasıl Yapabilirim?",
+            "video": "/howtowork/frame-ayarlari.mp4"
+          },
+          {
+            "question": "Sehpa Aralarındaki Mesafeler ve Sehpaların Yerden Yüksekliği Nasıl Ayarlanır?",
+            "video": "/howtowork/sehpa-mesafe-yukseklik.mp4"
+          },
+          {
+            "question": "Hem örneğin 2x26 sehpa hemde 2x13 sehpa yerleştirebilir miyim?",
+            "video": "/howtowork/coklu-sehpa-yerlesimi.mp4"
+          },
+          {
+            "question": "Sadece 2x26 sehpa yerleştirebilir miyim?",
+            "video": "/howtowork/tek-sehpa-yerlesimi.mp4"
+          },
+          {
+            "question": "Presetler nasıl kayıt edilir, nasıl silinir, nasıl çoğaltılır?",
+            "video": "/howtowork/preset-yonetimi.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Corridor Ayarları",
+        "items": [
+          {
+            "question": "Corridor Settings Nasıl Yapılır?",
+            "video": "/howtowork/corridor-settings.mp4"
+          }
+        ]
+      },
+      {
+        "title": "PV Area İşlemleri",
+        "items": [
+          {
+            "question": "PV Area Nasıl Çizilir ve Çizili bir Alanı Nasıl Dönüştürürüm?",
+            "video": "/howtowork/pv-area-cizim-donusum.mp4"
+          },
+          {
+            "question": "PV Area'da girilmeyecek bir alan var, onu nasıl engellerim?",
+            "video": "/howtowork/pv-area-engelleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Panel Yerleşimi ve İterasyon",
+        "items": [
+          {
+            "question": "Panelleri PV Layout'a Nasıl Yerleştiririm?",
+            "video": "/howtowork/panel-yerlesimi.mp4"
+          },
+          {
+            "question": "Bir PV alana kaç spacing mesafelerine göre kaç adet panel yerleşeceğini nasıl anlarım? İterasyon nasıl yapılır? Ayarları nasıl kayıt edilir?",
+            "video": "/howtowork/iterasyon-ayarlari.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Pile (Kazık) İşlemleri",
+        "items": [
+          {
+            "question": "Frameslere Pile eklenebilir mi? Nasıl?",
+            "video": "/howtowork/pile-ekleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Frames Hareket",
+        "items": [
+          {
+            "question": "Framesleri Nasıl Hareket Ettiririm?",
+            "video": "/howtowork/frames-hareket.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Harfiat Analizi",
+        "items": [
+          {
+            "question": "Harfiat Analizi Nasıl Yaparım?",
+            "video": "/howtowork/harfiat-analizi.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Stringleme",
+        "items": [
+          {
+            "question": "Stringleme Nasıl Yapılır? String Yönü Nasıl Değişir?",
+            "video": "/howtowork/stringleme-yon.mp4"
+          },
+          {
+            "question": "String İsimleri Nasıl Değiştirilir?",
+            "video": "/howtowork/string-isimleri.mp4"
+          }
+        ]
+      },
+      {
+        "title": "İnverter ve Panel Konfigürasyonu",
+        "items": [
+          {
+            "question": "İnverter Panel Konfigürasyonu Nasıl Yapılır?",
+            "video": "/howtowork/inverter-panel-konfigurasyonu.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Kablolama",
+        "items": [
+          {
+            "question": "DC - AC Kablolama Nasıl Yapılır?",
+            "video": "/howtowork/dc-ac-kablolama.mp4"
+          },
+          {
+            "question": "DC - AC Kablolama Nasıl 3D Çevrilir?",
+            "video": "/howtowork/dc-ac-kablolama-3d.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Yol Çizimi",
+        "items": [
+          {
+            "question": "Arazide Yol Mevcut, Yolu Nasıl Çizerim?",
+            "video": "/howtowork/yol-cizimi.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Kesit Görüntüsü ve Eğim",
+        "items": [
+          {
+            "question": "Kesit Görüntüsü Alabilir miyim? Eğim Nasıl Görünüyor? Harfiat Sonrası Eğim Nasıl Görünecek?",
+            "video": "/howtowork/kesit-goruntusu-egim.mp4"
+          },
+          {
+            "question": "Kuzey ve Güney - Doğu Batı Eğime Sahip Panelleri Görebilir miyim?",
+            "video": "/howtowork/egim-goruntuleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "İstatistikler ve Metrajlar",
+        "items": [
+          {
+            "question": "Kaç Adet Panel Yerleştirdiğimi ve Kaç Metre DC - AC Kablo Çıktığını Görebilir miyim?",
+            "video": "/howtowork/istatistikler-metrajlar.mp4"
+          },
+          {
+            "question": "Basic Export Excel Nasıl Kullanılır?",
+            "video": "/howtowork/basic-export-excel.mp4"
+          },
+          {
+            "question": "Advanced Export Excel Nasıl Kullanılır - DC Kablo Kesit Belirleme",
+            "video": "/howtowork/advanced-export-excel-dc-kesit.mp4"
+          },
+          {
+            "question": "AC Kablo Tahmini Kesit Belirleme",
+            "video": "/howtowork/ac-kablo-tahmini-kesit.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Gölgeleme Analizi",
+        "items": [
+          {
+            "question": "PVsyst'e PVC aktarıp zaman kaybetmek istemiyorum. Hızlıca burada gölgeleme analizi yapabilir miyim?",
+            "video": "/howtowork/golgeleme-analizi.mp4"
+          },
+          {
+            "question": "Arazide Gölgeleme Unsuru Olarak Trafo, Ağaç, Tel Çit, CCTV ve Paratoner Mevcut. Bunları Gölgeleme Unsuru Olarak Ekleyebilir miyim?",
+            "video": "/howtowork/golgeleme-unsurlari.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Export İşlemleri",
+        "items": [
+          {
+            "question": "PVC Export Nasıl Yapabilirim?",
+            "video": "/howtowork/pvc-export.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Gelişmiş Ayarlar",
+        "items": [
+          {
+            "question": "Panellerin Yerleşimini mm Cinsinden Yapmak İstiyorum. Bu Yapılabilir mi?",
+            "video": "/howtowork/mm-yerlesim.mp4"
+          },
+          {
+            "question": "Arazim Çok Büyük ve Bilgisayarım Kasmasını İstemiyorum. Bunun İçin Ne Yapabilirim?",
+            "video": "/howtowork/buyuk-arazi-optimizasyonu.mp4"
+          },
+          {
+            "question": "Plugin Şu Anda Kullanmıyorum. Nasıl Kapatırım ve Kapattıktan Sonra Nasıl Açarım?",
+            "video": "/howtowork/plugin-kapatma-acma.mp4"
+          }
+        ]
+      }
+    ]
   }
 }
 

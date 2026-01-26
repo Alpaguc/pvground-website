@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -114,9 +115,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
+                <Link to="/how-to-use" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
                   {t('footer.links.resources.training')}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -128,13 +129,13 @@ const Footer = () => {
             © {new Date().getFullYear()} PVGround. {t('footer.copyright')}
           </p>
           <div className="flex space-x-6">
-            <a href="#privacy" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
+            <a href="/legal-notice#privacy" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
               {t('footer.legal.privacy')}
             </a>
-            <a href="/legal-notice" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
+            <a href="/legal-notice#terms" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
               {t('footer.legal.terms')}
             </a>
-            <a href="#cookies" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
+            <a href="/legal-notice#cookies" className="text-gray-400 hover:text-white transition-colors duration-200 text-sm">
               {t('footer.legal.cookies')}
             </a>
           </div>

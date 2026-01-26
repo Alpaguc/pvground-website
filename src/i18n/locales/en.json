@@ -5,6 +5,7 @@
     "about": "About",
     "pricing": "Pricing",
     "releaseNotes": "Release Notes",
+    "howToUse": "How to Use",
     "requestDemo": "Request Key"
   },
   "hero": {
@@ -12,7 +13,7 @@
     "title1": "Solar Energy",
     "title2": "Design",
     "title3": "New Era",
-    "description": "PVGround is a completely free design and analysis platform for your solar energy projects. We offer it for free to help the industry become better. We are grateful for feedback from those who want to support us.",
+    "description": "PVGround is a completely free design and analysis platform for your solar energy projects.",
     "cta1": "Request Key",
     "cta2": "Explore Features",
     "stat1": "vs Manual",
@@ -103,7 +104,7 @@
     "title": "Why",
     "titleHighlight": "PVGround?",
     "description1": "PVGround offers fast, accurate, and smart solutions for your solar energy projects. We significantly reduce your design times with modern technology and advanced algorithms.",
-    "description2": "We take your solar energy projects to the next level with advanced optimization and user-focused design. We contribute to the industry's development by offering our platform completely free. We are grateful for feedback from those who want to support us.",
+    "description2": "We take your solar energy projects to the next level with advanced optimization and user-focused design.",
     "advantages": {
       "faster": {
         "title": "90%+ Faster Than Manual Calculation",
@@ -198,7 +199,7 @@
   "cta": {
     "title": "Get Started",
     "titleHighlight": "Now",
-    "description": "PVGround is completely free. We offer it for free to help the industry become better. We are grateful for feedback from those who want to support us. Get started now and share your experiences with us.",
+    "description": "PVGround is completely free. Get started now and share your experiences with us.",
     "button1": "Request Key",
     "button2": "Call Us",
     "trust": {
@@ -208,7 +209,7 @@
     }
   },
   "footer": {
-    "description": "Next-generation platform for solar energy design. Completely free. We offer it for free to help the industry become better. We are grateful for feedback from those who want to support us.",
+    "description": "Next-generation platform for solar energy design. Completely free.",
     "links": {
       "product": {
         "features": "Features",
@@ -247,21 +248,47 @@
   },
   "legalNotice": {
     "title": "Legal Notice and Disclaimer",
-    "section1": {
-      "title": "1. Independent Development and Originality",
-      "content": "PV Ground is a free AutoCAD® plugin developed from scratch by an independent developer, based on general engineering principles, mathematical algorithms, and publicly available technical information in the solar energy sector. The source code and working logic of this software are completely original. No access has been made to any third-party commercial software source code, no copying has been done, no reverse engineering has been applied, or code has been decompiled."
+    "termsOfService": {
+      "title": "PV GROUND - TERMS OF SERVICE",
+      "section1": {
+        "title": "1. LICENSE RIGHT",
+        "content": "The ownership of this software (PV Ground) belongs to the developer (Şükrü Yiğit). The user is only granted \"usage rights\"; the software itself is not sold."
+      },
+      "section2": {
+        "title": "2. REVERSE ENGINEERING PROHIBITION (VERY IMPORTANT)",
+        "content": "The user may not attempt to derive the source code of the software, perform reverse engineering, decompiling, or disassembly. Such attempts are considered intellectual property infringement and legal action will be initiated."
+      },
+      "section3": {
+        "title": "3. DISCLAIMER (NO WARRANTY)",
+        "content": "This software is in development stage (\"BETA\" version) to contribute to the industry. The software is provided \"AS-IS\". The developer does not guarantee that the software is 100% error-free, will work without interruption, or will definitely serve a commercial purpose."
+      },
+      "section4": {
+        "title": "4. ENGINEERING RESPONSIBILITY",
+        "content": "This software is a supporting tool. It is entirely the user's (engineer's) responsibility to verify the accuracy of calculations, drawings, and quantities produced by the software. The developer cannot be held responsible for commercial damages, calculation errors, or material losses that may arise from the software."
+      },
+      "section5": {
+        "title": "5. INTELLECTUAL PROPERTY",
+        "content": "The design, algorithms, and interface of the software are protected by copyright. Unauthorized copying is prohibited."
+      }
     },
-    "section2": {
-      "title": "2. No Commercial Connection",
-      "content": "PV Ground is in no way connected to PVcase UAB, Virto.CAD, Autodesk Inc., or any other commercial solar energy software provider. We have no partnership, data exchange, or commercial relationship with these companies. This software has not been authorized, supported, or approved by the aforementioned companies."
+    "privacyPolicy": {
+      "title": "PRIVACY POLICY",
+      "section1": {
+        "title": "1. WHAT DATA DO WE COLLECT?",
+        "content": "To enable you to use and license our software, we only collect the following basic information:\n\nName, Surname, and Email address (for contact purposes).\n\nHardware ID or MAC Address (to ensure the license works only on your computer)."
+      },
+      "section2": {
+        "title": "2. HOW DO WE USE THE DATA?",
+        "content": "The collected data is used only for license key verification (activation) and to send you update notifications. Your data is never sold to third parties or shared for marketing purposes."
+      },
+      "section3": {
+        "title": "3. PROJECT PRIVACY",
+        "content": "Projects, DWG files, and calculations you create using PV Ground are stored entirely on your computer (locally). No project data is uploaded to our servers. Your trade secrets are safe."
+      }
     },
-    "section3": {
-      "title": "3. Trademarks",
-      "content": "All product and company names mentioned in this documentation, website, or software interface (such as PVcase™, Virto.CAD™, AutoCAD®, PVsyst™, etc.) are registered trademarks of their respective owners. The use of these names is solely for identification, comparison, and compatibility purposes (Nominative Fair Use) and does not imply any trademark infringement or sponsorship."
-    },
-    "section4": {
-      "title": "4. Warranty and Liability Disclaimer",
-      "content": "This software is provided to users \"AS-IS\". The developer makes no express or implied warranties regarding the software's perfection, merchantability, or fitness for a particular purpose. The developer cannot be held liable for data loss, calculation errors, or commercial damages that may arise from the use of the software. The user accepts to use the software at their own risk."
+    "cookiePolicy": {
+      "title": "COOKIE POLICY",
+      "content": "Our website uses cookies to improve user experience and analyze site traffic.\n\nEssential Cookies: Technical cookies necessary for the site to function.\n\nAnalytics Cookies: Anonymous data used to track visitor numbers (Google Analytics, etc.). You can block cookies at any time from your browser settings."
     }
   },
   "demo": {
@@ -277,7 +304,20 @@
       "message": "Message",
       "phonePlaceholder": "Phone number",
       "submit": "Request Key",
-      "submitting": "Submitting..."
+      "submitting": "Submitting...",
+      "acceptTerms": {
+        "prefix": "I accept the",
+        "link": "Terms of Service",
+        "suffix": ""
+      },
+      "acceptCookies": {
+        "prefix": "I accept the",
+        "link": "Cookie Policy",
+        "suffix": ""
+      }
+    },
+    "modal": {
+      "close": "Close"
     },
     "validation": {
       "emailRequired": "Email address is required",
@@ -286,7 +326,9 @@
       "emailGenericNotAllowed": "Please use your personal email address. Generic email addresses like project, sales, info are not accepted.",
       "emailEducationNotAllowed": "Please use your company email address. Educational institution email addresses (edu.tr, edu.com, etc.) are not accepted.",
       "emailNote": "Please use your company email address (personal email services like @gmail.com, @yahoo.com are not accepted)",
-      "messageRequired": "Message field is required"
+      "messageRequired": "Message field is required",
+      "acceptTermsRequired": "You must accept the Terms of Service",
+      "acceptCookiesRequired": "You must accept the Cookie Policy"
     },
     "error": "An error occurred. Please try again or send an email directly to info@pvground.com.",
     "trust": {
@@ -663,7 +705,7 @@
     "free": "Completely Free",
     "freeTitle": "PVGround is Completely Free",
     "freeDescription": "All features and tools are provided completely free of charge.",
-    "mission": "We aim to contribute to the development of solar energy systems and support the growth of the industry. We offer our platform completely free to help the industry become better. We are grateful for feedback from those who want to support us.",
+    "mission": "We aim to contribute to the development of solar energy systems and support the growth of the industry.",
     "getStarted": "Get Started Now",
     "features": [
       "All design tools",
@@ -680,9 +722,232 @@
       "Continuous updates"
     ],
     "missionTitle": "Our Mission",
-    "missionText": "As PVGround, we aim to contribute to the development of the solar energy industry and provide professional design tools accessible to everyone. With our completely free platform, we support the faster and more efficient implementation of solar energy projects. We offer it for free to help the industry become better and we are grateful for feedback from those who want to support us.",
+    "missionText": "As PVGround, we aim to contribute to the development of the solar energy industry and provide professional design tools accessible to everyone. With our completely free platform, we support the faster and more efficient implementation of solar energy projects.",
     "earlyAccessTitle": "Early Access",
     "earlyAccessText": "This program I have prepared for you is completely free as part of early access until 01.05.2026. If you would like to contribute to the development process or provide support, you can always reach me at info@pvground.com. Thank you for your support!"
+  },
+  "howToUse": {
+    "title": "How to Use",
+    "description": "Learn how to create your projects using PVGround. Discover all features with step-by-step tutorial videos.",
+    "categories": [
+      {
+        "title": "Getting Started and Data Loading",
+        "items": [
+          {
+            "question": "How do I load my KML/KMZ file and topographic data?",
+            "video": "/howtowork/kml-kmz-yukleme.mp4"
+          },
+          {
+            "question": "Can I create terrain modeling using contourline lines?",
+            "video": "/howtowork/contourline-arazi-modelleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Frame Settings",
+        "items": [
+          {
+            "question": "How can I configure Frame Settings?",
+            "video": "/howtowork/frame-ayarlari.mp4"
+          },
+          {
+            "question": "How are the distances between frames and the height of frames from the ground adjusted?",
+            "video": "/howtowork/sehpa-mesafe-yukseklik.mp4"
+          },
+          {
+            "question": "Can I place both 2x26 frames and 2x13 frames?",
+            "video": "/howtowork/coklu-sehpa-yerlesimi.mp4"
+          },
+          {
+            "question": "Can I place only 2x26 frames?",
+            "video": "/howtowork/tek-sehpa-yerlesimi.mp4"
+          },
+          {
+            "question": "How are presets saved, deleted, and duplicated?",
+            "video": "/howtowork/preset-yonetimi.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Corridor Settings",
+        "items": [
+          {
+            "question": "How are Corridor Settings configured?",
+            "video": "/howtowork/corridor-settings.mp4"
+          }
+        ]
+      },
+      {
+        "title": "PV Area Operations",
+        "items": [
+          {
+            "question": "How do I draw a PV Area and how do I convert an existing area?",
+            "video": "/howtowork/pv-area-cizim-donusum.mp4"
+          },
+          {
+            "question": "There is an area in PV Area that should not be entered, how do I block it?",
+            "video": "/howtowork/pv-area-engelleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Panel Placement and Iteration",
+        "items": [
+          {
+            "question": "How do I place panels in PV Layout?",
+            "video": "/howtowork/panel-yerlesimi.mp4"
+          },
+          {
+            "question": "How do I determine how many panels will be placed in a PV area based on spacing distances? How is iteration performed? How are settings saved?",
+            "video": "/howtowork/iterasyon-ayarlari.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Pile Operations",
+        "items": [
+          {
+            "question": "Can piles be added to frames? How?",
+            "video": "/howtowork/pile-ekleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Frame Movement",
+        "items": [
+          {
+            "question": "How do I move frames?",
+            "video": "/howtowork/frames-hareket.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Cut & Fill Analysis",
+        "items": [
+          {
+            "question": "How do I perform Cut & Fill Analysis?",
+            "video": "/howtowork/harfiat-analizi.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Stringing",
+        "items": [
+          {
+            "question": "How is stringing performed? How do I change the string direction?",
+            "video": "/howtowork/stringleme-yon.mp4"
+          },
+          {
+            "question": "How are string names changed?",
+            "video": "/howtowork/string-isimleri.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Inverter and Panel Configuration",
+        "items": [
+          {
+            "question": "How is Inverter Panel Configuration performed?",
+            "video": "/howtowork/inverter-panel-konfigurasyonu.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Cabling",
+        "items": [
+          {
+            "question": "How is DC - AC Cabling performed?",
+            "video": "/howtowork/dc-ac-kablolama.mp4"
+          },
+          {
+            "question": "How is DC - AC Cabling converted to 3D?",
+            "video": "/howtowork/dc-ac-kablolama-3d.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Road Drawing",
+        "items": [
+          {
+            "question": "There is a road on the terrain, how do I draw the road?",
+            "video": "/howtowork/yol-cizimi.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Cross Section View and Slope",
+        "items": [
+          {
+            "question": "Can I get a cross section view? How is the slope displayed? How will the slope appear after Cut & Fill?",
+            "video": "/howtowork/kesit-goruntusu-egim.mp4"
+          },
+          {
+            "question": "Can I see panels with North and South - East West slopes?",
+            "video": "/howtowork/egim-goruntuleme.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Statistics and Measurements",
+        "items": [
+          {
+            "question": "Can I see how many panels I placed and how many meters of DC - AC cable were used?",
+            "video": "/howtowork/istatistikler-metrajlar.mp4"
+          },
+          {
+            "question": "How to Use Basic Export Excel?",
+            "video": "/howtowork/basic-export-excel.mp4"
+          },
+          {
+            "question": "How to Use Advanced Export Excel - DC Cable Cross-Section Determination",
+            "video": "/howtowork/advanced-export-excel-dc-kesit.mp4"
+          },
+          {
+            "question": "AC Cable Estimated Cross-Section Determination",
+            "video": "/howtowork/ac-kablo-tahmini-kesit.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Shading Analysis",
+        "items": [
+          {
+            "question": "I don't want to waste time transferring PVC to PVsyst. Can I quickly perform shading analysis here?",
+            "video": "/howtowork/golgeleme-analizi.mp4"
+          },
+          {
+            "question": "There are shading elements on the terrain such as transformer, tree, wire fence, CCTV, and lightning rod. Can I add these as shading elements?",
+            "video": "/howtowork/golgeleme-unsurlari.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Export Operations",
+        "items": [
+          {
+            "question": "How can I perform PVC Export?",
+            "video": "/howtowork/pvc-export.mp4"
+          }
+        ]
+      },
+      {
+        "title": "Advanced Settings",
+        "items": [
+          {
+            "question": "I want to place panels in millimeters. Is this possible?",
+            "video": "/howtowork/mm-yerlesim.mp4"
+          },
+          {
+            "question": "My terrain is very large and I don't want my computer to lag. What can I do about this?",
+            "video": "/howtowork/buyuk-arazi-optimizasyonu.mp4"
+          },
+          {
+            "question": "I'm not using the plugin right now. How do I close it and how do I open it after closing?",
+            "video": "/howtowork/plugin-kapatma-acma.mp4"
+          }
+        ]
+      }
+    ]
   }
 }
 

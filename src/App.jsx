@@ -13,6 +13,7 @@ import DemoRequest from './pages/DemoRequest'
 import ReleaseNotes from './pages/ReleaseNotes'
 import Pricing from './pages/Pricing'
 import LegalNotice from './pages/LegalNotice'
+import HowToUse from './pages/HowToUse'
 
 function Home() {
   const [scrolled, setScrolled] = useState(false)
@@ -70,6 +71,7 @@ function App() {
         <Route path="/release-notes" element={<ReleaseNotes />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/legal-notice" element={<LegalNotice />} />
+        <Route path="/how-to-use" element={<HowToUse />} />
       </Routes>
     </Router>
   )
