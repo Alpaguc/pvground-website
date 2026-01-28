@@ -120,11 +120,12 @@ const ReleaseNotes = () => {
                             <div className="rounded-lg overflow-hidden border border-gray-200 shadow-lg">
                               <video 
                                 src={feature.video} 
-                                controls
-                                className="w-full h-auto"
-                                preload="metadata"
-                                playsInline
+                                autoPlay
+                                loop
                                 muted
+                                playsInline
+                                className="w-full h-auto"
+                                preload="auto"
                                 style={{ minHeight: '400px' }}
                               >
                                 Tarayıcınız video oynatmayı desteklemiyor.
@@ -206,11 +207,12 @@ const ReleaseNotes = () => {
                             {improvement.video ? (
                               <video 
                                 src={improvement.video} 
-                                controls
-                                className="w-full h-auto"
-                                preload="metadata"
-                                playsInline
+                                autoPlay
+                                loop
                                 muted
+                                playsInline
+                                className="w-full h-auto"
+                                preload="auto"
                                 style={{ minHeight: '400px' }}
                               >
                                 Tarayıcınız video oynatmayı desteklemiyor.

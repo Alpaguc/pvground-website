@@ -301,8 +301,57 @@
       "company": "Unternehmen",
       "phone": "Telefon",
       "jobTitle": "Position",
+      "state": "Bundesland / Region",
+      "country": "Land",
+      "productInterest": "Produktinteresse",
+      "heardAbout": "Wo haben Sie von uns gehört?",
+      "businessFocus": "Der Großteil des Geschäfts meines Unternehmens ist in",
+      "projectSize": "Projektgröße",
+      "projectTypes": "Projekttypen",
+      "monthlyDesigns": "Geschätzte Anzahl an Designs (pro Monat)",
+      "usersCount": "Wie viele Benutzer?",
       "message": "Nachricht",
       "phonePlaceholder": "Telefonnummer",
+      "selectPlaceholder": "Bitte auswählen",
+      "productInterestOptions": {
+        "pvGround": "PVGround",
+        "pvRoof": "PVRoof"
+      },
+      "heardAboutOptions": {
+        "email": "E-Mail",
+        "google": "Google",
+        "socialMedia": "Soziale Medien",
+        "jobSites": "Jobportale",
+        "friend": "Empfohlen von einem Freund"
+      },
+      "businessFocusOptions": {
+        "epc": "EPC",
+        "development": "Projektentwicklung",
+        "consulting": "Beratung",
+        "manufacturer": "Anlagenhersteller"
+      },
+      "projectSizeOptions": {
+        "lt20": "<20kW",
+        "mid1": "20 kW - 3 MW",
+        "mid2": "3 MW - 10 MW",
+        "gt10": "10+ MW",
+        "all": "Alle Größen"
+      },
+      "projectTypeOptions": {
+        "carport": "Carport",
+        "groundMount": "Freiflächenanlage (Ground Mount)",
+        "other": "Andere"
+      },
+      "monthlyDesignsOptions": {
+        "lt20": "<20",
+        "mid": "20-50",
+        "gt50": "50+"
+      },
+      "usersCountOptions": {
+        "one": "1",
+        "twoToFive": "2-5",
+        "fivePlus": "5+"
+      },
       "submit": "Schlüssel Anfordern",
       "submitting": "Wird gesendet...",
       "acceptTerms": {
@@ -326,6 +375,8 @@
       "emailGenericNotAllowed": "Bitte verwenden Sie Ihre persönliche E-Mail-Adresse. Generische E-Mail-Adressen wie Projekt, Sales, Info werden nicht akzeptiert.",
       "emailEducationNotAllowed": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse. E-Mail-Adressen von Bildungseinrichtungen (edu.tr, edu.com usw.) werden nicht akzeptiert.",
       "emailNote": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse (persönliche E-Mail-Dienste wie @gmail.com, @yahoo.com, @outlook.com werden nicht akzeptiert)",
+      "phoneRequired": "Telefonnummer ist erforderlich",
+      "jobTitleRequired": "Position ist erforderlich",
       "messageRequired": "Nachrichtfeld ist erforderlich",
       "acceptTermsRequired": "Sie müssen die Nutzungsbedingungen akzeptieren",
       "acceptCookiesRequired": "Sie müssen die Cookie-Richtlinie akzeptieren"

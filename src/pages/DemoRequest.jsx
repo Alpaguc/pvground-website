@@ -16,6 +16,15 @@ const DemoRequest = () => {
     phoneCountryCode: '+90',
     phone: '',
     jobTitle: '',
+    state: '',
+    country: '',
+    productInterest: '',
+    heardAbout: '',
+    businessFocus: '',
+    projectTypes: [],
+    projectSize: '',
+    monthlyDesigns: '',
+    usersCount: '',
     message: '',
     acceptTerms: false,
     acceptCookies: false,
@@ -197,6 +206,16 @@ const DemoRequest = () => {
     }
   }
 
+  const handleProjectTypeChange = (type) => {
+    const current = formData.projectTypes || []
+    const exists = current.includes(type)
+    const updated = exists ? current.filter((t) => t !== type) : [...current, type]
+    setFormData({
+      ...formData,
+      projectTypes: updated,
+    })
+  }
+
   const validateEmail = (email) => {
     if (!email) return t('demo.validation.emailRequired')
     
@@ -206,7 +225,38 @@ const DemoRequest = () => {
     }
 
     const domain = email.split('@')[1]?.toLowerCase()
-    if (blockedEmailDomains.some(blocked => domain === blocked || domain?.endsWith('.' + blocked))) {
+    if (!domain) return t('demo.validation.emailInvalid')
+    
+    // Domain'i parçalara ayır (örn: gmail.com.tr -> ['gmail', 'com', 'tr'])
+    const domainParts = domain.split('.')
+    
+    // Engellenen domain'leri kontrol et
+    // Hem tam eşleşme (gmail.com) hem de alt domain'ler (gmail.com.tr, gmail.com.uk vb.) kontrol edilir
+    const isBlocked = blockedEmailDomains.some(blocked => {
+      // Tam eşleşme kontrolü
+      if (domain === blocked) return true
+      
+      // Base domain kontrolü: domain'in son kısmı blocked domain ile eşleşiyorsa engelle
+      // Örn: gmail.com.tr -> base: gmail.com, blocked: gmail.com -> engelle
+      // Örn: outlook.com.de -> base: outlook.com, blocked: outlook.com -> engelle
+      if (domainParts.length >= 2) {
+        const baseDomain = domainParts.slice(-2).join('.') // Son iki parça: com.tr -> com.tr, ama gmail.com.tr -> gmail.com
+        // Eğer domain blocked domain ile başlıyorsa veya base domain blocked ise engelle
+        if (domain.startsWith(blocked + '.') || baseDomain === blocked) {
+          return true
+        }
+      }
+      
+      // Domain'in blocked domain ile bitip bitmediğini kontrol et (herhangi bir ülke uzantısı için)
+      // Örn: gmail.com.xx -> gmail.com ile başlıyorsa engelle
+      if (domain.startsWith(blocked + '.')) {
+        return true
+      }
+      
+      return false
+    })
+    
+    if (isBlocked) {
       return t('demo.validation.emailBlocked')
     }
 
@@ -216,15 +266,19 @@ const DemoRequest = () => {
     }
 
     // Genel/şirket e-posta adreslerini engelle (kişisel e-posta adresleri kabul edilir)
+    // NOT: Tire (-) ile birleştirilmiş adresler kabul edilir (örn: proje-satis@...)
+    // Sadece nokta (.) ile ayrılmış parçalar ve tam eşleşmeler engellenir
     const localPart = email.split('@')[0]?.toLowerCase()
     if (localPart) {
-      // Local part'ı noktalara göre böl ve her parçayı kontrol et
-      const localParts = localPart.split('.')
-      if (localParts.some(part => blockedEmailPrefixes.includes(part))) {
+      // Tam eşleşmeyi kontrol et (örn: proje@company.com)
+      if (blockedEmailPrefixes.includes(localPart)) {
         return t('demo.validation.emailGenericNotAllowed')
       }
-      // Tam eşleşmeyi de kontrol et
-      if (blockedEmailPrefixes.includes(localPart)) {
+      
+      // Local part'ı sadece noktalara göre böl ve her parçayı kontrol et
+      // Tire ile ayrılmış olanları kontrol etme (örn: proje-satis@... kabul edilir)
+      const localParts = localPart.split('.')
+      if (localParts.some(part => blockedEmailPrefixes.includes(part))) {
         return t('demo.validation.emailGenericNotAllowed')
       }
     }
@@ -239,6 +293,16 @@ const DemoRequest = () => {
     const emailError = validateEmail(formData.email)
     if (emailError) {
       newErrors.email = emailError
+    }
+
+    // Telefon validasyonu
+    if (!formData.phone || formData.phone.trim().length === 0) {
+      newErrors.phone = t('demo.validation.phoneRequired')
+    }
+
+    // Pozisyon validasyonu
+    if (!formData.jobTitle || formData.jobTitle.trim().length === 0) {
+      newErrors.jobTitle = t('demo.validation.jobTitleRequired')
     }
 
     // Mesaj validasyonu
@@ -440,20 +504,84 @@ ${hasRequestedBefore ? '\n⚠️ NOT: Bu e-posta adresi daha önce key talep etm
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
+            <div className="inline-flex items-center px-3 py-1 mb-4 text-xs font-semibold tracking-wide uppercase rounded-full bg-primary-50 text-primary-700 border border-primary-100">
+              Free PVGround Trial
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               {t('demo.title')}
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               {t('demo.description')}
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Form */}
+          <div className="grid lg:grid-cols-3 gap-8 items-start">
+            {/* Sol taraf - Bilgilendirme / guven karti */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="lg:col-span-2"
+              className="space-y-6 lg:order-1"
+            >
+              <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{t('demo.trust.title')}</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <div>
+                      <div className="font-semibold text-gray-900">{t('demo.trust.item1.title')}</div>
+                      <div className="text-sm text-gray-600">{t('demo.trust.item1.description')}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <div>
+                      <div className="font-semibold text-gray-900">{t('demo.trust.item2.title')}</div>
+                      <div className="text-sm text-gray-600">{t('demo.trust.item2.description')}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <div>
+                      <div className="font-semibold text-gray-900">{t('demo.trust.item3.title')}</div>
+                      <div className="text-sm text-gray-600">{t('demo.trust.item3.description')}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-primary-50 to-solar-yellow/10 rounded-2xl p-6 border border-primary-100">
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div>
+                    <div className="text-3xl font-bold text-primary-600 mb-1">21+</div>
+                    <div className="text-sm text-gray-600">{t('demo.stats.customers')}</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-primary-600 mb-1">2+</div>
+                    <div className="text-sm text-gray-600">{t('demo.stats.countries')}</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-primary-600 mb-1">7+</div>
+                    <div className="text-sm text-gray-600">{t('testimonials.stats.projects')}</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-primary-600 mb-1">5/5</div>
+                    <div className="text-sm text-gray-600">{t('testimonials.stats.rating')}</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Sag taraf - Form */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="lg:col-span-2 lg:order-2"
             >
               <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                 <form 
@@ -542,7 +670,7 @@ ${hasRequestedBefore ? '\n⚠️ NOT: Bu e-posta adresi daha önce key talep etm
 
                   <div>
                     <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                      {t('demo.form.phone')}
+                      {t('demo.form.phone')} *
                     </label>
                     <div className="flex gap-2">
                       <select
@@ -562,26 +690,236 @@ ${hasRequestedBefore ? '\n⚠️ NOT: Bu e-posta adresi daha önce key talep etm
                         type="tel"
                         id="phone"
                         name="phone"
+                        required
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder={t('demo.form.phonePlaceholder')}
-                        className="flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        className={`flex-1 min-w-0 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all ${
+                          errors.phone ? 'border-red-500' : 'border-gray-300'
+                        }`}
                       />
                     </div>
+                    {errors.phone && (
+                      <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
+                    )}
                   </div>
 
                   <div>
                     <label htmlFor="jobTitle" className="block text-sm font-semibold text-gray-700 mb-2">
-                      {t('demo.form.jobTitle')}
+                      {t('demo.form.jobTitle')} *
                     </label>
                     <input
                       type="text"
                       id="jobTitle"
                       name="jobTitle"
+                      required
                       value={formData.jobTitle}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all ${
+                        errors.jobTitle ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     />
+                    {errors.jobTitle && (
+                      <p className="mt-1 text-sm text-red-600">{errors.jobTitle}</p>
+                    )}
+                  </div>
+
+                  {/* State & Country */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="state" className="block text-sm font-semibold text-gray-700 mb-2">
+                        {t('demo.form.state')} *
+                      </label>
+                      <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        required
+                        value={formData.state}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="country" className="block text-sm font-semibold text-gray-700 mb-2">
+                        {t('demo.form.country')} *
+                      </label>
+                      <input
+                        type="text"
+                        id="country"
+                        name="country"
+                        required
+                        value={formData.country}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Product Interest & How did you hear about us */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="productInterest" className="block text-sm font-semibold text-gray-700 mb-2">
+                        {t('demo.form.productInterest')} *
+                      </label>
+                      <select
+                        id="productInterest"
+                        name="productInterest"
+                        required
+                        value={formData.productInterest}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      >
+                        <option value="">{t('demo.form.selectPlaceholder')}</option>
+                        <option value="PVGround">{t('demo.form.productInterestOptions.pvGround')}</option>
+                        <option value="PVRoof">{t('demo.form.productInterestOptions.pvRoof')}</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label htmlFor="heardAbout" className="block text-sm font-semibold text-gray-700 mb-2">
+                        {t('demo.form.heardAbout')} *
+                      </label>
+                      <select
+                        id="heardAbout"
+                        name="heardAbout"
+                        required
+                        value={formData.heardAbout}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      >
+                        <option value="">{t('demo.form.selectPlaceholder')}</option>
+                        <option value="Email">{t('demo.form.heardAboutOptions.email')}</option>
+                        <option value="Google">{t('demo.form.heardAboutOptions.google')}</option>
+                        <option value="Social Media">{t('demo.form.heardAboutOptions.socialMedia')}</option>
+                        <option value="Job Sites">{t('demo.form.heardAboutOptions.jobSites')}</option>
+                        <option value="Friend">{t('demo.form.heardAboutOptions.friend')}</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Business focus & Project size */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="businessFocus" className="block text-sm font-semibold text-gray-700 mb-2">
+                        {t('demo.form.businessFocus')} *
+                      </label>
+                      <select
+                        id="businessFocus"
+                        name="businessFocus"
+                        required
+                        value={formData.businessFocus}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      >
+                        <option value="">{t('demo.form.selectPlaceholder')}</option>
+                        <option value="EPC">{t('demo.form.businessFocusOptions.epc')}</option>
+                        <option value="Project Development">{t('demo.form.businessFocusOptions.development')}</option>
+                        <option value="Consulting">{t('demo.form.businessFocusOptions.consulting')}</option>
+                        <option value="Equipment Manufacturer">{t('demo.form.businessFocusOptions.manufacturer')}</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label htmlFor="projectSize" className="block text-sm font-semibold text-gray-700 mb-2">
+                        {t('demo.form.projectSize')} *
+                      </label>
+                      <select
+                        id="projectSize"
+                        name="projectSize"
+                        required
+                        value={formData.projectSize}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      >
+                        <option value="">{t('demo.form.selectPlaceholder')}</option>
+                        <option value="<20kW">{t('demo.form.projectSizeOptions.lt20')}</option>
+                        <option value="20 kW - 3 MW">{t('demo.form.projectSizeOptions.mid1')}</option>
+                        <option value="3 MW - 10 MW">{t('demo.form.projectSizeOptions.mid2')}</option>
+                        <option value="10+ MW">{t('demo.form.projectSizeOptions.gt10')}</option>
+                        <option value="All Sizes">{t('demo.form.projectSizeOptions.all')}</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Types of projects & designs/users */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <span className="block text-sm font-semibold text-gray-700 mb-2">
+                        {t('demo.form.projectTypes')} *
+                      </span>
+                      <div className="space-y-2">
+                        <label className="flex items-center space-x-2">
+                          <input
+                            type="checkbox"
+                            name="projectTypes"
+                            value="Carport"
+                            checked={formData.projectTypes.includes('Carport')}
+                            onChange={() => handleProjectTypeChange('Carport')}
+                            className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                          />
+                          <span className="text-sm text-gray-700">{t('demo.form.projectTypeOptions.carport')}</span>
+                        </label>
+                        <label className="flex items-center space-x-2">
+                          <input
+                            type="checkbox"
+                            name="projectTypes"
+                            value="Ground Mount"
+                            checked={formData.projectTypes.includes('Ground Mount')}
+                            onChange={() => handleProjectTypeChange('Ground Mount')}
+                            className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                          />
+                          <span className="text-sm text-gray-700">{t('demo.form.projectTypeOptions.groundMount')}</span>
+                        </label>
+                        <label className="flex items-center space-x-2">
+                          <input
+                            type="checkbox"
+                            name="projectTypes"
+                            value="Other"
+                            checked={formData.projectTypes.includes('Other')}
+                            onChange={() => handleProjectTypeChange('Other')}
+                            className="w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                          />
+                          <span className="text-sm text-gray-700">{t('demo.form.projectTypeOptions.other')}</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div className="space-y-4">
+                      <div>
+                        <label htmlFor="monthlyDesigns" className="block text-sm font-semibold text-gray-700 mb-2">
+                          {t('demo.form.monthlyDesigns')} *
+                        </label>
+                        <select
+                          id="monthlyDesigns"
+                          name="monthlyDesigns"
+                          required
+                          value={formData.monthlyDesigns}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        >
+                          <option value="">{t('demo.form.selectPlaceholder')}</option>
+                          <option value="<20">{t('demo.form.monthlyDesignsOptions.lt20')}</option>
+                          <option value="20-50">{t('demo.form.monthlyDesignsOptions.mid')}</option>
+                          <option value="50+">{t('demo.form.monthlyDesignsOptions.gt50')}</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label htmlFor="usersCount" className="block text-sm font-semibold text-gray-700 mb-2">
+                          {t('demo.form.usersCount')} *
+                        </label>
+                        <select
+                          id="usersCount"
+                          name="usersCount"
+                          required
+                          value={formData.usersCount}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                        >
+                          <option value="">{t('demo.form.selectPlaceholder')}</option>
+                          <option value="1">{t('demo.form.usersCountOptions.one')}</option>
+                          <option value="2-5">{t('demo.form.usersCountOptions.twoToFive')}</option>
+                          <option value="5+">{t('demo.form.usersCountOptions.fivePlus')}</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
 
                   <div>
@@ -680,66 +1018,6 @@ ${hasRequestedBefore ? '\n⚠️ NOT: Bu e-posta adresi daha önce key talep etm
               </div>
             </motion.div>
 
-            {/* Sidebar - Trust Indicators */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="space-y-6"
-            >
-              <div className="bg-white rounded-2xl shadow-xl p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{t('demo.trust.title')}</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <div>
-                      <div className="font-semibold text-gray-900">{t('demo.trust.item1.title')}</div>
-                      <div className="text-sm text-gray-600">{t('demo.trust.item1.description')}</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <div>
-                      <div className="font-semibold text-gray-900">{t('demo.trust.item2.title')}</div>
-                      <div className="text-sm text-gray-600">{t('demo.trust.item2.description')}</div>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <svg className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <div>
-                      <div className="font-semibold text-gray-900">{t('demo.trust.item3.title')}</div>
-                      <div className="text-sm text-gray-600">{t('demo.trust.item3.description')}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-primary-50 to-solar-yellow/10 rounded-2xl p-6 border border-primary-100">
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-3xl font-bold text-primary-600 mb-1">21+</div>
-                    <div className="text-sm text-gray-600">{t('demo.stats.customers')}</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary-600 mb-1">2+</div>
-                    <div className="text-sm text-gray-600">{t('demo.stats.countries')}</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary-600 mb-1">7+</div>
-                    <div className="text-sm text-gray-600">{t('testimonials.stats.projects')}</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-primary-600 mb-1">5/5</div>
-                    <div className="text-sm text-gray-600">{t('testimonials.stats.rating')}</div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>

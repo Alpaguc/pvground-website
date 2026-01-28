@@ -301,8 +301,57 @@
       "company": "Şirket",
       "phone": "Telefon",
       "jobTitle": "Pozisyon",
+      "state": "Eyalet / İl",
+      "country": "Ülke",
+      "productInterest": "İlgi Duyduğunuz Ürün",
+      "heardAbout": "Bizi nereden duydunuz?",
+      "businessFocus": "Şirketinizin ana odağı",
+      "projectSize": "Proje Büyüklüğü",
+      "projectTypes": "Proje Tipleri",
+      "monthlyDesigns": "Aylık tasarım adedi",
+      "usersCount": "Kullanıcı sayısı",
       "message": "Mesaj",
       "phonePlaceholder": "Telefon numarası",
+      "selectPlaceholder": "Lütfen seçiniz",
+      "productInterestOptions": {
+        "pvGround": "PVGround",
+        "pvRoof": "PVRoof"
+      },
+      "heardAboutOptions": {
+        "email": "E-posta",
+        "google": "Google",
+        "socialMedia": "Sosyal Medya",
+        "jobSites": "İş arama siteleri",
+        "friend": "Arkadaş tavsiyesi"
+      },
+      "businessFocusOptions": {
+        "epc": "EPC",
+        "development": "Proje Geliştirme",
+        "consulting": "Danışmanlık",
+        "manufacturer": "Ekipman Üretici Firma"
+      },
+      "projectSizeOptions": {
+        "lt20": "<20kW",
+        "mid1": "20 kW - 3 MW",
+        "mid2": "3 MW - 10 MW",
+        "gt10": "10+ MW",
+        "all": "Tüm boyutlar"
+      },
+      "projectTypeOptions": {
+        "carport": "Carport",
+        "groundMount": "Yer Üstü (Ground Mount)",
+        "other": "Diğer"
+      },
+      "monthlyDesignsOptions": {
+        "lt20": "<20",
+        "mid": "20-50",
+        "gt50": "50+"
+      },
+      "usersCountOptions": {
+        "one": "1",
+        "twoToFive": "2-5",
+        "fivePlus": "5+"
+      },
       "submit": "Key Talep Et",
       "submitting": "Gönderiliyor...",
       "acceptTerms": {
@@ -326,6 +375,8 @@
       "emailGenericNotAllowed": "Lütfen kişisel e-posta adresinizi kullanınız. Proje, sales, satış, info gibi genel e-posta adresleri kabul edilmemektedir.",
       "emailEducationNotAllowed": "Lütfen şirket e-posta adresinizi kullanınız. Eğitim kurumlarına ait e-posta adresleri (edu.tr, edu.com vb.) kabul edilmemektedir.",
       "emailNote": "Lütfen şirket e-posta adresinizi kullanınız (@gmail.com, @yahoo.com, @outlook.com gibi kişisel e-posta servisleri kabul edilmemektedir)",
+      "phoneRequired": "Telefon numarası gereklidir",
+      "jobTitleRequired": "Pozisyon gereklidir",
       "messageRequired": "Mesaj alanı zorunludur",
       "acceptTermsRequired": "Kullanım Koşullarını kabul etmelisiniz",
       "acceptCookiesRequired": "Çerez Politikasını kabul etmelisiniz"

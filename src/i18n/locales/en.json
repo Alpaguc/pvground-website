@@ -301,8 +301,57 @@
       "company": "Company",
       "phone": "Phone",
       "jobTitle": "Job Title",
+      "state": "State",
+      "country": "Country",
+      "productInterest": "Product Interest",
+      "heardAbout": "How did you hear about us?",
+      "businessFocus": "Most of my company's business is in",
+      "projectSize": "Project Size",
+      "projectTypes": "Types of Projects",
+      "monthlyDesigns": "Estimated Number of Designs (per month)",
+      "usersCount": "How Many Users?",
       "message": "Message",
       "phonePlaceholder": "Phone number",
+      "selectPlaceholder": "Please select",
+      "productInterestOptions": {
+        "pvGround": "PVGround",
+        "pvRoof": "PVRoof"
+      },
+      "heardAboutOptions": {
+        "email": "Email",
+        "google": "Google",
+        "socialMedia": "Social Media",
+        "jobSites": "Job search sites",
+        "friend": "Referred by a friend"
+      },
+      "businessFocusOptions": {
+        "epc": "EPC",
+        "development": "Project Development",
+        "consulting": "Consulting",
+        "manufacturer": "Equipment Manufacturer"
+      },
+      "projectSizeOptions": {
+        "lt20": "<20kW",
+        "mid1": "20 kW - 3 MW",
+        "mid2": "3 MW - 10 MW",
+        "gt10": "10+ MW",
+        "all": "All Sizes"
+      },
+      "projectTypeOptions": {
+        "carport": "Carport",
+        "groundMount": "Ground Mount",
+        "other": "Other"
+      },
+      "monthlyDesignsOptions": {
+        "lt20": "<20",
+        "mid": "20-50",
+        "gt50": "50+"
+      },
+      "usersCountOptions": {
+        "one": "1",
+        "twoToFive": "2-5",
+        "fivePlus": "5+"
+      },
       "submit": "Request Key",
       "submitting": "Submitting...",
       "acceptTerms": {
@@ -326,6 +375,8 @@
       "emailGenericNotAllowed": "Please use your personal email address. Generic email addresses like project, sales, info are not accepted.",
       "emailEducationNotAllowed": "Please use your company email address. Educational institution email addresses (edu.tr, edu.com, etc.) are not accepted.",
       "emailNote": "Please use your company email address (personal email services like @gmail.com, @yahoo.com, @outlook.com are not accepted)",
+      "phoneRequired": "Phone number is required",
+      "jobTitleRequired": "Job title is required",
       "messageRequired": "Message field is required",
       "acceptTermsRequired": "You must accept the Terms of Service",
       "acceptCookiesRequired": "You must accept the Cookie Policy"
