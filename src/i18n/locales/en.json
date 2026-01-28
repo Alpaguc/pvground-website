@@ -322,10 +322,10 @@
     "validation": {
       "emailRequired": "Email address is required",
       "emailInvalid": "Please enter a valid email address",
-      "emailBlocked": "Please use your company email address. Personal email services like Gmail and Yahoo are not accepted.",
+      "emailBlocked": "Please use your company email address. Personal email services like Gmail, Yahoo, Outlook are not accepted.",
       "emailGenericNotAllowed": "Please use your personal email address. Generic email addresses like project, sales, info are not accepted.",
       "emailEducationNotAllowed": "Please use your company email address. Educational institution email addresses (edu.tr, edu.com, etc.) are not accepted.",
-      "emailNote": "Please use your company email address (personal email services like @gmail.com, @yahoo.com are not accepted)",
+      "emailNote": "Please use your company email address (personal email services like @gmail.com, @yahoo.com, @outlook.com are not accepted)",
       "messageRequired": "Message field is required",
       "acceptTermsRequired": "You must accept the Terms of Service",
       "acceptCookiesRequired": "You must accept the Cookie Policy"
@@ -371,6 +371,55 @@
     "improvements": "Improvements",
     "bugFixes": "Bug Fixes",
     "releases": {
+      "1.241": {
+        "date": "January 2026",
+        "description": "Version 1.241 with frame color & size options, new shadow objects and major stability improvements on steep terrains.",
+        "features": [
+          {
+            "title": "Frame Color and Size Management",
+            "description": [
+              "Frames can now be defined in different sizes",
+              "You can color frames in any color you want",
+              "Different frame types can be distinguished much more clearly during review"
+            ],
+            "video": "/images/release-notes/1.241/2026-01-28 18-16-27.mp4"
+          },
+          {
+            "title": "New Shadow Objects: CCTV and Lightning Rod",
+            "description": [
+              "CCTV and Lightning Rod have been added as new shadow objects",
+              "You can now include site security and protection elements in the shadow analysis",
+              "Create more realistic shading scenarios with CCTV and Lightning Rod objects"
+            ],
+            "images": [
+              "/images/release-notes/1.241/cctv.png",
+              "/images/release-notes/1.241/paratoner.png"
+            ]
+          },
+          {
+            "title": "Wind Turbine Studies Started",
+            "description": [
+              "Mathematical modeling studies for Wind Turbine as a new shadow object have started",
+              "In upcoming versions, wind turbine shading and placement support will be added"
+            ]
+          }
+        ],
+        "improvements": [
+          {
+            "title": "Tilt Angle Mathematical Model Updated",
+            "description": [
+              "The mathematical formula that was limiting the tilt angle has been updated",
+              "Frames are now placed with a sharper and more optimal tilt angle",
+              "More stable and predictable results on steep terrains"
+            ]
+          },
+          "UI updates have been made, dialogs and buttons are now more clear and user-friendly"
+        ],
+        "bugFixes": [
+          "Fixed major issue where frames did not fully follow the terrain on steep slopes",
+          "Fixed issue where frames used the old tilt angle when re-placing after tilt angle was changed"
+        ]
+      },
       "1.24": {
         "date": "January 2026",
         "description": "Version 1.24 with new icons, major changes in Ribbon Manager, and design optimized based on user feedback.",

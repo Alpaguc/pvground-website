@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 const ReleaseNotes = () => {
   const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
-  const [selectedVersion, setSelectedVersion] = useState('1.24')
+  const [selectedVersion, setSelectedVersion] = useState('1.241')
 
   useEffect(() => {
     // Scroll to top when page loads
@@ -21,7 +21,7 @@ const ReleaseNotes = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const releases = ['1.24', '1.23', '1.22', '1.21', '1.2', '1.1', '1.0', '0.9', '0.8', '0.7']
+  const releases = ['1.241', '1.24', '1.23', '1.22', '1.21', '1.2', '1.1', '1.0', '0.9', '0.8', '0.7']
 
   return (
     <div className="min-h-screen bg-white">
@@ -114,10 +114,10 @@ const ReleaseNotes = () => {
                         </div>
                       </div>
                       {/* Görsel/GIF/Video desteği */}
-                      {typeof feature === 'object' && (feature.image || feature.video) && (
+                      {typeof feature === 'object' && (feature.image || feature.images || feature.video) && (
                         <div className="mt-4 -ml-8 w-full max-w-4xl">
-                          <div className="rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                            {feature.video ? (
+                          {feature.video ? (
+                            <div className="rounded-lg overflow-hidden border border-gray-200 shadow-lg">
                               <video 
                                 src={feature.video} 
                                 controls
@@ -129,20 +129,39 @@ const ReleaseNotes = () => {
                               >
                                 Tarayıcınız video oynatmayı desteklemiyor.
                               </video>
-                            ) : feature.image && feature.image.endsWith('.gif') ? (
+                            </div>
+                          ) : Array.isArray(feature.images) ? (
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                              {feature.images.map((imgSrc, idx) => (
+                                <div
+                                  key={idx}
+                                  className="rounded-lg overflow-hidden border border-gray-200 shadow-lg"
+                                >
+                                  <img 
+                                    src={imgSrc} 
+                                    alt={feature.title || 'Feature image'} 
+                                    className="w-full h-auto"
+                                  />
+                                </div>
+                              ))}
+                            </div>
+                          ) : feature.image && feature.image.endsWith('.gif') ? (
+                            <div className="rounded-lg overflow-hidden border border-gray-200 shadow-lg">
                               <img 
                                 src={feature.image} 
                                 alt={feature.title || 'Feature demonstration'} 
                                 className="w-full h-auto"
                               />
-                            ) : (
+                            </div>
+                          ) : (
+                            <div className="rounded-lg overflow-hidden border border-gray-200 shadow-lg">
                               <img 
                                 src={feature.image} 
                                 alt={feature.title || 'Feature image'} 
                                 className="w-full h-auto"
                               />
-                            )}
-                          </div>
+                            </div>
+                          )}
                         </div>
                       )}
                     </li>

@@ -322,10 +322,10 @@
     "validation": {
       "emailRequired": "E-posta adresi gereklidir",
       "emailInvalid": "Geçerli bir e-posta adresi giriniz",
-      "emailBlocked": "Lütfen şirket e-posta adresinizi kullanınız. Gmail, Yahoo gibi kişisel e-posta servisleri kabul edilmemektedir.",
+      "emailBlocked": "Lütfen şirket e-posta adresinizi kullanınız. Gmail, Yahoo, Outlook gibi kişisel e-posta servisleri kabul edilmemektedir.",
       "emailGenericNotAllowed": "Lütfen kişisel e-posta adresinizi kullanınız. Proje, sales, satış, info gibi genel e-posta adresleri kabul edilmemektedir.",
       "emailEducationNotAllowed": "Lütfen şirket e-posta adresinizi kullanınız. Eğitim kurumlarına ait e-posta adresleri (edu.tr, edu.com vb.) kabul edilmemektedir.",
-      "emailNote": "Lütfen şirket e-posta adresinizi kullanınız (@gmail.com, @yahoo.com gibi kişisel e-posta servisleri kabul edilmemektedir)",
+      "emailNote": "Lütfen şirket e-posta adresinizi kullanınız (@gmail.com, @yahoo.com, @outlook.com gibi kişisel e-posta servisleri kabul edilmemektedir)",
       "messageRequired": "Mesaj alanı zorunludur",
       "acceptTermsRequired": "Kullanım Koşullarını kabul etmelisiniz",
       "acceptCookiesRequired": "Çerez Politikasını kabul etmelisiniz"
@@ -371,6 +371,55 @@
     "improvements": "İyileştirmeler",
     "bugFixes": "Hata Düzeltmeleri",
     "releases": {
+      "1.241": {
+        "date": "Ocak 2026",
+        "description": "Frames renk seçenekleri, yeni shadow objeleri ve yüksek eğimli arazilerde önemli stabilite iyileştirmeleri ile Versiyon 1.241.",
+        "features": [
+          {
+            "title": "Frames Renk ve Boyut Yönetimi",
+            "description": [
+              "Framesler artık farklı boyutlarda tanımlanabiliyor",
+              "Framesleri istediğiniz renkte renklendirebiliyorsunuz",
+              "Farklı tiplerdeki framesleri inceleme aşamasında çok daha net ayırt edebiliyorsunuz"
+            ],
+            "video": "/images/release-notes/1.241/2026-01-28 18-16-27.mp4"
+          },
+          {
+            "title": "Yeni Gölgeleme Objeleri: CCTV ve Paratoner",
+            "description": [
+              "Shadow objelerine CCTV ve Paratoner eklendi",
+              "Arazi üzerindeki güvenlik ve koruma elemanlarını gölgeleme hesabına dahil edebiliyorsunuz",
+              "CCTV ve Paratoner objeleri ile daha gerçekçi gölgeleme senaryoları oluşturabilirsiniz"
+            ],
+            "images": [
+              "/images/release-notes/1.241/cctv.png",
+              "/images/release-notes/1.241/paratoner.png"
+            ]
+          },
+          {
+            "title": "Rüzgar Türbini Çalışmaları Başladı",
+            "description": [
+              "Yeni shadow objesi olarak Rüzgar Türbini için matematiksel modelleme çalışmalarına başlandı",
+              "İlerleyen sürümlerde rüzgar türbini gölgeleme ve yerleşim desteği eklenecek"
+            ]
+          }
+        ],
+        "improvements": [
+          {
+            "title": "Tilt Açısı Matematiksel Modeli Güncellendi",
+            "description": [
+              "Tilt açısını engelleyen matematiksel formül güncellendi",
+              "Artık framesler daha keskin ve optimum tilt açısı ile yerleşiyor",
+              "Yüksek eğimli arazilerde daha stabil ve öngörülebilir sonuçlar sağlandı"
+            ]
+          },
+          "Arayüz güncellemeleri yapıldı, dialoglar ve butonlar daha anlaşılır ve kullanışlı hale getirildi"
+        ],
+        "bugFixes": [
+          "Frameslerin yüksek eğimli arazilerde terrain ile tam olarak uyumlu hareket etmeme sorunu giderildi",
+          "Frames tilt açısı değiştirildikten sonra tekrar yerleşim yaparken eski tilt açısı ile yerleşim yapmasına sebep olan hata giderildi"
+        ]
+      },
       "1.24": {
         "date": "Ocak 2026",
         "description": "Yeni ikonlar, Ribbon Manager'da köklü değişiklikler ve kullanıcı geri bildirimlerine göre optimize edilmiş tasarım ile Versiyon 1.24.",

@@ -322,10 +322,10 @@
     "validation": {
       "emailRequired": "E-Mail-Adresse ist erforderlich",
       "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-      "emailBlocked": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse. Persönliche E-Mail-Dienste wie Gmail und Yahoo werden nicht akzeptiert.",
+      "emailBlocked": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse. Persönliche E-Mail-Dienste wie Gmail, Yahoo und Outlook werden nicht akzeptiert.",
       "emailGenericNotAllowed": "Bitte verwenden Sie Ihre persönliche E-Mail-Adresse. Generische E-Mail-Adressen wie Projekt, Sales, Info werden nicht akzeptiert.",
       "emailEducationNotAllowed": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse. E-Mail-Adressen von Bildungseinrichtungen (edu.tr, edu.com usw.) werden nicht akzeptiert.",
-      "emailNote": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse (persönliche E-Mail-Dienste wie @gmail.com, @yahoo.com werden nicht akzeptiert)",
+      "emailNote": "Bitte verwenden Sie Ihre Firmen-E-Mail-Adresse (persönliche E-Mail-Dienste wie @gmail.com, @yahoo.com, @outlook.com werden nicht akzeptiert)",
       "messageRequired": "Nachrichtfeld ist erforderlich",
       "acceptTermsRequired": "Sie müssen die Nutzungsbedingungen akzeptieren",
       "acceptCookiesRequired": "Sie müssen die Cookie-Richtlinie akzeptieren"
@@ -371,6 +371,55 @@
     "improvements": "Verbesserungen",
     "bugFixes": "Fehlerbehebungen",
     "releases": {
+      "1.241": {
+        "date": "Januar 2026",
+        "description": "Version 1.241 mit Farb- und Größenoptionen für Frames, neuen Verschattungselementen und wichtigen Stabilitätsverbesserungen auf stark geneigten Geländen.",
+        "features": [
+          {
+            "title": "Frame-Farb- und Größenverwaltung",
+            "description": [
+              "Frames können jetzt in verschiedenen Größen definiert werden",
+              "Sie können Frames in beliebigen Farben einfärben",
+              "Verschiedene Frame-Typen lassen sich in der Prüfphase deutlich besser unterscheiden"
+            ],
+            "video": "/images/release-notes/1.241/2026-01-28 18-16-27.mp4"
+          },
+          {
+            "title": "Neue Verschattungselemente: CCTV und Blitzableiter",
+            "description": [
+              "CCTV und Blitzableiter wurden als neue Verschattungselemente hinzugefügt",
+              "Sicherheits- und Schutzelemente auf dem Gelände können in die Verschattungsanalyse einbezogen werden",
+              "Mit CCTV- und Blitzableiter-Objekten lassen sich realistischere Verschattungsszenarien erstellen"
+            ],
+            "images": [
+              "/images/release-notes/1.241/cctv.png",
+              "/images/release-notes/1.241/paratoner.png"
+            ]
+          },
+          {
+            "title": "Arbeiten am Windturbinen-Modell Gestartet",
+            "description": [
+              "Mathematische Modellierungsarbeiten für das neue Verschattungselement Windturbine wurden gestartet",
+              "In kommenden Versionen werden Verschattungs- und Platzierungsfunktionen für Windturbinen hinzugefügt"
+            ]
+          }
+        ],
+        "improvements": [
+          {
+            "title": "Tilt-Winkel Mathematisches Modell Aktualisiert",
+            "description": [
+              "Die den Tilt-Winkel begrenzende mathematische Formel wurde aktualisiert",
+              "Frames werden nun mit einem schärferen und optimaleren Tilt-Winkel platziert",
+              "Stabilere und besser vorhersagbare Ergebnisse auf stark geneigten Geländen"
+            ]
+          },
+          "Oberflächen-Updates wurden durchgeführt, Dialoge und Schaltflächen sind jetzt verständlicher und benutzerfreundlicher"
+        ],
+        "bugFixes": [
+          "Problem behoben, bei dem Frames auf stark geneigten Geländen dem Terrain nicht vollständig gefolgt sind",
+          "Problem behoben, bei dem Frames nach Änderung des Tilt-Winkels bei einer erneuten Platzierung den alten Tilt-Winkel verwendet haben"
+        ]
+      },
       "1.24": {
         "date": "Januar 2026",
         "description": "Version 1.24 mit neuen Symbolen, umfassenden Änderungen im Ribbon Manager und auf Benutzerfeedback optimiertem Design.",
