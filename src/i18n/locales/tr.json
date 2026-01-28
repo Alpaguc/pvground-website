@@ -6,6 +6,7 @@
     "pricing": "Fiyatlandırma",
     "releaseNotes": "Yama Notları",
     "howToUse": "Nasıl Kullanılır",
+    "login": "Giriş Yap",
     "requestDemo": "Key Talep Et"
   },
   "hero": {
@@ -1048,6 +1049,49 @@
         ]
       }
     ]
+  },
+  "login": {
+    "title": "Hesabınıza Giriş Yapın",
+    "subtitle": "PVGround hesabınızla giriş yapın veya yeni hesap oluşturun",
+    "tabs": {
+      "login": "Giriş Yap",
+      "register": "Kayıt Ol"
+    },
+    "form": {
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "ornek@email.com",
+      "password": "Şifre",
+      "passwordPlaceholder": "Şifrenizi girin",
+      "confirmPassword": "Şifre Tekrar",
+      "confirmPasswordPlaceholder": "Şifrenizi tekrar girin",
+      "fullName": "Ad Soyad",
+      "fullNamePlaceholder": "Adınız ve soyadınız",
+      "rememberMe": "Beni hatırla",
+      "forgotPassword": "Şifremi unuttum",
+      "acceptTerms": "Kullanım şartlarını ve gizlilik politikasını kabul ediyorum.",
+      "termsLink": "Şartları oku",
+      "loginButton": "Giriş Yap",
+      "registerButton": "Kayıt Ol",
+      "submitting": "İşleniyor...",
+      "passwordHint": "En az 6 karakter olmalıdır"
+    },
+    "errors": {
+      "emailRequired": "E-posta adresi gereklidir",
+      "passwordRequired": "Şifre gereklidir",
+      "fullNameRequired": "Ad soyad gereklidir",
+      "invalidEmail": "Geçerli bir e-posta adresi girin",
+      "passwordMinLength": "Şifre en az 6 karakter olmalıdır",
+      "passwordMismatch": "Şifreler eşleşmiyor",
+      "acceptTerms": "Kullanım şartlarını kabul etmelisiniz",
+      "loginFailed": "Giriş başarısız. E-posta ve şifrenizi kontrol edin.",
+      "registerFailed": "Kayıt başarısız. Lütfen tekrar deneyin.",
+      "supabaseNotConfigured": "Sistem yapılandırması eksik. Lütfen yöneticiye başvurun."
+    },
+    "success": {
+      "loginSuccess": "Giriş başarılı! Yönlendiriliyorsunuz...",
+      "registerSuccess": "Kayıt başarılı! E-posta adresinizi doğrulamanız gerekebilir."
+    },
+    "backToHome": "Ana sayfaya dön"
   }
 }
 

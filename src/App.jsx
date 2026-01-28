@@ -14,6 +14,10 @@ import ReleaseNotes from './pages/ReleaseNotes'
 import Pricing from './pages/Pricing'
 import LegalNotice from './pages/LegalNotice'
 import HowToUse from './pages/HowToUse'
+import Login from './pages/Login'
+import AdminUsers from './pages/AdminUsers'
+import EnvTest from './pages/EnvTest'
+import Dashboard from './pages/Dashboard'
 
 function Home() {
   const [scrolled, setScrolled] = useState(false)
@@ -72,6 +76,10 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/legal-notice" element={<LegalNotice />} />
         <Route path="/how-to-use" element={<HowToUse />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/admin/users" element={<AdminUsers />} />
+        <Route path="/env-test" element={<EnvTest />} />
       </Routes>
     </Router>
   )

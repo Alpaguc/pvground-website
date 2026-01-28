@@ -1,12 +1,47 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from './LanguageSelector'
+import { supabase } from '../lib/supabase'
 
 const Navbar = ({ scrolled }) => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [currentUser, setCurrentUser] = useState(null)
+  const [accountMenuOpen, setAccountMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const loadSession = async () => {
+      if (!supabase) return
+      const {
+        data: { session },
+      } = await supabase.auth.getSession()
+      setCurrentUser(session?.user || null)
+    }
+
+    loadSession()
+
+    if (!supabase) return
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setCurrentUser(session?.user || null)
+    })
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [])
+
+  const handleLogout = async () => {
+    if (!supabase) return
+    await supabase.auth.signOut()
+    setCurrentUser(null)
+    navigate('/')
+  }
 
   const navItems = [
     { key: 'products', href: '/#features', isLink: true },
@@ -70,6 +105,56 @@ const Navbar = ({ scrolled }) => {
               </Link>
             ))}
             <LanguageSelector />
+            {currentUser ? (
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => setAccountMenuOpen(!accountMenuOpen)}
+                  className="inline-flex items-center px-4 py-2 text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 border border-gray-200 rounded-lg bg-white"
+                >
+                  Hesabım
+                  <svg
+                    className="ml-1 h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {accountMenuOpen && (
+                  <div className="absolute right-0 mt-2 w-40 rounded-lg border border-gray-200 bg-white shadow-lg z-50">
+                    <Link
+                      to="/dashboard"
+                      onClick={() => setAccountMenuOpen(false)}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                    >
+                      Dashboard
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setAccountMenuOpen(false)
+                        handleLogout()
+                      }}
+                      className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                    >
+                      Çıkış Yap
+                    </button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link to="/login">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-4 py-2 text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200"
+                >
+                  {t('nav.login')}
+                </motion.div>
+              </Link>
+            )}
             <Link to="/demo">
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -134,13 +219,51 @@ const Navbar = ({ scrolled }) => {
               <div className="py-2">
                 <LanguageSelector />
               </div>
-              <Link
-                to="/demo"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block py-2.5 px-6 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-lg font-semibold text-center"
-              >
-                {t('nav.requestDemo')}
-              </Link>
+              {currentUser ? (
+                <>
+                  <Link
+                    to="/dashboard"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
+                  >
+                    Dashboard
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMobileMenuOpen(false)
+                      handleLogout()
+                    }}
+                    className="w-full mt-2 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100"
+                  >
+                    Çıkış Yap
+                  </button>
+                  <Link
+                    to="/demo"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="mt-2 block py-2.5 px-6 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-lg font-semibold text-center"
+                  >
+                    {t('nav.requestDemo')}
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
+                  >
+                    {t('nav.login')}
+                  </Link>
+                  <Link
+                    to="/demo"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block py-2.5 px-6 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-lg font-semibold text-center"
+                  >
+                    {t('nav.requestDemo')}
+                  </Link>
+                </>
+              )}
             </div>
           </motion.div>
         )}

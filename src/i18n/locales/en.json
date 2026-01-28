@@ -6,6 +6,7 @@
     "pricing": "Pricing",
     "releaseNotes": "Release Notes",
     "howToUse": "How to Use",
+    "login": "Sign In",
     "requestDemo": "Request Key"
   },
   "hero": {
@@ -1048,6 +1049,49 @@
         ]
       }
     ]
+  },
+  "login": {
+    "title": "Sign In to Your Account",
+    "subtitle": "Sign in with your PVGround account or create a new account",
+    "tabs": {
+      "login": "Sign In",
+      "register": "Sign Up"
+    },
+    "form": {
+      "email": "Email Address",
+      "emailPlaceholder": "example@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Re-enter your password",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Your first and last name",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "acceptTerms": "I accept the terms of use and privacy policy.",
+      "termsLink": "Read terms",
+      "loginButton": "Sign In",
+      "registerButton": "Sign Up",
+      "submitting": "Processing...",
+      "passwordHint": "Must be at least 6 characters"
+    },
+    "errors": {
+      "emailRequired": "Email address is required",
+      "passwordRequired": "Password is required",
+      "fullNameRequired": "Full name is required",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "passwordMismatch": "Passwords do not match",
+      "acceptTerms": "You must accept the terms of use",
+      "loginFailed": "Login failed. Please check your email and password.",
+      "registerFailed": "Registration failed. Please try again.",
+      "supabaseNotConfigured": "System configuration is missing. Please contact the administrator."
+    },
+    "success": {
+      "loginSuccess": "Login successful! Redirecting...",
+      "registerSuccess": "Registration successful! You may need to verify your email address."
+    },
+    "backToHome": "Back to home"
   }
 }
 

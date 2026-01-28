@@ -6,6 +6,7 @@
     "pricing": "Preise",
     "releaseNotes": "Versionshinweise",
     "howToUse": "Wie man verwendet",
+    "login": "Anmelden",
     "requestDemo": "Schlüssel Anfordern"
   },
   "hero": {
@@ -1047,6 +1048,49 @@
         ]
       }
     ]
+  },
+  "login": {
+    "title": "Bei Ihrem Konto anmelden",
+    "subtitle": "Melden Sie sich mit Ihrem PVGround-Konto an oder erstellen Sie ein neues Konto",
+    "tabs": {
+      "login": "Anmelden",
+      "register": "Registrieren"
+    },
+    "form": {
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "beispiel@email.com",
+      "password": "Passwort",
+      "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+      "confirmPassword": "Passwort bestätigen",
+      "confirmPasswordPlaceholder": "Geben Sie Ihr Passwort erneut ein",
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "Ihr Vor- und Nachname",
+      "rememberMe": "Angemeldet bleiben",
+      "forgotPassword": "Passwort vergessen?",
+      "acceptTerms": "Ich akzeptiere die Nutzungsbedingungen und die Datenschutzrichtlinie.",
+      "termsLink": "Bedingungen lesen",
+      "loginButton": "Anmelden",
+      "registerButton": "Registrieren",
+      "submitting": "Wird verarbeitet...",
+      "passwordHint": "Muss mindestens 6 Zeichen lang sein"
+    },
+    "errors": {
+      "emailRequired": "E-Mail-Adresse ist erforderlich",
+      "passwordRequired": "Passwort ist erforderlich",
+      "fullNameRequired": "Vollständiger Name ist erforderlich",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "passwordMinLength": "Passwort muss mindestens 6 Zeichen lang sein",
+      "passwordMismatch": "Passwörter stimmen nicht überein",
+      "acceptTerms": "Sie müssen die Nutzungsbedingungen akzeptieren",
+      "loginFailed": "Anmeldung fehlgeschlagen. Bitte überprüfen Sie Ihre E-Mail und Ihr Passwort.",
+      "registerFailed": "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+      "supabaseNotConfigured": "Systemkonfiguration fehlt. Bitte kontaktieren Sie den Administrator."
+    },
+    "success": {
+      "loginSuccess": "Anmeldung erfolgreich! Weiterleitung...",
+      "registerSuccess": "Registrierung erfolgreich! Sie müssen möglicherweise Ihre E-Mail-Adresse bestätigen."
+    },
+    "backToHome": "Zurück zur Startseite"
   }
 }
 
