@@ -24,6 +24,13 @@
   status = 200
   force = false
 
+# login.pvground.com ana sayfasini dogrudan /login route'una gonder
+[[redirects]]
+  from = "/"
+  to = "/login"
+  status = 200
+  conditions = { Host = ["login.pvground.com"] }
+
 # SPA routing - Tüm sayfaları index.html'e yönlendir
 [[redirects]]
   from = "/*"
