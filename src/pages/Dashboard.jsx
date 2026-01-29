@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
+import i18n from '../i18n/config'
 import { supabase } from '../lib/supabase'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -9,6 +11,7 @@ import Footer from '../components/Footer'
 const EXPIRY_DATE = new Date('2026-04-01T00:00:00Z')
 
 const Dashboard = () => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const [scrolled, setScrolled] = useState(false)
   const [user, setUser] = useState(null)
@@ -60,7 +63,7 @@ const Dashboard = () => {
     return Math.ceil(diffMs / (1000 * 60 * 60 * 24))
   }
 
-  const expiryDateText = EXPIRY_DATE.toLocaleDateString('tr-TR', {
+  const expiryDateText = EXPIRY_DATE.toLocaleDateString(i18n.language === 'tr' ? 'tr-TR' : i18n.language === 'de' ? 'de-DE' : 'en-US', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
@@ -92,7 +95,7 @@ const Dashboard = () => {
         setKeys(data || [])
       } catch (err) {
         console.error('user_keys yüklenemedi:', err)
-        setError('Lisans verileri yüklenemedi. Lütfen daha sonra tekrar deneyin.')
+        setError(t('dashboard.error'))
       } finally {
         setLoadingKeys(false)
       }
@@ -114,10 +117,10 @@ const Dashboard = () => {
             className="mb-8"
           >
             <h1 className="text-3xl font-bold text-gray-900">
-              Hoş geldin{fullName ? `, ${fullName}` : ''} 👋
+              {t('dashboard.welcome')}{fullName ? `, ${fullName}` : ''} 👋
             </h1>
             <p className="mt-2 text-gray-600">
-              Buradan PVGround ve PVRoof lisanslarını ve indirme bağlantılarını yöneteceksin.
+              {t('dashboard.subtitle')}
             </p>
           </motion.div>
 
@@ -129,7 +132,7 @@ const Dashboard = () => {
               className="lg:col-span-1 bg-white rounded-xl shadow-sm border border-gray-100 p-4 space-y-3"
             >
               <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
-                Ürünler
+                {t('dashboard.products')}
               </h2>
               <button
                 type="button"
@@ -140,7 +143,7 @@ const Dashboard = () => {
                     : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
                 }`}
               >
-                PVGround
+                {t('dashboard.pvground')}
               </button>
               <button
                 type="button"
@@ -151,7 +154,7 @@ const Dashboard = () => {
                     : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
                 }`}
               >
-                PVRoof
+                {t('dashboard.pvroof')}
               </button>
             </motion.aside>
 
@@ -162,7 +165,7 @@ const Dashboard = () => {
               className="lg:col-span-3 bg-white rounded-xl shadow-sm border border-gray-100 p-6"
             >
               <h2 className="text-xl font-semibold text-gray-900 mb-4">
-                {activeProduct === 'pvground' ? 'PVGround Lisansların' : 'PVRoof Lisansların'}
+                {activeProduct === 'pvground' ? t('dashboard.pvgroundLicenses') : t('dashboard.pvroofLicenses')}
               </h2>
 
               {error && (
@@ -176,16 +179,12 @@ const Dashboard = () => {
                   {loadingKeys ? (
                     <div className="flex items-center justify-center py-10">
                       <div className="h-8 w-8 animate-spin rounded-full border-b-2 border-primary-600" />
+                      <span className="ml-3 text-sm text-gray-600">{t('dashboard.loading')}</span>
                     </div>
                   ) : keys.length === 0 ? (
                     <div className="rounded-lg border border-dashed border-gray-300 p-6 text-center">
                       <p className="text-sm text-gray-600">
-                        Bu hesap için kayıtlı PVGround lisansı bulunamadı.
-                      </p>
-                      <p className="mt-2 text-xs text-gray-500">
-                        Supabase üzerindeki <code className="rounded bg-gray-100 px-1">user_keys</code>{' '}
-                        tablosunda <code className="rounded bg-gray-100 px-1">email</code> alanının
-                        bu hesapta giriş yaptığın e-posta adresiyle aynı olduğundan emin olun.
+                        {t('dashboard.noLicense')}
                       </p>
                     </div>
                   ) : (
@@ -197,19 +196,19 @@ const Dashboard = () => {
                         >
                           <div>
                             <div className="text-xs font-medium uppercase tracking-wide text-gray-500">
-                              Lisans Key
+                              {t('dashboard.licenseKey')}
                             </div>
                             <div className="mt-1 font-mono text-sm text-gray-900">
                               {key.license_key}
                             </div>
                             <div className="mt-3 text-xs text-gray-600 space-y-1">
                               <p>
-                                <span className="font-semibold">Son geçerlilik tarihi:</span>{' '}
+                                <span className="font-semibold">{t('dashboard.expiryDate')}:</span>{' '}
                                 {expiryDateText}
                               </p>
                               <p>
-                                <span className="font-semibold">Kalan süre:</span>{' '}
-                                {getRemainingDays()} gün
+                                <span className="font-semibold">{t('dashboard.remainingDays')}:</span>{' '}
+                                {getRemainingDays()} {t('dashboard.days')}
                               </p>
                             </div>
                           </div>
@@ -220,7 +219,7 @@ const Dashboard = () => {
                               rel="noopener noreferrer"
                               className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-primary-700"
                             >
-                              PVGround Setup İndir
+                              {t('dashboard.downloadSetup')}
                             </a>
                           </div>
                         </div>
@@ -231,8 +230,7 @@ const Dashboard = () => {
               ) : (
                 <div className="rounded-lg border border-dashed border-gray-300 p-6 text-center">
                   <p className="text-sm text-gray-600">
-                    PVRoof için henüz lisans sistemi eklenmedi. Hazır olduğunda burada
-                    görüntülenecek.
+                    {t('dashboard.noLicense')}
                   </p>
                 </div>
               )}

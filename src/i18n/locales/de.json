@@ -7,7 +7,10 @@
     "releaseNotes": "Versionshinweise",
     "howToUse": "Wie man verwendet",
     "login": "Anmelden",
-    "requestDemo": "Schlüssel Anfordern"
+    "requestDemo": "Schlüssel Anfordern",
+    "account": "Mein Konto",
+    "dashboard": "Dashboard",
+    "logout": "Abmelden"
   },
   "hero": {
     "badge": "Solar-Design der nächsten Generation",
@@ -1091,6 +1094,24 @@
       "registerSuccess": "Registrierung erfolgreich! Sie müssen möglicherweise Ihre E-Mail-Adresse bestätigen."
     },
     "backToHome": "Zurück zur Startseite"
+  },
+  "dashboard": {
+    "welcome": "Willkommen",
+    "subtitle": "Verwalten Sie hier Ihre PVGround- und PVRoof-Lizenzen und Download-Links.",
+    "products": "PRODUKTE",
+    "pvground": "PVGround",
+    "pvroof": "PVRoof",
+    "pvgroundLicenses": "Ihre PVGround-Lizenzen",
+    "pvroofLicenses": "Ihre PVRoof-Lizenzen",
+    "licenseKey": "LIZENZSCHLÜSSEL",
+    "expiryDate": "Ablaufdatum",
+    "remainingDays": "Verbleibende Zeit",
+    "days": "Tage",
+    "downloadSetup": "PVGround Setup herunterladen",
+    "downloadSetupRoof": "PVRoof Setup herunterladen",
+    "noLicense": "Keine registrierte Lizenz für dieses Konto gefunden.",
+    "loading": "Lizenzen werden geladen...",
+    "error": "Lizenzdaten konnten nicht geladen werden. Bitte versuchen Sie es später erneut."
   }
 }
 

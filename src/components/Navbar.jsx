@@ -112,7 +112,7 @@ const Navbar = ({ scrolled }) => {
                   onClick={() => setAccountMenuOpen(!accountMenuOpen)}
                   className="inline-flex items-center px-4 py-2 text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 border border-gray-200 rounded-lg bg-white"
                 >
-                  Hesabım
+                  {t('nav.account')}
                   <svg
                     className="ml-1 h-4 w-4"
                     fill="none"
@@ -129,7 +129,7 @@ const Navbar = ({ scrolled }) => {
                       onClick={() => setAccountMenuOpen(false)}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                     >
-                      Dashboard
+                      {t('nav.dashboard')}
                     </Link>
                     <button
                       type="button"
@@ -139,7 +139,7 @@ const Navbar = ({ scrolled }) => {
                       }}
                       className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                     >
-                      Çıkış Yap
+                      {t('nav.logout')}
                     </button>
                   </div>
                 )}
@@ -226,7 +226,7 @@ const Navbar = ({ scrolled }) => {
                     onClick={() => setMobileMenuOpen(false)}
                     className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
                   >
-                    Dashboard
+                    {t('nav.dashboard')}
                   </Link>
                   <button
                     type="button"
@@ -236,7 +236,7 @@ const Navbar = ({ scrolled }) => {
                     }}
                     className="w-full mt-2 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100"
                   >
-                    Çıkış Yap
+                    {t('nav.logout')}
                   </button>
                   <Link
                     to="/demo"

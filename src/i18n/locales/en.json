@@ -7,7 +7,10 @@
     "releaseNotes": "Release Notes",
     "howToUse": "How to Use",
     "login": "Sign In",
-    "requestDemo": "Request Key"
+    "requestDemo": "Request Key",
+    "account": "My Account",
+    "dashboard": "Dashboard",
+    "logout": "Sign Out"
   },
   "hero": {
     "badge": "Next-Generation Solar Design",
@@ -1092,6 +1095,24 @@
       "registerSuccess": "Registration successful! You may need to verify your email address."
     },
     "backToHome": "Back to home"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "subtitle": "Manage your PVGround and PVRoof licenses and download links from here.",
+    "products": "PRODUCTS",
+    "pvground": "PVGround",
+    "pvroof": "PVRoof",
+    "pvgroundLicenses": "Your PVGround Licenses",
+    "pvroofLicenses": "Your PVRoof Licenses",
+    "licenseKey": "LICENSE KEY",
+    "expiryDate": "Expiry date",
+    "remainingDays": "Remaining time",
+    "days": "days",
+    "downloadSetup": "Download PVGround Setup",
+    "downloadSetupRoof": "Download PVRoof Setup",
+    "noLicense": "No registered license found for this account.",
+    "loading": "Loading licenses...",
+    "error": "License data could not be loaded. Please try again later."
   }
 }
 

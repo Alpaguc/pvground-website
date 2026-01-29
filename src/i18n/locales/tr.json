@@ -7,7 +7,10 @@
     "releaseNotes": "Yama Notları",
     "howToUse": "Nasıl Kullanılır",
     "login": "Giriş Yap",
-    "requestDemo": "Key Talep Et"
+    "requestDemo": "Key Talep Et",
+    "account": "Hesabım",
+    "dashboard": "Dashboard",
+    "logout": "Çıkış Yap"
   },
   "hero": {
     "badge": "Yeni Nesil Güneş Enerjisi Tasarımı",
@@ -1092,6 +1095,24 @@
       "registerSuccess": "Kayıt başarılı! E-posta adresinizi doğrulamanız gerekebilir."
     },
     "backToHome": "Ana sayfaya dön"
+  },
+  "dashboard": {
+    "welcome": "Hos geldin",
+    "subtitle": "Buradan PVGround ve PVRoof lisanslarini ve indirme baglantilarini yoneteceksin.",
+    "products": "URUNLER",
+    "pvground": "PVGround",
+    "pvroof": "PVRoof",
+    "pvgroundLicenses": "PVGround Lisanslarin",
+    "pvroofLicenses": "PVRoof Lisanslarin",
+    "licenseKey": "LISANS KEY",
+    "expiryDate": "Son gecerlilik tarihi",
+    "remainingDays": "Kalan sure",
+    "days": "gun",
+    "downloadSetup": "PVGround Setup Indir",
+    "downloadSetupRoof": "PVRoof Setup Indir",
+    "noLicense": "Bu hesap icin kayitli lisans bulunamadi.",
+    "loading": "Lisanslar yukleniyor...",
+    "error": "Lisans verileri yuklenemedi. Lutfen daha sonra tekrar deneyin."
   }
 }
 
