@@ -404,8 +404,8 @@
     },
     "success": {
       "title": "Talebiniz Alındı!",
-      "message": "Demo talebiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
-      "back": "Ana Sayfaya Dön"
+      "message": "Lutfen talep edilen e-posta ile kayit olun. En kisa surede hesabiniza lisans key ve indirme baglantisi tanimlanacak. Bilgileri oradan alabilirsiniz.",
+      "back": "Ana Sayfaya Don"
     },
     "confirmation": {
       "subject": "PVGround - Talebiniz Alındı",

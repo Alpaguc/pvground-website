@@ -404,7 +404,7 @@
     },
     "success": {
       "title": "Request Received!",
-      "message": "Your demo request has been successfully submitted. We'll contact you as soon as possible.",
+      "message": "Please register with the email address you provided. Your license key and download link will be added to your account shortly. You can access them from your dashboard.",
       "back": "Back to Home"
     },
     "confirmation": {

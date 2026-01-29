@@ -404,8 +404,8 @@
     },
     "success": {
       "title": "Anfrage erhalten!",
-      "message": "Ihre Demo-Anfrage wurde erfolgreich übermittelt. Wir werden uns so schnell wie möglich bei Ihnen melden.",
-      "back": "Zurück zur Startseite"
+      "message": "Bitte registrieren Sie sich mit der von Ihnen angegebenen E-Mail-Adresse. Ihr Lizenzschlüssel und Download-Link werden in Kuerze zu Ihrem Konto hinzugefuegt. Sie koennen sie von Ihrem Dashboard aus abrufen.",
+      "back": "Zurueck zur Startseite"
     },
     "confirmation": {
       "subject": "PVGround - Ihre Anfrage wurde erhalten",
