@@ -388,6 +388,16 @@ ${hasRequestedBefore ? '⚠️ UYARI: Bu e-posta adresi daha önce key talep etm
 Şirket: ${formData.company || 'Belirtilmemiş'}
 Telefon: ${fullPhone}
 Pozisyon: ${formData.jobTitle || 'Belirtilmemiş'}
+Eyalet/İl: ${formData.state || 'Belirtilmemiş'}
+Ülke: ${formData.country || 'Belirtilmemiş'}
+
+Ürün İlgisi: ${formData.productInterest || 'Belirtilmemiş'}
+Nereden Duydunuz: ${formData.heardAbout || 'Belirtilmemiş'}
+İş Odağı: ${formData.businessFocus || 'Belirtilmemiş'}
+Proje Tipleri: ${formData.projectTypes && formData.projectTypes.length > 0 ? formData.projectTypes.join(', ') : 'Belirtilmemiş'}
+Proje Boyutu: ${formData.projectSize || 'Belirtilmemiş'}
+Aylık Tasarım Sayısı: ${formData.monthlyDesigns || 'Belirtilmemiş'}
+Kullanıcı Sayısı: ${formData.usersCount || 'Belirtilmemiş'}
 
 Mesaj:
 ${formData.message}

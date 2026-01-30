@@ -428,7 +428,7 @@
     "releases": {
       "1.241": {
         "date": "Januar 2026",
-        "description": "Version 1.241 mit Farb- und Größenoptionen für Frames, neuen Verschattungselementen und wichtigen Stabilitätsverbesserungen auf stark geneigten Geländen.",
+        "description": "Version 1.241 mit Entwässerungssystem, Farb- und Größenoptionen für Frames, neuen Verschattungselementen, Website-Automatikschlüsselzuweisungssystem und wichtigen Stabilitätsverbesserungen auf stark geneigten Geländen.",
         "features": [
           {
             "title": "Frame-Farb- und Größenverwaltung",
@@ -457,6 +457,17 @@
               "Mathematische Modellierungsarbeiten für das neue Verschattungselement Windturbine wurden gestartet",
               "In kommenden Versionen werden Verschattungs- und Platzierungsfunktionen für Windturbinen hinzugefügt"
             ]
+          },
+          {
+            "title": "Entwässerungssystem Aktiviert",
+            "description": [
+              "Das Entwässerungssystem ist jetzt vollständig aktiv und arbeitet automatisch basierend auf der Geländeneigung",
+              "Wenn Sie auf einen beliebigen Punkt klicken, den Sie simulieren möchten, können Sie die gesamte Entwässerungsleitung visualisieren, die von diesem Punkt aus fließt",
+              "Wenn eine Straße auf der Entwässerungsleitung vorhanden ist, setzt das System die Entwässerungsleitung automatisch entlang der Straße fort",
+              "Dies ermöglicht es Ihnen, Entwässerungssysteme und Straßen gemeinsam zu entwerfen und eine integrierte Lösung zu erstellen",
+              "Dank der Geländeneigungsanalyse werden Wasserflussrichtung und Entwässerungsleitungen realistisch berechnet"
+            ],
+            "video": "/images/release-notes/1.241/drenaj-sistemi.mp4"
           }
         ],
         "improvements": [
@@ -468,7 +479,18 @@
               "Stabilere und besser vorhersagbare Ergebnisse auf stark geneigten Geländen"
             ]
           },
-          "Oberflächen-Updates wurden durchgeführt, Dialoge und Schaltflächen sind jetzt verständlicher und benutzerfreundlicher"
+          "Oberflächen-Updates wurden durchgeführt, Dialoge und Schaltflächen sind jetzt verständlicher und benutzerfreundlicher",
+          {
+            "title": "PVGround Website - Automatische Schlüsselzuweisung und Update-Verfolgung",
+            "description": [
+              "Schlüsselanfragen werden jetzt automatisch der angeforderten E-Mail-Adresse zugewiesen, wenn Benutzer sich registrieren",
+              "Wenn ein Lizenzschlüssel dem Benutzerkonto zugewiesen wurde, wird er auf dem Dashboard-Bildschirm angezeigt und der Download-Link ist sofort verfügbar",
+              "Sie können neue Updates von der Website verfolgen und die neuesten Versionen schnell von der Website herunterladen",
+              "Benutzer können jetzt ihre Lizenzschlüssel und Download-Links von einem einzigen Ort aus verwalten, nachdem sie ein Konto erstellt haben",
+              "Das Benachrichtigungssystem für Versions-Updates und neue Funktionen wurde verbessert"
+            ],
+            "image": "/images/release-notes/1.241/dashboard-update.png"
+          }
         ],
         "bugFixes": [
           "Problem behoben, bei dem Frames auf stark geneigten Geländen dem Terrain nicht vollständig gefolgt sind",

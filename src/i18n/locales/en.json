@@ -428,7 +428,7 @@
     "releases": {
       "1.241": {
         "date": "January 2026",
-        "description": "Version 1.241 with frame color & size options, new shadow objects and major stability improvements on steep terrains.",
+        "description": "Version 1.241 with drainage system, frame color & size options, new shadow objects, website automatic key assignment system, and major stability improvements on steep terrains.",
         "features": [
           {
             "title": "Frame Color and Size Management",
@@ -457,6 +457,17 @@
               "Mathematical modeling studies for Wind Turbine as a new shadow object have started",
               "In upcoming versions, wind turbine shading and placement support will be added"
             ]
+          },
+          {
+            "title": "Drainage System Activated",
+            "description": [
+              "The drainage system is now fully active and operates automatically based on terrain slope",
+              "When you click on any point you want to simulate, you can visualize the entire drainage line flowing from that point",
+              "If a road exists on the drainage line, the system automatically continues the drainage line along the road",
+              "This allows you to design drainage systems and roads together, creating an integrated solution",
+              "Thanks to terrain slope analysis, water flow direction and drainage lines are calculated realistically"
+            ],
+            "video": "/images/release-notes/1.241/drenaj-sistemi.mp4"
           }
         ],
         "improvements": [
@@ -468,7 +479,18 @@
               "More stable and predictable results on steep terrains"
             ]
           },
-          "UI updates have been made, dialogs and buttons are now more clear and user-friendly"
+          "UI updates have been made, dialogs and buttons are now more clear and user-friendly",
+          {
+            "title": "PVGround Website - Automatic Key Assignment and Update Tracking",
+            "description": [
+              "Key requests are now automatically assigned to the requested email address when users register",
+              "If a license key has been assigned to the user's account, it is displayed on the dashboard screen and the download link is immediately available",
+              "You can track new updates from the website and quickly download the latest versions from the site",
+              "Users can now manage their license keys and download links from a single location after creating an account",
+              "The notification system for version updates and new features has been improved"
+            ],
+            "image": "/images/release-notes/1.241/dashboard-update.png"
+          }
         ],
         "bugFixes": [
           "Fixed major issue where frames did not fully follow the terrain on steep slopes",

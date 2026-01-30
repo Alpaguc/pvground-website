@@ -428,7 +428,7 @@
     "releases": {
       "1.241": {
         "date": "Ocak 2026",
-        "description": "Frames renk seçenekleri, yeni shadow objeleri ve yüksek eğimli arazilerde önemli stabilite iyileştirmeleri ile Versiyon 1.241.",
+        "description": "Drenaj sistemi, frames renk seçenekleri, yeni shadow objeleri, web sitesi otomatik key atama sistemi ve yüksek eğimli arazilerde önemli stabilite iyileştirmeleri ile Versiyon 1.241.",
         "features": [
           {
             "title": "Frames Renk ve Boyut Yönetimi",
@@ -457,6 +457,17 @@
               "Yeni shadow objesi olarak Rüzgar Türbini için matematiksel modelleme çalışmalarına başlandı",
               "İlerleyen sürümlerde rüzgar türbini gölgeleme ve yerleşim desteği eklenecek"
             ]
+          },
+          {
+            "title": "Drenaj Sistemi Aktif Edildi",
+            "description": [
+              "Drenaj sistemi artık tam olarak aktif ve arazi eğimine göre otomatik olarak çalışıyor",
+              "Simülasyon etmek istediğiniz herhangi bir noktaya tıkladığınızda, o noktadan başlayarak akan tüm drenaj hattını görselleştirebilirsiniz",
+              "Drenaj hattı üzerinde yol mevcut ise, sistem otomatik olarak yol boyunca drenaj hattını devam ettirir",
+              "Bu sayede drenaj sistemi ile yol tasarımını birlikte yapabilir ve entegre bir çözüm oluşturabilirsiniz",
+              "Arazi eğim analizi sayesinde su akış yönü ve drenaj hatları gerçekçi bir şekilde hesaplanıyor"
+            ],
+            "video": "/images/release-notes/1.241/drenaj-sistemi.mp4"
           }
         ],
         "improvements": [
@@ -468,7 +479,18 @@
               "Yüksek eğimli arazilerde daha stabil ve öngörülebilir sonuçlar sağlandı"
             ]
           },
-          "Arayüz güncellemeleri yapıldı, dialoglar ve butonlar daha anlaşılır ve kullanışlı hale getirildi"
+          "Arayüz güncellemeleri yapıldı, dialoglar ve butonlar daha anlaşılır ve kullanışlı hale getirildi",
+          {
+            "title": "PVGround Web Sitesi - Otomatik Key Atama ve Güncelleme Takibi",
+            "description": [
+              "Artık key talepleri doğrudan kayıt olunduğunda talep edilen e-posta adresine otomatik olarak atanıyor",
+              "Eğer kullanıcının hesabına atanmış bir lisans key mevcut ise, dashboard ekranında görüntüleniyor ve indirme bağlantısı hemen kullanılabilir durumda",
+              "Yeni gelen güncellemeleri siteden takip edebilir ve güncel versiyonları site üzerinden hızlıca indirebilirsiniz",
+              "Kullanıcılar artık hesap oluşturduktan sonra lisans key'lerini ve indirme bağlantılarını tek bir yerden yönetebiliyor",
+              "Versiyon güncellemeleri ve yeni özellikler hakkında bilgilendirme sistemi iyileştirildi"
+            ],
+            "image": "/images/release-notes/1.241/dashboard-update.png"
+          }
         ],
         "bugFixes": [
           "Frameslerin yüksek eğimli arazilerde terrain ile tam olarak uyumlu hareket etmeme sorunu giderildi",
